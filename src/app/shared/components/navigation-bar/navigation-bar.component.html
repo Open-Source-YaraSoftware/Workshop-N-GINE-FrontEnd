@@ -1,0 +1,22 @@
+<aside class="navbar">
+  <nav class="menu">
+    <div class="menu-icon">
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <img class="logo" src="/assets/images/logo.png" alt="logo of workshop n-gine">
+    <ul class="links">
+      @for (item of navigationItems(); track item.name){
+        <button mat-button [routerLink]="item.namePath">
+          {{item.name}}
+        </button>
+      }
+    </ul>
+  </nav>
+  <div class="go-back">
+    <button mat-icon-button>
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
+</aside>
