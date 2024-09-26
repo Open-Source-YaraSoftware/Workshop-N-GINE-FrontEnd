@@ -1,0 +1,2825 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "workshop_id": 1,
+      "first_name": "Carlos",
+      "last_name": "García",
+      "dni": "00000001A",
+      "email": "carlos.garcia@example.com",
+      "password": "hashed_password_1",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 1,
+        "type": "workshop_owner"
+      }
+    },
+    {
+      "id": 2,
+      "workshop_id": 1,
+      "first_name": "María",
+      "last_name": "López",
+      "dni": "10000002B",
+      "email": "maria.lopez@example.com",
+      "password": "hashed_password_2",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 3,
+      "workshop_id": 1,
+      "first_name": "José",
+      "last_name": "Martínez",
+      "dni": "10000003C",
+      "email": "jose.martinez@example.com",
+      "password": "hashed_password_3",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 4,
+      "workshop_id": 1,
+      "first_name": "Laura",
+      "last_name": "Sánchez",
+      "dni": "10000004D",
+      "email": "laura.sanchez@example.com",
+      "password": "hashed_password_4",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 5,
+      "workshop_id": 1,
+      "first_name": "Antonio",
+      "last_name": "Pérez",
+      "dni": "10000005E",
+      "email": "antonio.perez@example.com",
+      "password": "hashed_password_5",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 6,
+      "workshop_id": 1,
+      "first_name": "Ana",
+      "last_name": "Gómez",
+      "dni": "10000006F",
+      "email": "ana.gomez@example.com",
+      "password": "hashed_password_6",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 7,
+      "workshop_id": 1,
+      "first_name": "Luis",
+      "last_name": "Fernández",
+      "dni": "10000007G",
+      "email": "luis.fernandez@example.com",
+      "password": "hashed_password_7",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 8,
+      "workshop_id": 1,
+      "first_name": "Elena",
+      "last_name": "Díaz",
+      "dni": "10000008H",
+      "email": "elena.diaz@example.com",
+      "password": "hashed_password_8",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 9,
+      "workshop_id": 1,
+      "first_name": "Miguel",
+      "last_name": "Ruiz",
+      "dni": "10000009I",
+      "email": "miguel.ruiz@example.com",
+      "password": "hashed_password_9",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 10,
+      "workshop_id": 1,
+      "first_name": "Isabel",
+      "last_name": "Hernández",
+      "dni": "10000010J",
+      "email": "isabel.hernandez@example.com",
+      "password": "hashed_password_10",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 11,
+      "workshop_id": 1,
+      "first_name": "Daniel",
+      "last_name": "Torres",
+      "dni": "10000011K",
+      "email": "daniel.torres@example.com",
+      "password": "hashed_password_11",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 12,
+      "workshop_id": 1,
+      "first_name": "Sofía",
+      "last_name": "Ramírez",
+      "dni": "10000012L",
+      "email": "sofia.ramirez@example.com",
+      "password": "hashed_password_12",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 13,
+      "workshop_id": 1,
+      "first_name": "Javier",
+      "last_name": "Flores",
+      "dni": "10000013M",
+      "email": "javier.flores@example.com",
+      "password": "hashed_password_13",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 14,
+      "workshop_id": 1,
+      "first_name": "Lucía",
+      "last_name": "Santos",
+      "dni": "10000014N",
+      "email": "lucia.santos@example.com",
+      "password": "hashed_password_14",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 15,
+      "workshop_id": 1,
+      "first_name": "Manuel",
+      "last_name": "Castro",
+      "dni": "10000015O",
+      "email": "manuel.castro@example.com",
+      "password": "hashed_password_15",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 16,
+      "workshop_id": 1,
+      "first_name": "Carmen",
+      "last_name": "Vargas",
+      "dni": "10000016P",
+      "email": "carmen.vargas@example.com",
+      "password": "hashed_password_16",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 17,
+      "workshop_id": 1,
+      "first_name": "Juan",
+      "last_name": "Gutiérrez",
+      "dni": "10000017Q",
+      "email": "juan.gutierrez@example.com",
+      "password": "hashed_password_17",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 18,
+      "workshop_id": 1,
+      "first_name": "Patricia",
+      "last_name": "Jiménez",
+      "dni": "10000018R",
+      "email": "patricia.jimenez@example.com",
+      "password": "hashed_password_18",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 19,
+      "workshop_id": 1,
+      "first_name": "Pedro",
+      "last_name": "Reyes",
+      "dni": "10000019S",
+      "email": "pedro.reyes@example.com",
+      "password": "hashed_password_19",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 20,
+      "workshop_id": 1,
+      "first_name": "Sara",
+      "last_name": "Morales",
+      "dni": "10000020T",
+      "email": "sara.morales@example.com",
+      "password": "hashed_password_20",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 21,
+      "workshop_id": 1,
+      "first_name": "Diego",
+      "last_name": "Ortega",
+      "dni": "10000021U",
+      "email": "diego.ortega@example.com",
+      "password": "hashed_password_21",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 3,
+        "type": "workshop_client"
+      }
+    },
+    {
+      "id": 22,
+      "workshop_id": 1,
+      "first_name": "Alejandro",
+      "last_name": "Navarro",
+      "dni": "20000022V",
+      "email": "alejandro.navarro@example.com",
+      "password": "hashed_password_22",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 23,
+      "workshop_id": 1,
+      "first_name": "Marta",
+      "last_name": "Romero",
+      "dni": "20000023W",
+      "email": "marta.romero@example.com",
+      "password": "hashed_password_23",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 24,
+      "workshop_id": 1,
+      "first_name": "Fernando",
+      "last_name": "Domínguez",
+      "dni": "20000024X",
+      "email": "fernando.dominguez@example.com",
+      "password": "hashed_password_24",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 25,
+      "workshop_id": 1,
+      "first_name": "Lucía",
+      "last_name": "Alonso",
+      "dni": "20000025Y",
+      "email": "lucia.alonso@example.com",
+      "password": "hashed_password_25",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 26,
+      "workshop_id": 1,
+      "first_name": "Sergio",
+      "last_name": "Gil",
+      "dni": "20000026Z",
+      "email": "sergio.gil@example.com",
+      "password": "hashed_password_26",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 27,
+      "workshop_id": 1,
+      "first_name": "Natalia",
+      "last_name": "Méndez",
+      "dni": "20000027A",
+      "email": "natalia.mendez@example.com",
+      "password": "hashed_password_27",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 28,
+      "workshop_id": 1,
+      "first_name": "Jorge",
+      "last_name": "Cruz",
+      "dni": "20000028B",
+      "email": "jorge.cruz@example.com",
+      "password": "hashed_password_28",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 29,
+      "workshop_id": 1,
+      "first_name": "Eva",
+      "last_name": "Herrera",
+      "dni": "20000029C",
+      "email": "eva.herrera@example.com",
+      "password": "hashed_password_29",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 30,
+      "workshop_id": 1,
+      "first_name": "Alberto",
+      "last_name": "Soto",
+      "dni": "20000030D",
+      "email": "alberto.soto@example.com",
+      "password": "hashed_password_30",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 31,
+      "workshop_id": 1,
+      "first_name": "Raquel",
+      "last_name": "Delgado",
+      "dni": "20000031E",
+      "email": "raquel.delgado@example.com",
+      "password": "hashed_password_31",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 32,
+      "workshop_id": 1,
+      "first_name": "Pablo",
+      "last_name": "Ortiz",
+      "dni": "20000032F",
+      "email": "pablo.ortiz@example.com",
+      "password": "hashed_password_32",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 33,
+      "workshop_id": 1,
+      "first_name": "Silvia",
+      "last_name": "Marín",
+      "dni": "20000033G",
+      "email": "silvia.marin@example.com",
+      "password": "hashed_password_33",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 34,
+      "workshop_id": 1,
+      "first_name": "Víctor",
+      "last_name": "Serrano",
+      "dni": "20000034H",
+      "email": "victor.serrano@example.com",
+      "password": "hashed_password_34",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 35,
+      "workshop_id": 1,
+      "first_name": "Teresa",
+      "last_name": "Blanco",
+      "dni": "20000035I",
+      "email": "teresa.blanco@example.com",
+      "password": "hashed_password_35",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 36,
+      "workshop_id": 1,
+      "first_name": "Andrés",
+      "last_name": "Molina",
+      "dni": "20000036J",
+      "email": "andres.molina@example.com",
+      "password": "hashed_password_36",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 37,
+      "workshop_id": 1,
+      "first_name": "Lorena",
+      "last_name": "Moreno",
+      "dni": "20000037K",
+      "email": "lorena.moreno@example.com",
+      "password": "hashed_password_37",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 38,
+      "workshop_id": 1,
+      "first_name": "Francisco",
+      "last_name": "Carrasco",
+      "dni": "20000038L",
+      "email": "francisco.carrasco@example.com",
+      "password": "hashed_password_38",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 39,
+      "workshop_id": 1,
+      "first_name": "Cristina",
+      "last_name": "Fuentes",
+      "dni": "20000039M",
+      "email": "cristina.fuentes@example.com",
+      "password": "hashed_password_39",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 40,
+      "workshop_id": 1,
+      "first_name": "Rubén",
+      "last_name": "Núñez",
+      "dni": "20000040N",
+      "email": "ruben.nunez@example.com",
+      "password": "hashed_password_40",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 41,
+      "workshop_id": 1,
+      "first_name": "Beatriz",
+      "last_name": "Garrido",
+      "dni": "20000041O",
+      "email": "beatriz.garrido@example.com",
+      "password": "hashed_password_41",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 42,
+      "workshop_id": 1,
+      "first_name": "Adrián",
+      "last_name": "Cortés",
+      "dni": "20000042P",
+      "email": "adrian.cortes@example.com",
+      "password": "hashed_password_42",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 43,
+      "workshop_id": 1,
+      "first_name": "Irene",
+      "last_name": "Castillo",
+      "dni": "20000043Q",
+      "email": "irene.castillo@example.com",
+      "password": "hashed_password_43",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 44,
+      "workshop_id": 1,
+      "first_name": "Oscar",
+      "last_name": "Lara",
+      "dni": "20000044R",
+      "email": "oscar.lara@example.com",
+      "password": "hashed_password_44",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 45,
+      "workshop_id": 1,
+      "first_name": "Claudia",
+      "last_name": "Calvo",
+      "dni": "20000045S",
+      "email": "claudia.calvo@example.com",
+      "password": "hashed_password_45",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    },
+    {
+      "id": 46,
+      "workshop_id": 1,
+      "first_name": "Marcos",
+      "last_name": "Iglesias",
+      "dni": "20000046T",
+      "email": "marcos.iglesias@example.com",
+      "password": "hashed_password_46",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "state": {
+        "id": 1,
+        "name": "ACTIVE"
+      },
+      "user_type": {
+        "id": 2,
+        "type": "mechanic"
+      }
+    }
+  ],
+  "account_states": [
+    {
+      "id": 1,
+      "name": "ACTIVE"
+    },
+    {
+      "id": 2,
+      "name": "INACTIVE"
+    },
+    {
+      "id": 3,
+      "name": "HIDDEN"
+    }
+  ],
+  "user_types": [
+    {
+      "id": 1,
+      "type": "workshop_owner"
+    },
+    {
+      "id": 2,
+      "type": "mechanic"
+    },
+    {
+      "id": 3,
+      "type": "workshop_client"
+    }
+  ],
+  "workshops": [
+    {
+      "id": 1,
+      "owner_id": 1,
+      "name": "AutoFix Garage"
+    }
+  ],
+  "inventory_items": [
+    {
+      "id": 1,
+      "workshop_id": 1,
+      "name": "Filtro de aceite",
+      "amount": 15
+    },
+    {
+      "id": 2,
+      "workshop_id": 1,
+      "name": "Pastillas de freno",
+      "amount": 30
+    },
+    {
+      "id": 3,
+      "workshop_id": 1,
+      "name": "Bujía",
+      "amount": 25
+    },
+    {
+      "id": 4,
+      "workshop_id": 1,
+      "name": "Aceite de motor",
+      "amount": 50
+    },
+    {
+      "id": 5,
+      "workshop_id": 1,
+      "name": "Filtro de aire",
+      "amount": 20
+    },
+    {
+      "id": 6,
+      "workshop_id": 1,
+      "name": "Correa de distribución",
+      "amount": 10
+    },
+    {
+      "id": 7,
+      "workshop_id": 1,
+      "name": "Amortiguadores",
+      "amount": 12
+    },
+    {
+      "id": 8,
+      "workshop_id": 1,
+      "name": "Batería",
+      "amount": 8
+    },
+    {
+      "id": 9,
+      "workshop_id": 1,
+      "name": "Neumáticos",
+      "amount": 40
+    },
+    {
+      "id": 10,
+      "workshop_id": 1,
+      "name": "Radiador",
+      "amount": 5
+    },
+    {
+      "id": 11,
+      "workshop_id": 1,
+      "name": "Alternador",
+      "amount": 7
+    },
+    {
+      "id": 12,
+      "workshop_id": 1,
+      "name": "Embrague",
+      "amount": 9
+    },
+    {
+      "id": 13,
+      "workshop_id": 1,
+      "name": "Filtro de combustible",
+      "amount": 18
+    },
+    {
+      "id": 14,
+      "workshop_id": 1,
+      "name": "Disco de freno",
+      "amount": 22
+    },
+    {
+      "id": 15,
+      "workshop_id": 1,
+      "name": "Parabrisas",
+      "amount": 6
+    },
+    {
+      "id": 16,
+      "workshop_id": 1,
+      "name": "Espejo lateral",
+      "amount": 14
+    },
+    {
+      "id": 17,
+      "workshop_id": 1,
+      "name": "Faros delanteros",
+      "amount": 11
+    },
+    {
+      "id": 18,
+      "workshop_id": 1,
+      "name": "Bobina de encendido",
+      "amount": 13
+    },
+    {
+      "id": 19,
+      "workshop_id": 1,
+      "name": "Sensor de oxígeno",
+      "amount": 16
+    },
+    {
+      "id": 20,
+      "workshop_id": 1,
+      "name": "Filtro de habitáculo",
+      "amount": 17
+    }
+  ],
+  "inventory_requests": [
+    {
+      "id": 1,
+      "workshop_id": 1,
+      "user_id": 2,
+      "task_id": 1,
+      "item_id": 1,
+      "amount": 2,
+      "description": "Reemplazar filtro de aceite",
+      "date": "2024-09-20T08:30:00",
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 2,
+      "workshop_id": 1,
+      "user_id": 4,
+      "task_id": 2,
+      "item_id": 2,
+      "amount": 4,
+      "description": "Cambiar pastillas de freno",
+      "date": "2024-09-21T09:15:00",
+      "state": {
+        "id": 2,
+        "name": "APPROVED"
+      }
+    },
+    {
+      "id": 3,
+      "workshop_id": 1,
+      "user_id": 6,
+      "task_id": 3,
+      "item_id": 3,
+      "amount": 6,
+      "description": "Reemplazar bujías",
+      "date": "2024-09-22T10:45:00",
+      "state": {
+        "id": 3,
+        "name": "REJECTED"
+      }
+    },
+    {
+      "id": 4,
+      "workshop_id": 1,
+      "user_id": 8,
+      "task_id": 4,
+      "item_id": 4,
+      "amount": 5,
+      "description": "Cambio de aceite de motor",
+      "date": "2024-09-23T11:00:00",
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 5,
+      "workshop_id": 1,
+      "user_id": 2,
+      "task_id": 5,
+      "item_id": 5,
+      "amount": 3,
+      "description": "Reemplazar filtro de aire",
+      "date": "2024-09-24T12:30:00",
+      "state": {
+        "id": 2,
+        "name": "APPROVED"
+      }
+    },
+    {
+      "id": 6,
+      "workshop_id": 1,
+      "user_id": 4,
+      "task_id": 6,
+      "item_id": 6,
+      "amount": 1,
+      "description": "Cambiar correa de distribución",
+      "date": "2024-09-25T13:45:00",
+      "state": {
+        "id": 3,
+        "name": "REJECTED"
+      }
+    },
+    {
+      "id": 7,
+      "workshop_id": 1,
+      "user_id": 6,
+      "task_id": 7,
+      "item_id": 7,
+      "amount": 4,
+      "description": "Reemplazar amortiguadores",
+      "date": "2024-09-26T14:15:00",
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 8,
+      "workshop_id": 1,
+      "user_id": 8,
+      "task_id": 8,
+      "item_id": 8,
+      "amount": 2,
+      "description": "Cambiar batería",
+      "date": "2024-09-27T15:30:00",
+      "state": {
+        "id": 2,
+        "name": "APPROVED"
+      }
+    },
+    {
+      "id": 9,
+      "workshop_id": 1,
+      "user_id": 2,
+      "task_id": 9,
+      "item_id": 9,
+      "amount": 4,
+      "description": "Reemplazar neumáticos",
+      "date": "2024-09-28T16:00:00",
+      "state": {
+        "id": 3,
+        "name": "REJECTED"
+      }
+    },
+    {
+      "id": 10,
+      "workshop_id": 1,
+      "user_id": 4,
+      "task_id": 10,
+      "item_id": 10,
+      "amount": 1,
+      "description": "Cambiar radiador",
+      "date": "2024-09-29T17:15:00",
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 11,
+      "workshop_id": 1,
+      "user_id": 6,
+      "task_id": 11,
+      "item_id": 11,
+      "amount": 1,
+      "description": "Reemplazar alternador",
+      "date": "2024-09-30T18:30:00",
+      "state": {
+        "id": 2,
+        "name": "APPROVED"
+      }
+    },
+    {
+      "id": 12,
+      "workshop_id": 1,
+      "user_id": 8,
+      "task_id": 12,
+      "item_id": 12,
+      "amount": 1,
+      "description": "Cambiar embrague",
+      "date": "2024-10-01T09:00:00",
+      "state": {
+        "id": 3,
+        "name": "REJECTED"
+      }
+    },
+    {
+      "id": 13,
+      "workshop_id": 1,
+      "user_id": 2,
+      "task_id": 13,
+      "item_id": 13,
+      "amount": 2,
+      "description": "Reemplazar filtro de combustible",
+      "date": "2024-10-02T10:15:00",
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 14,
+      "workshop_id": 1,
+      "user_id": 4,
+      "task_id": 14,
+      "item_id": 14,
+      "amount": 2,
+      "description": "Cambiar discos de freno",
+      "date": "2024-10-03T11:30:00",
+      "state": {
+        "id": 2,
+        "name": "APPROVED"
+      }
+    },
+    {
+      "id": 15,
+      "workshop_id": 1,
+      "user_id": 6,
+      "task_id": 15,
+      "item_id": 15,
+      "amount": 1,
+      "description": "Reemplazar parabrisas",
+      "date": "2024-10-04T12:45:00",
+      "state": {
+        "id": 3,
+        "name": "REJECTED"
+      }
+    },
+    {
+      "id": 16,
+      "workshop_id": 1,
+      "user_id": 8,
+      "task_id": 16,
+      "item_id": 16,
+      "amount": 2,
+      "description": "Cambiar espejos laterales",
+      "date": "2024-10-05T14:00:00",
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 17,
+      "workshop_id": 1,
+      "user_id": 2,
+      "task_id": 17,
+      "item_id": 17,
+      "amount": 2,
+      "description": "Reemplazar faros delanteros",
+      "date": "2024-10-06T15:15:00",
+      "state": {
+        "id": 2,
+        "name": "APPROVED"
+      }
+    },
+    {
+      "id": 18,
+      "workshop_id": 1,
+      "user_id": 4,
+      "task_id": 18,
+      "item_id": 18,
+      "amount": 4,
+      "description": "Cambiar bobina de encendido",
+      "date": "2024-10-07T16:30:00",
+      "state": {
+        "id": 3,
+        "name": "REJECTED"
+      }
+    },
+    {
+      "id": 19,
+      "workshop_id": 1,
+      "user_id": 6,
+      "task_id": 19,
+      "item_id": 19,
+      "amount": 1,
+      "description": "Reemplazar sensor de oxígeno",
+      "date": "2024-10-08T17:45:00",
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 20,
+      "workshop_id": 1,
+      "user_id": 8,
+      "task_id": 20,
+      "item_id": 20,
+      "amount": 1,
+      "description": "Cambiar filtro de habitáculo",
+      "date": "2024-10-09T18:00:00",
+      "state": {
+        "id": 2,
+        "name": "APPROVED"
+      }
+    }
+  ],
+  "inventory_request_states": [
+    {
+      "id": 1,
+      "name": "PENDING"
+    },
+    {
+      "id": 2,
+      "name": "APPROVED"
+    },
+    {
+      "id": 3,
+      "name": "REJECTED"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "intervention_id": 1,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 2,
+      "user_id": 4,
+      "intervention_id": 2,
+      "state": {
+        "id": 2,
+        "name": "AWAITING_COMPONENTS"
+      }
+    },
+    {
+      "id": 3,
+      "user_id": 6,
+      "intervention_id": 3,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 4,
+      "user_id": 8,
+      "intervention_id": 4,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 5,
+      "user_id": 2,
+      "intervention_id": 5,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 6,
+      "user_id": 4,
+      "intervention_id": 6,
+      "state": {
+        "id": 2,
+        "name": "AWAITING_COMPONENTS"
+      }
+    },
+    {
+      "id": 7,
+      "user_id": 6,
+      "intervention_id": 7,
+      "state": {
+        "id": 3,
+        "name": "AWAITING_REASSIGNMENT"
+      }
+    },
+    {
+      "id": 8,
+      "user_id": 8,
+      "intervention_id": 8,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 9,
+      "user_id": 2,
+      "intervention_id": 9,
+      "state": {
+        "id": 4,
+        "name": "CANCELED"
+      }
+    },
+    {
+      "id": 10,
+      "user_id": 4,
+      "intervention_id": 10,
+      "state": {
+        "id": 5,
+        "name": "DONE"
+      }
+    },
+    {
+      "id": 11,
+      "user_id": 6,
+      "intervention_id": 11,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 12,
+      "user_id": 8,
+      "intervention_id": 12,
+      "state": {
+        "id": 2,
+        "name": "AWAITING_COMPONENTS"
+      }
+    },
+    {
+      "id": 13,
+      "user_id": 2,
+      "intervention_id": 13,
+      "state": {
+        "id": 3,
+        "name": "AWAITING_REASSIGNMENT"
+      }
+    },
+    {
+      "id": 14,
+      "user_id": 4,
+      "intervention_id": 14,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 15,
+      "user_id": 6,
+      "intervention_id": 15,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 16,
+      "user_id": 8,
+      "intervention_id": 16,
+      "state": {
+        "id": 2,
+        "name": "AWAITING_COMPONENTS"
+      }
+    },
+    {
+      "id": 17,
+      "user_id": 2,
+      "intervention_id": 17,
+      "state": {
+        "id": 3,
+        "name": "AWAITING_REASSIGNMENT"
+      }
+    },
+    {
+      "id": 18,
+      "user_id": 4,
+      "intervention_id": 18,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 19,
+      "user_id": 6,
+      "intervention_id": 19,
+      "state": {
+        "id": 5,
+        "name": "DONE"
+      }
+    },
+    {
+      "id": 20,
+      "user_id": 8,
+      "intervention_id": 20,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 21,
+      "user_id": 2,
+      "intervention_id": 21,
+      "state": {
+        "id": 2,
+        "name": "AWAITING_COMPONENTS"
+      }
+    },
+    {
+      "id": 22,
+      "user_id": 4,
+      "intervention_id": 22,
+      "state": {
+        "id": 3,
+        "name": "AWAITING_REASSIGNMENT"
+      }
+    },
+    {
+      "id": 23,
+      "user_id": 6,
+      "intervention_id": 23,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 24,
+      "user_id": 8,
+      "intervention_id": 24,
+      "state": {
+        "id": 4,
+        "name": "CANCELED"
+      }
+    },
+    {
+      "id": 25,
+      "user_id": 2,
+      "intervention_id": 25,
+      "state": {
+        "id": 5,
+        "name": "DONE"
+      }
+    },
+    {
+      "id": 26,
+      "user_id": 4,
+      "intervention_id": 26,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 27,
+      "user_id": 6,
+      "intervention_id": 27,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 28,
+      "user_id": 8,
+      "intervention_id": 28,
+      "state": {
+        "id": 2,
+        "name": "AWAITING_COMPONENTS"
+      }
+    },
+    {
+      "id": 29,
+      "user_id": 2,
+      "intervention_id": 29,
+      "state": {
+        "id": 3,
+        "name": "AWAITING_REASSIGNMENT"
+      }
+    },
+    {
+      "id": 30,
+      "user_id": 4,
+      "intervention_id": 30,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    }
+  ],
+  "task_states": [
+    {
+      "id": 1,
+      "name": "PENDING"
+    },
+    {
+      "id": 2,
+      "name": "AWAITING_COMPONENTS"
+    },
+    {
+      "id": 3,
+      "name": "AWAITING_REASSIGNMENT"
+    },
+    {
+      "id": 4,
+      "name": "CANCELED"
+    },
+    {
+      "id": 5,
+      "name": "DONE"
+    }
+  ],
+  "intervention_states": [
+    {
+      "id": 1,
+      "name": "PENDING"
+    },
+    {
+      "id": 2,
+      "name": "IN_PROGRESS"
+    },
+    {
+      "id": 3,
+      "name": "UNDER_INSPECTION"
+    },
+    {
+      "id": 4,
+      "name": "COMPLETED"
+    },
+    {
+      "id": 5,
+      "name": "CLOSED"
+    },
+    {
+      "id": 6,
+      "name": "REJECTED"
+    }
+  ],
+  "interventions": [
+    {
+      "id": 1,
+      "workshop_id": 1,
+      "mechanic_leader_id": 2,
+      "vehicle_id": 1,
+      "client_id": 3,
+      "registration_date": "2024-09-20T08:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 2,
+      "workshop_id": 1,
+      "mechanic_leader_id": 4,
+      "vehicle_id": 2,
+      "client_id": 5,
+      "registration_date": "2024-09-21T09:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 2,
+        "name": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": 3,
+      "workshop_id": 1,
+      "mechanic_leader_id": 6,
+      "vehicle_id": 3,
+      "client_id": 7,
+      "registration_date": "2024-09-22T10:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 4,
+      "workshop_id": 1,
+      "mechanic_leader_id": 8,
+      "vehicle_id": 4,
+      "client_id": 9,
+      "registration_date": "2024-09-23T11:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 5,
+      "workshop_id": 1,
+      "mechanic_leader_id": 2,
+      "vehicle_id": 5,
+      "client_id": 3,
+      "registration_date": "2024-09-24T12:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 2,
+        "name": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": 6,
+      "workshop_id": 1,
+      "mechanic_leader_id": 4,
+      "vehicle_id": 6,
+      "client_id": 5,
+      "registration_date": "2024-09-25T13:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 3,
+        "name": "UNDER_INSPECTION"
+      }
+    },
+    {
+      "id": 7,
+      "workshop_id": 1,
+      "mechanic_leader_id": 6,
+      "vehicle_id": 7,
+      "client_id": 7,
+      "registration_date": "2024-09-26T14:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 8,
+      "workshop_id": 1,
+      "mechanic_leader_id": 8,
+      "vehicle_id": 8,
+      "client_id": 9,
+      "registration_date": "2024-09-27T15:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 4,
+        "name": "COMPLETED"
+      }
+    },
+    {
+      "id": 9,
+      "workshop_id": 1,
+      "mechanic_leader_id": 2,
+      "vehicle_id": 9,
+      "client_id": 3,
+      "registration_date": "2024-09-28T16:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 5,
+        "name": "CLOSED"
+      }
+    },
+    {
+      "id": 10,
+      "workshop_id": 1,
+      "mechanic_leader_id": 4,
+      "vehicle_id": 10,
+      "client_id": 5,
+      "registration_date": "2024-09-29T17:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 11,
+      "workshop_id": 1,
+      "mechanic_leader_id": 6,
+      "vehicle_id": 11,
+      "client_id": 7,
+      "registration_date": "2024-09-30T18:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 2,
+        "name": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": 12,
+      "workshop_id": 1,
+      "mechanic_leader_id": 8,
+      "vehicle_id": 12,
+      "client_id": 9,
+      "registration_date": "2024-10-01T09:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 3,
+        "name": "UNDER_INSPECTION"
+      }
+    },
+    {
+      "id": 13,
+      "workshop_id": 1,
+      "mechanic_leader_id": 2,
+      "vehicle_id": 13,
+      "client_id": 3,
+      "registration_date": "2024-10-02T10:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 14,
+      "workshop_id": 1,
+      "mechanic_leader_id": 4,
+      "vehicle_id": 14,
+      "client_id": 5,
+      "registration_date": "2024-10-03T11:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 4,
+        "name": "COMPLETED"
+      }
+    },
+    {
+      "id": 15,
+      "workshop_id": 1,
+      "mechanic_leader_id": 6,
+      "vehicle_id": 15,
+      "client_id": 7,
+      "registration_date": "2024-10-04T12:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 5,
+        "name": "CLOSED"
+      }
+    },
+    {
+      "id": 16,
+      "workshop_id": 1,
+      "mechanic_leader_id": 8,
+      "vehicle_id": 16,
+      "client_id": 9,
+      "registration_date": "2024-10-05T13:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 17,
+      "workshop_id": 1,
+      "mechanic_leader_id": 2,
+      "vehicle_id": 17,
+      "client_id": 3,
+      "registration_date": "2024-10-06T14:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 2,
+        "name": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": 18,
+      "workshop_id": 1,
+      "mechanic_leader_id": 4,
+      "vehicle_id": 18,
+      "client_id": 5,
+      "registration_date": "2024-10-07T15:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 3,
+        "name": "UNDER_INSPECTION"
+      }
+    },
+    {
+      "id": 19,
+      "workshop_id": 1,
+      "mechanic_leader_id": 6,
+      "vehicle_id": 19,
+      "client_id": 7,
+      "registration_date": "2024-10-08T16:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 20,
+      "workshop_id": 1,
+      "mechanic_leader_id": 8,
+      "vehicle_id": 20,
+      "client_id": 9,
+      "registration_date": "2024-10-09T17:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 4,
+        "name": "COMPLETED"
+      }
+    },
+    {
+      "id": 21,
+      "workshop_id": 1,
+      "mechanic_leader_id": 2,
+      "vehicle_id": 21,
+      "client_id": 3,
+      "registration_date": "2024-10-10T18:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 5,
+        "name": "CLOSED"
+      }
+    },
+    {
+      "id": 22,
+      "workshop_id": 1,
+      "mechanic_leader_id": 4,
+      "vehicle_id": 22,
+      "client_id": 5,
+      "registration_date": "2024-10-11T09:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 23,
+      "workshop_id": 1,
+      "mechanic_leader_id": 6,
+      "vehicle_id": 23,
+      "client_id": 7,
+      "registration_date": "2024-10-12T10:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 2,
+        "name": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": 24,
+      "workshop_id": 1,
+      "mechanic_leader_id": 8,
+      "vehicle_id": 24,
+      "client_id": 9,
+      "registration_date": "2024-10-13T11:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 3,
+        "name": "UNDER_INSPECTION"
+      }
+    },
+    {
+      "id": 25,
+      "workshop_id": 1,
+      "mechanic_leader_id": 2,
+      "vehicle_id": 25,
+      "client_id": 3,
+      "registration_date": "2024-10-14T12:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 26,
+      "workshop_id": 1,
+      "mechanic_leader_id": 4,
+      "vehicle_id": 26,
+      "client_id": 5,
+      "registration_date": "2024-10-15T13:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 4,
+        "name": "COMPLETED"
+      }
+    },
+    {
+      "id": 27,
+      "workshop_id": 1,
+      "mechanic_leader_id": 6,
+      "vehicle_id": 27,
+      "client_id": 7,
+      "registration_date": "2024-10-16T14:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 5,
+        "name": "CLOSED"
+      }
+    },
+    {
+      "id": 28,
+      "workshop_id": 1,
+      "mechanic_leader_id": 8,
+      "vehicle_id": 28,
+      "client_id": 9,
+      "registration_date": "2024-10-17T15:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 1,
+        "name": "PENDING"
+      }
+    },
+    {
+      "id": 29,
+      "workshop_id": 1,
+      "mechanic_leader_id": 2,
+      "vehicle_id": 29,
+      "client_id": 3,
+      "registration_date": "2024-10-18T16:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 2,
+        "name": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": 30,
+      "workshop_id": 1,
+      "mechanic_leader_id": 4,
+      "vehicle_id": 30,
+      "client_id": 5,
+      "registration_date": "2024-10-19T17:00:00",
+      "completion_date": null,
+      "state": {
+        "id": 3,
+        "name": "UNDER_INSPECTION"
+      }
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "license_plate": "ABC-123",
+      "brand": "Toyota",
+      "model": "Corolla"
+    },
+    {
+      "id": 2,
+      "user_id": 5,
+      "license_plate": "DEF-456",
+      "brand": "Honda",
+      "model": "Civic"
+    },
+    {
+      "id": 3,
+      "user_id": 7,
+      "license_plate": "GHI-789",
+      "brand": "Ford",
+      "model": "Focus"
+    },
+    {
+      "id": 4,
+      "user_id": 9,
+      "license_plate": "JKL-012",
+      "brand": "Chevrolet",
+      "model": "Cruze"
+    },
+    {
+      "id": 5,
+      "user_id": 3,
+      "license_plate": "MNO-345",
+      "brand": "Nissan",
+      "model": "Sentra"
+    },
+    {
+      "id": 6,
+      "user_id": 5,
+      "license_plate": "PQR-678",
+      "brand": "Volkswagen",
+      "model": "Jetta"
+    },
+    {
+      "id": 7,
+      "user_id": 7,
+      "license_plate": "STU-901",
+      "brand": "Hyundai",
+      "model": "Elantra"
+    },
+    {
+      "id": 8,
+      "user_id": 9,
+      "license_plate": "VWX-234",
+      "brand": "Kia",
+      "model": "Forte"
+    },
+    {
+      "id": 9,
+      "user_id": 3,
+      "license_plate": "YZA-567",
+      "brand": "Subaru",
+      "model": "Impreza"
+    },
+    {
+      "id": 10,
+      "user_id": 5,
+      "license_plate": "BCD-890",
+      "brand": "Mazda",
+      "model": "Mazda3"
+    },
+    {
+      "id": 11,
+      "user_id": 7,
+      "license_plate": "EFG-123",
+      "brand": "BMW",
+      "model": "3 Series"
+    },
+    {
+      "id": 12,
+      "user_id": 9,
+      "license_plate": "HIJ-456",
+      "brand": "Mercedes-Benz",
+      "model": "C-Class"
+    },
+    {
+      "id": 13,
+      "user_id": 3,
+      "license_plate": "KLM-789",
+      "brand": "Audi",
+      "model": "A4"
+    },
+    {
+      "id": 14,
+      "user_id": 5,
+      "license_plate": "NOP-012",
+      "brand": "Lexus",
+      "model": "IS"
+    },
+    {
+      "id": 15,
+      "user_id": 7,
+      "license_plate": "QRS-345",
+      "brand": "Acura",
+      "model": "TLX"
+    },
+    {
+      "id": 16,
+      "user_id": 9,
+      "license_plate": "TUV-678",
+      "brand": "Infiniti",
+      "model": "Q50"
+    },
+    {
+      "id": 17,
+      "user_id": 3,
+      "license_plate": "WXY-901",
+      "brand": "Volvo",
+      "model": "S60"
+    },
+    {
+      "id": 18,
+      "user_id": 5,
+      "license_plate": "ZAB-234",
+      "brand": "Jaguar",
+      "model": "XE"
+    },
+    {
+      "id": 19,
+      "user_id": 7,
+      "license_plate": "CDE-567",
+      "brand": "Alfa Romeo",
+      "model": "Giulia"
+    },
+    {
+      "id": 20,
+      "user_id": 9,
+      "license_plate": "FGH-890",
+      "brand": "Tesla",
+      "model": "Model 3"
+    },
+    {
+      "id": 21,
+      "user_id": 3,
+      "license_plate": "IJK-123",
+      "brand": "Genesis",
+      "model": "G70"
+    },
+    {
+      "id": 22,
+      "user_id": 5,
+      "license_plate": "LMN-456",
+      "brand": "Cadillac",
+      "model": "ATS"
+    },
+    {
+      "id": 23,
+      "user_id": 7,
+      "license_plate": "OPQ-789",
+      "brand": "Lincoln",
+      "model": "MKZ"
+    },
+    {
+      "id": 24,
+      "user_id": 9,
+      "license_plate": "RST-012",
+      "brand": "Buick",
+      "model": "Regal"
+    },
+    {
+      "id": 25,
+      "user_id": 3,
+      "license_plate": "UVW-345",
+      "brand": "Chrysler",
+      "model": "200"
+    },
+    {
+      "id": 26,
+      "user_id": 5,
+      "license_plate": "XYZ-678",
+      "brand": "Dodge",
+      "model": "Dart"
+    },
+    {
+      "id": 27,
+      "user_id": 7,
+      "license_plate": "ABC-901",
+      "brand": "Mitsubishi",
+      "model": "Lancer"
+    },
+    {
+      "id": 28,
+      "user_id": 9,
+      "license_plate": "DEF-234",
+      "brand": "Suzuki",
+      "model": "Kizashi"
+    },
+    {
+      "id": 29,
+      "user_id": 3,
+      "license_plate": "GHI-567",
+      "brand": "Peugeot",
+      "model": "508"
+    },
+    {
+      "id": 30,
+      "user_id": 5,
+      "license_plate": "JKL-890",
+      "brand": "Renault",
+      "model": "Talisman"
+    }
+  ],
+  "scans": [
+    {
+      "id": 1,
+      "vehicle_id": 1,
+      "license_plate": "ABC-123",
+      "date": "2024-09-20T08:15:00"
+    },
+    {
+      "id": 2,
+      "vehicle_id": 2,
+      "license_plate": "DEF-456",
+      "date": "2024-09-21T09:30:00"
+    },
+    {
+      "id": 3,
+      "vehicle_id": 3,
+      "license_plate": "GHI-789",
+      "date": "2024-09-22T10:45:00"
+    },
+    {
+      "id": 4,
+      "vehicle_id": 4,
+      "license_plate": "JKL-012",
+      "date": "2024-09-23T11:15:00"
+    },
+    {
+      "id": 5,
+      "vehicle_id": 5,
+      "license_plate": "MNO-345",
+      "date": "2024-09-24T12:30:00"
+    },
+    {
+      "id": 6,
+      "vehicle_id": 6,
+      "license_plate": "PQR-678",
+      "date": "2024-09-25T13:45:00"
+    },
+    {
+      "id": 7,
+      "vehicle_id": 7,
+      "license_plate": "STU-901",
+      "date": "2024-09-26T14:00:00"
+    },
+    {
+      "id": 8,
+      "vehicle_id": 8,
+      "license_plate": "VWX-234",
+      "date": "2024-09-27T15:15:00"
+    },
+    {
+      "id": 9,
+      "vehicle_id": 9,
+      "license_plate": "YZA-567",
+      "date": "2024-09-28T16:30:00"
+    },
+    {
+      "id": 10,
+      "vehicle_id": 10,
+      "license_plate": "BCD-890",
+      "date": "2024-09-29T17:45:00"
+    },
+    {
+      "id": 11,
+      "vehicle_id": 11,
+      "license_plate": "EFG-123",
+      "date": "2024-09-30T18:00:00"
+    },
+    {
+      "id": 12,
+      "vehicle_id": 12,
+      "license_plate": "HIJ-456",
+      "date": "2024-10-01T09:15:00"
+    },
+    {
+      "id": 13,
+      "vehicle_id": 13,
+      "license_plate": "KLM-789",
+      "date": "2024-10-02T10:30:00"
+    },
+    {
+      "id": 14,
+      "vehicle_id": 14,
+      "license_plate": "NOP-012",
+      "date": "2024-10-03T11:45:00"
+    },
+    {
+      "id": 15,
+      "vehicle_id": 15,
+      "license_plate": "QRS-345",
+      "date": "2024-10-04T12:00:00"
+    },
+    {
+      "id": 16,
+      "vehicle_id": 16,
+      "license_plate": "TUV-678",
+      "date": "2024-10-05T13:15:00"
+    },
+    {
+      "id": 17,
+      "vehicle_id": 17,
+      "license_plate": "WXY-901",
+      "date": "2024-10-06T14:30:00"
+    },
+    {
+      "id": 18,
+      "vehicle_id": 18,
+      "license_plate": "ZAB-234",
+      "date": "2024-10-07T15:45:00"
+    },
+    {
+      "id": 19,
+      "vehicle_id": 19,
+      "license_plate": "CDE-567",
+      "date": "2024-10-08T16:00:00"
+    },
+    {
+      "id": 20,
+      "vehicle_id": 20,
+      "license_plate": "FGH-890",
+      "date": "2024-10-09T17:15:00"
+    }
+  ],
+  "codes": [
+    {
+      "id": 1,
+      "scan_id": 1,
+      "code": "P001",
+      "description": "Falla en el motor"
+    },
+    {
+      "id": 2,
+      "scan_id": 2,
+      "code": "P002",
+      "description": "Problema en la transmisión"
+    },
+    {
+      "id": 3,
+      "scan_id": 3,
+      "code": "P003",
+      "description": "Mal funcionamiento del sistema de frenos"
+    },
+    {
+      "id": 4,
+      "scan_id": 4,
+      "code": "P004",
+      "description": "Sensor de oxígeno defectuoso"
+    },
+    {
+      "id": 5,
+      "scan_id": 5,
+      "code": "P005",
+      "description": "Falla en el sistema de combustible"
+    },
+    {
+      "id": 6,
+      "scan_id": 6,
+      "code": "P006",
+      "description": "Problema en el sistema de enfriamiento"
+    },
+    {
+      "id": 7,
+      "scan_id": 7,
+      "code": "P007",
+      "description": "Falla en el sistema eléctrico"
+    },
+    {
+      "id": 8,
+      "scan_id": 8,
+      "code": "P008",
+      "description": "Mal funcionamiento del catalizador"
+    },
+    {
+      "id": 9,
+      "scan_id": 9,
+      "code": "P009",
+      "description": "Problema en el sistema de escape"
+    },
+    {
+      "id": 10,
+      "scan_id": 10,
+      "code": "P010",
+      "description": "Falla en el sensor de temperatura"
+    },
+    {
+      "id": 11,
+      "scan_id": 11,
+      "code": "P011",
+      "description": "Sensor de presión defectuoso"
+    },
+    {
+      "id": 12,
+      "scan_id": 12,
+      "code": "P012",
+      "description": "Problema en el sistema de admisión"
+    },
+    {
+      "id": 13,
+      "scan_id": 13,
+      "code": "P013",
+      "description": "Falla en el sistema de encendido"
+    },
+    {
+      "id": 14,
+      "scan_id": 14,
+      "code": "P014",
+      "description": "Mal funcionamiento del EGR"
+    },
+    {
+      "id": 15,
+      "scan_id": 15,
+      "code": "P015",
+      "description": "Problema en el sensor de flujo de aire"
+    },
+    {
+      "id": 16,
+      "scan_id": 16,
+      "code": "P016",
+      "description": "Falla en el sistema de carga"
+    },
+    {
+      "id": 17,
+      "scan_id": 17,
+      "code": "P017",
+      "description": "Sensor de detonación defectuoso"
+    },
+    {
+      "id": 18,
+      "scan_id": 18,
+      "code": "P018",
+      "description": "Problema en el sistema de dirección"
+    },
+    {
+      "id": 19,
+      "scan_id": 19,
+      "code": "P019",
+      "description": "Falla en el sistema de suspensión"
+    },
+    {
+      "id": 20,
+      "scan_id": 20,
+      "code": "P020",
+      "description": "Mal funcionamiento del ABS"
+    },
+    {
+      "id": 21,
+      "scan_id": 1,
+      "code": "P021",
+      "description": "Falla en el sistema de airbags"
+    },
+    {
+      "id": 22,
+      "scan_id": 2,
+      "code": "P022",
+      "description": "Problema en el sistema de tracción"
+    },
+    {
+      "id": 23,
+      "scan_id": 3,
+      "code": "P023",
+      "description": "Falla en el sistema de emisiones"
+    },
+    {
+      "id": 24,
+      "scan_id": 4,
+      "code": "P024",
+      "description": "Sensor de velocidad defectuoso"
+    },
+    {
+      "id": 25,
+      "scan_id": 5,
+      "code": "P025",
+      "description": "Problema en el sistema de climatización"
+    }
+  ],
+  "notification_states": [
+    {
+      "id": 1,
+      "name": "READ"
+    },
+    {
+      "id": 2,
+      "name": "UNREAD"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 3,
+      "date": "2024-09-20T08:00:00",
+      "content": "Necesita cambio de aceite",
+      "endpoint": "/interventions/1"
+    },
+    {
+      "id": 2,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 5,
+      "date": "2024-09-21T09:00:00",
+      "content": "Reemplazo de pastillas de freno",
+      "endpoint": "/interventions/2"
+    },
+    {
+      "id": 3,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 2,
+      "date": "2024-09-22T10:00:00",
+      "content": "Diagnóstico de motor completado",
+      "endpoint": "/tasks/3"
+    },
+    {
+      "id": 4,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 7,
+      "date": "2024-09-23T11:00:00",
+      "content": "Cambio de batería necesario",
+      "endpoint": "/interventions/4"
+    },
+    {
+      "id": 5,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 9,
+      "date": "2024-09-24T12:00:00",
+      "content": "Revisión de sistema de frenos",
+      "endpoint": "/interventions/5"
+    },
+    {
+      "id": 6,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 4,
+      "date": "2024-09-25T13:00:00",
+      "content": "Tarea asignada: reemplazo de correa",
+      "endpoint": "/tasks/6"
+    },
+    {
+      "id": 7,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 6,
+      "date": "2024-09-26T14:00:00",
+      "content": "Solicitud de piezas aprobada",
+      "endpoint": "/inventory_requests/7"
+    },
+    {
+      "id": 8,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 8,
+      "date": "2024-09-27T15:00:00",
+      "content": "Intervención finalizada",
+      "endpoint": "/interventions/8"
+    },
+    {
+      "id": 9,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 3,
+      "date": "2024-09-28T16:00:00",
+      "content": "Cambio de neumáticos recomendado",
+      "endpoint": "/interventions/9"
+    },
+    {
+      "id": 10,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 5,
+      "date": "2024-09-29T17:00:00",
+      "content": "Actualización de estado de intervención",
+      "endpoint": "/interventions/10"
+    },
+    {
+      "id": 11,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 2,
+      "date": "2024-09-30T18:00:00",
+      "content": "Nueva tarea asignada",
+      "endpoint": "/tasks/11"
+    },
+    {
+      "id": 12,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 4,
+      "date": "2024-10-01T09:00:00",
+      "content": "Revisión de sistema eléctrico",
+      "endpoint": "/interventions/12"
+    },
+    {
+      "id": 13,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 6,
+      "date": "2024-10-02T10:00:00",
+      "content": "Solicitud de piezas pendiente",
+      "endpoint": "/inventory_requests/13"
+    },
+    {
+      "id": 14,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 8,
+      "date": "2024-10-03T11:00:00",
+      "content": "Intervención cancelada",
+      "endpoint": "/interventions/14"
+    },
+    {
+      "id": 15,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 3,
+      "date": "2024-10-04T12:00:00",
+      "content": "Reemplazo de parabrisas necesario",
+      "endpoint": "/interventions/15"
+    },
+    {
+      "id": 16,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 5,
+      "date": "2024-10-05T13:00:00",
+      "content": "Actualización de tareas",
+      "endpoint": "/tasks/16"
+    },
+    {
+      "id": 17,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 7,
+      "date": "2024-10-06T14:00:00",
+      "content": "Mantenimiento programado",
+      "endpoint": "/interventions/17"
+    },
+    {
+      "id": 18,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 9,
+      "date": "2024-10-07T15:00:00",
+      "content": "Cambio de aceite realizado",
+      "endpoint": "/interventions/18"
+    },
+    {
+      "id": 19,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 2,
+      "date": "2024-10-08T16:00:00",
+      "content": "Nueva solicitud de piezas",
+      "endpoint": "/inventory_requests/19"
+    },
+    {
+      "id": 20,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 4,
+      "date": "2024-10-09T17:00:00",
+      "content": "Intervención en espera",
+      "endpoint": "/interventions/20"
+    },
+    {
+      "id": 21,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 6,
+      "date": "2024-10-10T18:00:00",
+      "content": "Diagnóstico completado",
+      "endpoint": "/interventions/21"
+    },
+    {
+      "id": 22,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 8,
+      "date": "2024-10-11T09:00:00",
+      "content": "Reparación de sistema de escape",
+      "endpoint": "/interventions/22"
+    },
+    {
+      "id": 23,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 3,
+      "date": "2024-10-12T10:00:00",
+      "content": "Recordatorio de mantenimiento",
+      "endpoint": "/interventions/23"
+    },
+    {
+      "id": 24,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 5,
+      "date": "2024-10-13T11:00:00",
+      "content": "Cambio de correa necesario",
+      "endpoint": "/interventions/24"
+    },
+    {
+      "id": 25,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 7,
+      "date": "2024-10-14T12:00:00",
+      "content": "Actualización de intervención",
+      "endpoint": "/interventions/25"
+    },
+    {
+      "id": 26,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 9,
+      "date": "2024-10-15T13:00:00",
+      "content": "Próxima cita programada",
+      "endpoint": "/interventions/26"
+    },
+    {
+      "id": 27,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 2,
+      "date": "2024-10-16T14:00:00",
+      "content": "Solicitud de reasignación de tarea",
+      "endpoint": "/tasks/27"
+    },
+    {
+      "id": 28,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 4,
+      "date": "2024-10-17T15:00:00",
+      "content": "Piezas recibidas",
+      "endpoint": "/inventory_requests/28"
+    },
+    {
+      "id": 29,
+      "state": {
+        "id": 1,
+        "name": "READ"
+      },
+      "user_id": 6,
+      "date": "2024-10-18T16:00:00",
+      "content": "Intervención rechazada",
+      "endpoint": "/interventions/29"
+    },
+    {
+      "id": 30,
+      "state": {
+        "id": 2,
+        "name": "UNREAD"
+      },
+      "user_id": 8,
+      "date": "2024-10-19T17:00:00",
+      "content": "Informe de intervención disponible",
+      "endpoint": "/interventions/30"
+    }
+  ]
+}
