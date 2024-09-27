@@ -5,47 +5,47 @@
   </div>
 
   <div class="mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource">
+    <table mat-table [dataSource]="dataSource" matSort>
 
       <!-- Client First Name -->
       <ng-container matColumnDef="clientFirstName">
-        <th mat-header-cell *matHeaderCellDef>Client First Name</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Client First Name</th>
         <td mat-cell *matCellDef="let intervention"> {{ intervention.clientFirstName }} </td>
       </ng-container>
 
       <!-- Client Last Name -->
       <ng-container matColumnDef="clientLastName">
-        <th mat-header-cell *matHeaderCellDef>Client Last Name</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Client Last Name</th>
         <td mat-cell *matCellDef="let intervention"> {{ intervention.clientLastName }} </td>
       </ng-container>
 
       <!-- Vehicle License Plate -->
       <ng-container matColumnDef="licensePlate">
-        <th mat-header-cell *matHeaderCellDef>Vehicle License Plate</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Vehicle License Plate</th>
         <td mat-cell *matCellDef="let intervention"> {{ intervention.licensePlate }} </td>
       </ng-container>
 
       <!-- Vehicle Model -->
       <ng-container matColumnDef="vehicleModel">
-        <th mat-header-cell *matHeaderCellDef>Vehicle Model</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Vehicle Model</th>
         <td mat-cell *matCellDef="let intervention"> {{ intervention.vehicleModel }} </td>
       </ng-container>
 
       <!-- Registration Date -->
       <ng-container matColumnDef="registrationDate">
-        <th mat-header-cell *matHeaderCellDef>Registration Date</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Registration Date</th>
         <td mat-cell *matCellDef="let intervention"> {{ intervention.registrationDate | date }} </td>
       </ng-container>
 
       <!-- Completion Date -->
       <ng-container matColumnDef="completionDate">
-        <th mat-header-cell *matHeaderCellDef>Completion Date</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Completion Date</th>
         <td mat-cell *matCellDef="let intervention"> {{ intervention.completionDate | date }} </td>
       </ng-container>
 
       <!-- State -->
       <ng-container matColumnDef="state">
-        <th mat-header-cell *matHeaderCellDef>Status</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
         <td mat-cell *matCellDef="let intervention"> {{ intervention.state }} </td>
       </ng-container>
 

@@ -17,14 +17,23 @@ export class InterventionsComponent implements OnInit, AfterViewInit {
   dataSource = new MatTableDataSource<any>();
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-
-  constructor(public dialog: MatDialog) {}
-
-  ngOnInit(): void {
-    // Placeholder for future data fetch
-  }
+  @ViewChild(MatSort) sort!: MatSort;
 
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+
+    this.dataSource.sortingDataAccessor = (data, sortHeaderId) => {
+      switch (sortHeaderId) {
+        case 'clientFirstName': return data.clientFirstName.toLowerCase();
+        case 'clientLastName': return data.clientLastName.toLowerCase();
+        case 'licensePlate': return data.licensePlate.toLowerCase();
+        case 'vehicleModel': return data.vehicleModel.toLowerCase();
+        case 'registrationDate': return new Date(data.registrationDate).getTime();
+        case 'completionDate': return new Date(data.completionDate).getTime();
+        default: return '';
+      }
+    };
   }
 }
+
