@@ -1,0 +1,52 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-paginator {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 14.3%;
+}
+
+.mat-elevation-z8 {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.section-title {
+  font-size: 3.4rem;
+}
+
+.justify-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+button {
+  font-size: 1.4rem;
+}
+
+.mat-header-cell {
+  font-size: 1.4rem;
+  padding: 16px;
+}
+
+.mat-cell {
+  font-size: 1.3rem;
+  padding: 16px;
+}
+
+
+
+
+
