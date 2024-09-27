@@ -15,6 +15,7 @@ import {TaskService} from "../../services/task.service";
 import {Task} from "../../model/task.entity";
 import {RouterLink} from "@angular/router";
 import {MatButton} from "@angular/material/button";
+import {filter, map} from "rxjs";
 
 @Component({
   selector: 'app-tasks',
@@ -60,6 +61,21 @@ export class TasksComponent implements AfterViewInit {
       this.dataSource.sort = this.sort;
       this.updatedSortingAccessor();
     });
+    this.getTasksIdByMechanic();
+  }
+
+  getTasksIdByMechanic(){
+    this.taskService.getByMechanicId(1)
+      .pipe(
+        map((data: any) => data.map((task: Task) => task.intervention.id))
+      )
+      .subscribe((data: any) => {
+        console.log(data)
+      });
+  }
+
+  getInterventionId(task: Task){
+
   }
 
   ngAfterViewInit() {
