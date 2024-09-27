@@ -51,8 +51,8 @@ export class NavigationBarComponent {
       isPublic: false
     },
     {
-      name: 'My tasks',
-      namePath: 'tasks',
+      name: 'My activities',
+      namePath: 'activities',
       role: 2,
       isPublic: false
     },

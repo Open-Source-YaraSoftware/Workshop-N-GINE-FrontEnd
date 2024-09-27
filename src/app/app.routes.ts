@@ -76,14 +76,31 @@ export const routes: Routes = [
         loadComponent: () => import('./communication/pages/notifications/notifications.component').then(m => m.NotificationsComponent),
       },
       {
-        path: 'tasks',
-        title: 'tasks',
-        loadComponent: () => import('./service/pages/tasks/tasks.component').then(m => m.TasksComponent),
+        path: 'activities',
+        title: 'activities',
+        loadComponent: () => import('./service/components/activities-header/activities-header.component').then(m => m.ActivitiesHeaderComponent),
+        children: [
+          {
+            path: '',
+            pathMatch: 'full',
+            redirectTo: 'tasks',
+          },
+          {
+            path: 'tasks',
+            title: 'tasks',
+            loadComponent: () => import('./service/pages/tasks/tasks.component').then(m => m.TasksComponent),
+          },
+          {
+            path: 'interventions',
+            title: 'interventions',
+            loadComponent: () => import('./service/pages/interventions/interventions.component').then(m => m.InterventionsComponent),
+          }
+        ]
       },
       {
-        path: 'tasks/:id',
-        title: 'task',
-        loadComponent: () => import('./service/components/task-header/task-header.component').then(m => m.TaskHeaderComponent),
+        path: 'activities/:id',
+        title: 'activity',
+        loadComponent: () => import('./service/components/activity-header/activity-header.component').then(m => m.ActivityHeaderComponent),
         children: [
           {
             path: '',
@@ -93,17 +110,17 @@ export const routes: Routes = [
           {
             path: 'information',
             title: 'information',
-            loadComponent: () => import('./service/pages/task-information/task-information.component').then(m => m.TaskInformationComponent),
+            loadComponent: () => import('./service/pages/activity-information/activity-information.component').then(m => m.ActivityInformationComponent),
           },
           {
             path: 'diagnostic-preparation',
             title: 'diagnostic-preparation',
-            loadComponent: () => import('./service/pages/task-diagnostic-preparation/task-diagnostic-preparation.component').then(m => m.TaskDiagnosticPreparationComponent),
+            loadComponent: () => import('./service/pages/activity-diagnostic-preparation/activity-diagnostic-preparation.component').then(m => m.ActivityDiagnosticPreparationComponent),
           },
           {
             path: 'execution/:taskId',
             title: 'execution',
-            loadComponent: () => import('./service/components/task-execution-header/task-execution-header.component').then(m => m.TaskExecutionHeaderComponent),
+            loadComponent: () => import('./service/components/activity-execution-header/activity-execution-header.component').then(m => m.ActivityExecutionHeaderComponent),
             children: [
               {
                 path: '',
@@ -112,25 +129,25 @@ export const routes: Routes = [
               },
               {
                 path: 'requests',
-                title: 'task-requests',
-                loadComponent: () => import('./service/pages/task-requests/task-requests.component').then(m => m.TaskRequestsComponent),
+                title: 'activity-requests',
+                loadComponent: () => import('./service/pages/activity-requests/activity-requests.component').then(m => m.ActivityRequestsComponent),
               },
               {
                 path: 'tracking',
-                title: 'task-tracking',
-                loadComponent: () => import('./service/pages/task-tracking/task-tracking.component').then(m => m.TaskTrackingComponent),
+                title: 'activity-tracking',
+                loadComponent: () => import('./service/pages/activity-tracking/activity-tracking.component').then(m => m.ActivityTrackingComponent),
               }
             ]
           },
           {
             path: 'monitoring',
             title: 'monitoring',
-            loadComponent: () => import('./service/pages/task-monitoring/task-monitoring.component').then(m => m.TaskMonitoringComponent),
+            loadComponent: () => import('./service/pages/activity-monitoring/activity-monitoring.component').then(m => m.ActivityMonitoringComponent),
           }
         ]
       },
       {
-        path: 'vehicles/client/:id',
+        path: 'vehicles',
         title: 'vehicles',
         loadComponent: () => import('./crm/pages/vehicles/vehicles.component').then(m => m.VehiclesComponent),
       },

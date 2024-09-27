@@ -1,1 +1,44 @@
-<p>tasks works!</p>
+<section>
+  <mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Search..." #input>
+  </mat-form-field>
+  <div>
+    <table mat-table [dataSource]="dataSource" matSort>
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Id</th>
+        <td mat-cell *matCellDef="let data">
+          <button mat-button [routerLink]="['/activities', data.id]" [queryParams]="{type: 'task'}">{{ data.id }}</button>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
+        <td mat-cell *matCellDef="let data">{{ data.description }}</td>
+      </ng-container>
+      <ng-container matColumnDef="state">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>State</th>
+        <td mat-cell *matCellDef="let data">{{ data.state }}</td>
+      </ng-container>
+      <ng-container matColumnDef="interventionId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Intervention Id</th>
+        <td mat-cell *matCellDef="let data">{{ data.intervention.id }}</td>
+      </ng-container>
+      <ng-container matColumnDef="interventionType">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Intervention Type</th>
+        <td mat-cell *matCellDef="let data">{{ data.intervention.interventionType }}</td>
+      </ng-container>
+      <ng-container matColumnDef="interventionState">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Intervention State</th>
+        <td mat-cell *matCellDef="let data">{{ data.intervention.state }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns()"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns();"></tr>
+
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+      </tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5,10,15]"></mat-paginator>
+  </div>
+</section>
