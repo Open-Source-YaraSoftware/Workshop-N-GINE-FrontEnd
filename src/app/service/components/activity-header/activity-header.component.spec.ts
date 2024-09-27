@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TaskMonitoringComponent } from './task-monitoring.component';
+import { ActivityHeaderComponent } from './activity-header.component';
 
-describe('TaskMonitoringComponent', () => {
-  let component: TaskMonitoringComponent;
-  let fixture: ComponentFixture<TaskMonitoringComponent>;
+describe('ActivityHeaderComponent', () => {
+  let component: ActivityHeaderComponent;
+  let fixture: ComponentFixture<ActivityHeaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TaskMonitoringComponent]
+      imports: [ActivityHeaderComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TaskMonitoringComponent);
+    fixture = TestBed.createComponent(ActivityHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
