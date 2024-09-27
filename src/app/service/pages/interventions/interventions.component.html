@@ -4,6 +4,10 @@
     <button mat-raised-button color="primary">+ Schedule intervention</button>
   </div>
 
+  <mat-form-field>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Filter interventions" />
+  </mat-form-field>
+
   <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource" matSort>
 
