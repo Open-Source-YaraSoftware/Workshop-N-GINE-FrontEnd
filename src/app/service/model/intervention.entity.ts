@@ -1,18 +1,31 @@
 import {InterventionState} from "./intervention-state.enum";
 import {InterventionType} from "./intervention-type.enum";
+import {Workshop} from "./workshop.entity";
+import {Vehicle} from "./vehicle.entity";
+import {Task} from "./task.entity";
+
 
 export class Intervention {
   id: number;
+  workshop: Workshop;
+  vehicle: Vehicle;
+  state: InterventionState;
   registrationDate: Date;
   completionDate: Date;
-  state: InterventionState;
-  interventionType: InterventionType;
+  type: InterventionType;
+  taskList: Task[];
 
-  constructor({id = 0, registrationDate = new Date(), completionDate = new Date(), state = InterventionState.PENDING, interventionType = InterventionType.REPARATION}={}) {
-    this.id = id;
-    this.registrationDate = registrationDate;
-    this.completionDate = completionDate;
-    this.state = InterventionState[state];
-    this.interventionType = InterventionType[interventionType];
+  constructor() {
+    this.id = 0;
+    this.workshop = new Workshop();
+    this.vehicle = new Vehicle();
+    this.state = InterventionState.PENDING;
+    this.registrationDate = new Date();
+    this.completionDate = new Date();
+    this.type = InterventionType.REPARATION;
+    this.taskList = [];
   }
+
+  updateInterventionState(state: InterventionState): void {}
+  deleteTask(task: Task): void {}
 }

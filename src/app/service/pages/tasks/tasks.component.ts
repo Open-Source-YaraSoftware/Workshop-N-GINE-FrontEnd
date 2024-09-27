@@ -100,7 +100,7 @@ export class TasksComponent implements AfterViewInit {
         case 'interventionId':
           return item.intervention ? item.intervention.id : '';
         case 'interventionType':
-          return item.intervention ? item.intervention.interventionType : '';
+          return item.intervention ? item.intervention.type : '';
         case 'interventionState':
           return item.intervention ? item.intervention.state : '';
         default:
