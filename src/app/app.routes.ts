@@ -100,7 +100,7 @@ export const routes: Routes = [
       {
         path: 'activities/:id',
         title: 'activity',
-        loadComponent: () => import('./service/components/activities-header/activities-header.component').then(m => m.ActivitiesHeaderComponent),
+        loadComponent: () => import('./service/components/activity-header/activity-header.component').then(m => m.ActivityHeaderComponent),
         children: [
           {
             path: '',
