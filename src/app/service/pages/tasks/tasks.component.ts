@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, inject, OnInit, signal, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, inject, signal, ViewChild} from '@angular/core';
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {
@@ -12,10 +12,13 @@ import {
 import {MatSort, MatSortHeader} from "@angular/material/sort";
 import {MatPaginator} from "@angular/material/paginator";
 import {TaskService} from "../../services/task.service";
-import {Task} from "../../model/task.entity";
 import {RouterLink} from "@angular/router";
 import {MatButton} from "@angular/material/button";
-import {filter, map} from "rxjs";
+import { map, Observable, switchMap} from "rxjs";
+import {InterventionsService} from "../../services/interventions.service";
+import {Intervention} from "../../model/intervention.entity";
+import {Task} from "../../model/task.entity";
+import {DatePipe} from "@angular/common";
 
 @Component({
   selector: 'app-tasks',
@@ -39,43 +42,52 @@ import {filter, map} from "rxjs";
     MatNoDataRow,
     MatPaginator,
     RouterLink,
-    MatButton
+    MatButton,
+    DatePipe
   ],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })
 export class TasksComponent implements AfterViewInit {
-  dataSource!: MatTableDataSource<Task>;
-  displayedColumns = signal(['id', 'description', 'state', 'interventionId', 'interventionType', 'interventionState']);
+  dataSource!: MatTableDataSource<Intervention>;
+  displayedColumns: string[] = ['id', 'client', 'vehicle', 'date', 'type', 'status'];
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor(){
-    this.dataSource = new MatTableDataSource([] as Task[]);
+    this.dataSource = new MatTableDataSource([] as Intervention[]);
     // TODO: Implement this by mechanic id dynamically
-    this.taskService.getByMechanicId(1).subscribe((data: any) => {
-      console.log(data)
-      this.dataSource = new MatTableDataSource(data);
-      this.dataSource.paginator = this.paginator;
-      this.dataSource.sort = this.sort;
-      this.updatedSortingAccessor();
-    });
-    this.getTasksIdByMechanic();
+    this.setupFilterPredicate();
+    this.getInterventionForMechanicAssistant()
   }
 
-  getTasksIdByMechanic(){
-    this.taskService.getByMechanicId(1)
+  getInterventionIdFromTaskOfMechanicId(): Observable<any> {
+    return this.taskService.getByMechanicId(2).pipe(
+      map((data: any) => data.map((task: Task) => task.intervention.id))
+    );
+  }
+
+  getInterventionForMechanicAssistant() {
+    this.getInterventionIdFromTaskOfMechanicId()
       .pipe(
-        map((data: any) => data.map((task: Task) => task.intervention.id))
+        switchMap((taskIds: any) => {
+          console.log(taskIds)
+          return this.interventionService.getAll().pipe(
+            map((interventions: any) => {
+              return interventions.filter((intervention: any) => {
+                return taskIds.includes(intervention.id) && intervention.leader.id !== 2;
+              });
+            })
+          );
+        })
       )
-      .subscribe((data: any) => {
-        console.log(data)
+      .subscribe((filteredInterventions: Intervention[]) => {
+        this.dataSource.data = filteredInterventions;
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
+        this.updatedSortingAccessor();
       });
-  }
-
-  getInterventionId(task: Task){
-
   }
 
   ngAfterViewInit() {
@@ -93,20 +105,38 @@ export class TasksComponent implements AfterViewInit {
   }
 
   taskService = inject(TaskService);
+  interventionService = inject(InterventionsService);
 
-  updatedSortingAccessor(){
-    this.dataSource.sortingDataAccessor = (item: Task, property: string) => {
+  updatedSortingAccessor() {
+    this.dataSource.sortingDataAccessor = (item: Intervention, property: string) => {
       switch (property) {
-        case 'interventionId':
-          return item.intervention ? item.intervention.id : '';
-        case 'interventionType':
-          return item.intervention ? item.intervention.type : '';
-        case 'interventionState':
-          return item.intervention ? item.intervention.state : '';
+        case 'client':
+          return `${item.vehicle.owner.firstName} ${item.vehicle.owner.lastName}`;
+        case 'vehicle':
+          return item.vehicle.licensePlate;
+        case 'date':
+          return new Date(item.registrationDate);
+        case 'type':
+          return item.interventionType;
+        case 'status':
+          return item.state;
         default:
-          return item[property as keyof Task] !== undefined ? String(item[property as keyof Task]) : '';
+          return (item as any)[property];
       }
-    }
+    };
   }
-
+  setupFilterPredicate() {
+    this.dataSource.filterPredicate = (data: Intervention, filter: string) => {
+      const transformedFilter = filter.trim().toLowerCase();
+      const combinedData = `
+        ${data.id}
+        ${data.vehicle.owner.firstName} ${data.vehicle.owner.lastName}
+        ${data.vehicle.licensePlate}
+        ${data.registrationDate}
+        ${data.interventionType}
+        ${data.state}
+      `.toLowerCase();
+      return combinedData.includes(transformedFilter);
+    };
+  }
 }

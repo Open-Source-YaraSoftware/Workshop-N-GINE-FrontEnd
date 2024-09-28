@@ -12,7 +12,7 @@ export class Intervention {
   state: InterventionState;
   registrationDate: Date;
   completionDate: Date;
-  type: InterventionType;
+  interventionType: InterventionType;
   taskList: Task[];
 
   constructor() {
@@ -22,7 +22,7 @@ export class Intervention {
     this.state = InterventionState.PENDING;
     this.registrationDate = new Date();
     this.completionDate = new Date();
-    this.type = InterventionType.REPARATION;
+    this.interventionType = InterventionType.REPARATION;
     this.taskList = [];
   }
 
