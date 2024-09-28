@@ -10,7 +10,7 @@ export class WorkshopClientService extends BaseService<WorkshopClient> {
 
   constructor() {
     super();
-    this.resourceEndpoint = '/workshop-clients';
+    this.resourceEndpoint = '/clients';
   }
 
   getByWorkshopId(workshopId: number) {
