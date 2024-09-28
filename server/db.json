@@ -455,6 +455,62 @@
             "errorCode": "T2002",
             "description": "Transmission fluid low.",
             "state": "INACTIVE"
+          },
+          {
+            "id": 3,
+            "component": "Brakes",
+            "errorCode": "B3003",
+            "description": "Brake pads wear detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 4,
+            "component": "Air Conditioning",
+            "errorCode": "AC4004",
+            "description": "Air conditioning malfunction.",
+            "state": "FAILED"
+          },
+          {
+            "id": 5,
+            "component": "Battery",
+            "errorCode": "BT5005",
+            "description": "Battery voltage irregularity.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 6,
+            "component": "Suspension",
+            "errorCode": "S6006",
+            "description": "Suspension system imbalance.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 7,
+            "component": "Electrical",
+            "errorCode": "EL7007",
+            "description": "Electrical short detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 8,
+            "component": "Tires",
+            "errorCode": "TR8008",
+            "description": "Tire pressure low.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 9,
+            "component": "Fuel System",
+            "errorCode": "FS9009",
+            "description": "Fuel pump malfunction.",
+            "state": "FAILED"
+          },
+          {
+            "id": 10,
+            "component": "Exhaust",
+            "errorCode": "EX1010",
+            "description": "Exhaust leak detected.",
+            "state": "INACTIVE"
           }
         ]
       },
@@ -520,11 +576,74 @@
         "id": 2,
         "codeList": [
           {
-            "id": 3,
+            "id": 11,
             "component": "Brakes",
             "errorCode": "B3003",
             "description": "Brake pads wear detected.",
             "state": "ACTIVE"
+          },
+          {
+            "id": 12,
+            "component": "Transmission",
+            "errorCode": "T2003",
+            "description": "Transmission slipping detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 13,
+            "component": "Engine",
+            "errorCode": "E1004",
+            "description": "Engine misfire detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 14,
+            "component": "Electrical",
+            "errorCode": "EL7008",
+            "description": "Short circuit in wiring.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 15,
+            "component": "Air Conditioning",
+            "errorCode": "AC4005",
+            "description": "Air conditioning coolant low.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 16,
+            "component": "Battery",
+            "errorCode": "BT5006",
+            "description": "Battery charging issue.",
+            "state": "FAILED"
+          },
+          {
+            "id": 17,
+            "component": "Suspension",
+            "errorCode": "S6007",
+            "description": "Suspension leak detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 18,
+            "component": "Tires",
+            "errorCode": "TR8009",
+            "description": "Tire tread wear exceeded.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 19,
+            "component": "Fuel System",
+            "errorCode": "FS9010",
+            "description": "Fuel injector malfunction.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 20,
+            "component": "Exhaust",
+            "errorCode": "EX1011",
+            "description": "Catalytic converter failure.",
+            "state": "FAILED"
           }
         ]
       },
@@ -590,11 +709,74 @@
         "id": 3,
         "codeList": [
           {
-            "id": 4,
+            "id": 21,
             "component": "Air Conditioning",
             "errorCode": "AC4004",
             "description": "Air conditioning malfunction.",
             "state": "FAILED"
+          },
+          {
+            "id": 22,
+            "component": "Engine",
+            "errorCode": "E1005",
+            "description": "Engine oil pressure low.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 23,
+            "component": "Transmission",
+            "errorCode": "T2006",
+            "description": "Transmission fluid contamination.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 24,
+            "component": "Brakes",
+            "errorCode": "B3004",
+            "description": "Brake fluid leak detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 25,
+            "component": "Electrical",
+            "errorCode": "EL7009",
+            "description": "Battery charger malfunction.",
+            "state": "FAILED"
+          },
+          {
+            "id": 26,
+            "component": "Suspension",
+            "errorCode": "S6008",
+            "description": "Suspension wear detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 27,
+            "component": "Tires",
+            "errorCode": "TR8010",
+            "description": "Tire rotation required.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 28,
+            "component": "Fuel System",
+            "errorCode": "FS9020",
+            "description": "Fuel tank pressure high.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 29,
+            "component": "Exhaust",
+            "errorCode": "EX1012",
+            "description": "Exhaust system blockage.",
+            "state": "FAILED"
+          },
+          {
+            "id": 30,
+            "component": "Steering",
+            "errorCode": "ST1122",
+            "description": "Power steering fluid low.",
+            "state": "ACTIVE"
           }
         ]
       },
@@ -669,10 +851,73 @@
         "id": 4,
         "codeList": [
           {
-            "id": 5,
+            "id": 31,
             "component": "Battery",
             "errorCode": "BT5005",
             "description": "Battery voltage irregularity.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 32,
+            "component": "Engine",
+            "errorCode": "E1006",
+            "description": "Engine misfire detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 33,
+            "component": "Transmission",
+            "errorCode": "T2007",
+            "description": "Transmission fluid contamination.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 34,
+            "component": "Brakes",
+            "errorCode": "B3005",
+            "description": "Brake rotor wear detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 35,
+            "component": "Electrical",
+            "errorCode": "EL7010",
+            "description": "Alternator malfunction.",
+            "state": "FAILED"
+          },
+          {
+            "id": 36,
+            "component": "Suspension",
+            "errorCode": "S6009",
+            "description": "Suspension strut damage.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 37,
+            "component": "Tires",
+            "errorCode": "TR8011",
+            "description": "Tire balance required.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 38,
+            "component": "Fuel System",
+            "errorCode": "FS9031",
+            "description": "Fuel injector clogging.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 39,
+            "component": "Exhaust",
+            "errorCode": "EX1013",
+            "description": "Exhaust system rust detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 40,
+            "component": "Steering",
+            "errorCode": "ST1123",
+            "description": "Power steering leak detected.",
             "state": "ACTIVE"
           }
         ]
@@ -739,10 +984,73 @@
         "id": 5,
         "codeList": [
           {
-            "id": 6,
+            "id": 41,
             "component": "Suspension",
             "errorCode": "S6006",
             "description": "Suspension system imbalance.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 42,
+            "component": "Engine",
+            "errorCode": "E1007",
+            "description": "Engine oil pressure low.",
+            "state": "FAILED"
+          },
+          {
+            "id": 43,
+            "component": "Transmission",
+            "errorCode": "T2008",
+            "description": "Transmission overheating.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 44,
+            "component": "Brakes",
+            "errorCode": "B3006",
+            "description": "Brake system fluid contamination.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 45,
+            "component": "Electrical",
+            "errorCode": "EL7011",
+            "description": "Alternator malfunction.",
+            "state": "FAILED"
+          },
+          {
+            "id": 46,
+            "component": "Suspension",
+            "errorCode": "S6010",
+            "description": "Suspension strut damage.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 47,
+            "component": "Tires",
+            "errorCode": "TR8012",
+            "description": "Tire puncture detected.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 48,
+            "component": "Fuel System",
+            "errorCode": "FS9032",
+            "description": "Fuel injector leak detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 49,
+            "component": "Exhaust",
+            "errorCode": "EX1014",
+            "description": "Exhaust manifold crack detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 50,
+            "component": "Steering",
+            "errorCode": "ST1124",
+            "description": "Power steering leak detected.",
             "state": "ACTIVE"
           }
         ]
@@ -800,10 +1108,73 @@
         "id": 6,
         "codeList": [
           {
-            "id": 7,
+            "id": 51,
             "component": "Tires",
             "errorCode": "TR7007",
             "description": "Tire pressure low.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 52,
+            "component": "Engine",
+            "errorCode": "E1008",
+            "description": "Engine coolant leak detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 53,
+            "component": "Transmission",
+            "errorCode": "T2010",
+            "description": "Transmission torque converter malfunction.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 54,
+            "component": "Brakes",
+            "errorCode": "B3010",
+            "description": "Brake system overheating.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 55,
+            "component": "Air Conditioning",
+            "errorCode": "AC4010",
+            "description": "Air conditioning compressor failure.",
+            "state": "FAILED"
+          },
+          {
+            "id": 56,
+            "component": "Suspension",
+            "errorCode": "S6011",
+            "description": "Suspension control module fault.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 57,
+            "component": "Tires",
+            "errorCode": "TR8013",
+            "description": "Tire pressure irregularity.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 58,
+            "component": "Fuel System",
+            "errorCode": "FS9033",
+            "description": "Fuel tank vent valve malfunction.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 59,
+            "component": "Exhaust",
+            "errorCode": "EX1015",
+            "description": "Exhaust pipe corrosion.",
+            "state": "FAILED"
+          },
+          {
+            "id": 60,
+            "component": "Steering",
+            "errorCode": "ST1125",
+            "description": "Steering column wear detected.",
             "state": "ACTIVE"
           }
         ]
@@ -870,11 +1241,74 @@
         "id": 7,
         "codeList": [
           {
-            "id": 8,
+            "id": 61,
             "component": "Fuel System",
             "errorCode": "FS8008",
             "description": "Fuel pump malfunction.",
             "state": "FAILED"
+          },
+          {
+            "id": 62,
+            "component": "Engine",
+            "errorCode": "E1009",
+            "description": "Engine control module fault.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 63,
+            "component": "Transmission",
+            "errorCode": "T2011",
+            "description": "Transmission gear shift delay.",
+            "state": "FAILED"
+          },
+          {
+            "id": 64,
+            "component": "Brakes",
+            "errorCode": "B3011",
+            "description": "Brake system fluid contamination.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 65,
+            "component": "Air Conditioning",
+            "errorCode": "AC4006",
+            "description": "Air conditioning compressor leak.",
+            "state": "FAILED"
+          },
+          {
+            "id": 66,
+            "component": "Suspension",
+            "errorCode": "S6012",
+            "description": "Suspension component failure.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 67,
+            "component": "Tires",
+            "errorCode": "TR8014",
+            "description": "Tire puncture detected.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 68,
+            "component": "Fuel System",
+            "errorCode": "FS9034",
+            "description": "Fuel pump relay failure.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 69,
+            "component": "Exhaust",
+            "errorCode": "EX1016",
+            "description": "Exhaust manifold crack detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 70,
+            "component": "Steering",
+            "errorCode": "ST1126",
+            "description": "Steering column wear detected.",
+            "state": "ACTIVE"
           }
         ]
       },
@@ -940,10 +1374,73 @@
         "id": 8,
         "codeList": [
           {
-            "id": 9,
+            "id": 71,
             "component": "Electrical",
             "errorCode": "EL9009",
             "description": "Electrical short detected in dashboard.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 72,
+            "component": "Engine",
+            "errorCode": "E1010",
+            "description": "Engine coolant leak detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 73,
+            "component": "Transmission",
+            "errorCode": "T2012",
+            "description": "Transmission torque converter malfunction.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 74,
+            "component": "Brakes",
+            "errorCode": "B3012",
+            "description": "Brake system overheating.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 75,
+            "component": "Air Conditioning",
+            "errorCode": "AC4010",
+            "description": "Air conditioning compressor failure.",
+            "state": "FAILED"
+          },
+          {
+            "id": 76,
+            "component": "Suspension",
+            "errorCode": "S6013",
+            "description": "Suspension control module fault.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 77,
+            "component": "Tires",
+            "errorCode": "TR8015",
+            "description": "Tire pressure irregularity.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 78,
+            "component": "Fuel System",
+            "errorCode": "FS9035",
+            "description": "Fuel pump relay failure.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 79,
+            "component": "Exhaust",
+            "errorCode": "EX1017",
+            "description": "Exhaust pipe corrosion.",
+            "state": "FAILED"
+          },
+          {
+            "id": 80,
+            "component": "Steering",
+            "errorCode": "ST1127",
+            "description": "Power steering pump failure.",
             "state": "ACTIVE"
           }
         ]
@@ -1010,11 +1507,74 @@
         "id": 9,
         "codeList": [
           {
-            "id": 10,
+            "id": 81,
             "component": "Exhaust",
             "errorCode": "EX1010",
             "description": "Exhaust leak detected.",
             "state": "INACTIVE"
+          },
+          {
+            "id": 82,
+            "component": "Engine",
+            "errorCode": "E1011",
+            "description": "Engine control module failure.",
+            "state": "FAILED"
+          },
+          {
+            "id": 83,
+            "component": "Transmission",
+            "errorCode": "T2013",
+            "description": "Transmission gear shift delay.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 84,
+            "component": "Brakes",
+            "errorCode": "B3013",
+            "description": "Brake system fluid contamination.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 85,
+            "component": "Air Conditioning",
+            "errorCode": "AC4007",
+            "description": "Air conditioning compressor leak.",
+            "state": "FAILED"
+          },
+          {
+            "id": 86,
+            "component": "Suspension",
+            "errorCode": "S6014",
+            "description": "Suspension component failure.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 87,
+            "component": "Tires",
+            "errorCode": "TR8016",
+            "description": "Tire tread wear exceeded.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 88,
+            "component": "Fuel System",
+            "errorCode": "FS9036",
+            "description": "Fuel pump relay failure.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 89,
+            "component": "Exhaust",
+            "errorCode": "EX1018",
+            "description": "Exhaust system blockage.",
+            "state": "FAILED"
+          },
+          {
+            "id": 90,
+            "component": "Steering",
+            "errorCode": "ST1128",
+            "description": "Steering column wear detected.",
+            "state": "ACTIVE"
           }
         ]
       },
@@ -1080,10 +1640,73 @@
         "id": 10,
         "codeList": [
           {
-            "id": 11,
+            "id": 91,
             "component": "Steering",
             "errorCode": "ST1111",
             "description": "Steering alignment issue.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 92,
+            "component": "Engine",
+            "errorCode": "E1012",
+            "description": "Engine timing belt wear.",
+            "state": "FAILED"
+          },
+          {
+            "id": 93,
+            "component": "Transmission",
+            "errorCode": "T2014",
+            "description": "Transmission torque converter malfunction.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 94,
+            "component": "Brakes",
+            "errorCode": "B3014",
+            "description": "Brake system overheating.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 95,
+            "component": "Air Conditioning",
+            "errorCode": "AC4008",
+            "description": "Air conditioning compressor leak.",
+            "state": "FAILED"
+          },
+          {
+            "id": 96,
+            "component": "Suspension",
+            "errorCode": "S6015",
+            "description": "Suspension spring breakage.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 97,
+            "component": "Tires",
+            "errorCode": "TR8017",
+            "description": "Tire pressure irregularity.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 98,
+            "component": "Fuel System",
+            "errorCode": "FS9037",
+            "description": "Fuel tank vent valve malfunction.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 99,
+            "component": "Exhaust",
+            "errorCode": "EX1019",
+            "description": "Exhaust system blockage.",
+            "state": "FAILED"
+          },
+          {
+            "id": 100,
+            "component": "Steering",
+            "errorCode": "ST1129",
+            "description": "Power steering pump failure.",
             "state": "ACTIVE"
           }
         ]
@@ -1150,10 +1773,73 @@
         "id": 11,
         "codeList": [
           {
-            "id": 12,
+            "id": 101,
             "component": "Transmission",
             "errorCode": "T2002",
             "description": "Transmission fluid low.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 102,
+            "component": "Engine",
+            "errorCode": "E1013",
+            "description": "Engine oil leak detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 103,
+            "component": "Transmission",
+            "errorCode": "T2013",
+            "description": "Transmission solenoid malfunction.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 104,
+            "component": "Brakes",
+            "errorCode": "B3015",
+            "description": "Brake pad thickness below threshold.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 105,
+            "component": "Air Conditioning",
+            "errorCode": "AC4009",
+            "description": "Air conditioning compressor leak.",
+            "state": "FAILED"
+          },
+          {
+            "id": 106,
+            "component": "Suspension",
+            "errorCode": "S6016",
+            "description": "Suspension control module fault.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 107,
+            "component": "Tires",
+            "errorCode": "TR8018",
+            "description": "Tire rotation required.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 108,
+            "component": "Fuel System",
+            "errorCode": "FS9038",
+            "description": "Fuel pump relay failure.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 109,
+            "component": "Exhaust",
+            "errorCode": "EX1020",
+            "description": "Exhaust manifold crack detected.",
+            "state": "FAILED"
+          },
+          {
+            "id": 110,
+            "component": "Steering",
+            "errorCode": "ST1130",
+            "description": "Steering column wear detected.",
             "state": "ACTIVE"
           }
         ]
@@ -1220,11 +1906,74 @@
         "id": 12,
         "codeList": [
           {
-            "id": 13,
+            "id": 111,
             "component": "Airbags",
             "errorCode": "AB1212",
             "description": "Airbag sensor malfunction.",
             "state": "FAILED"
+          },
+          {
+            "id": 112,
+            "component": "Engine",
+            "errorCode": "E1014",
+            "description": "Engine control module fault.",
+            "state": "FAILED"
+          },
+          {
+            "id": 113,
+            "component": "Transmission",
+            "errorCode": "T2014",
+            "description": "Transmission gear shift delay.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 114,
+            "component": "Brakes",
+            "errorCode": "B3014",
+            "description": "Brake system fluid contamination.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 115,
+            "component": "Air Conditioning",
+            "errorCode": "AC4010",
+            "description": "Air conditioning compressor failure.",
+            "state": "FAILED"
+          },
+          {
+            "id": 116,
+            "component": "Suspension",
+            "errorCode": "S6017",
+            "description": "Suspension component failure.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 117,
+            "component": "Tires",
+            "errorCode": "TR8019",
+            "description": "Tire pressure irregularity.",
+            "state": "INACTIVE"
+          },
+          {
+            "id": 118,
+            "component": "Fuel System",
+            "errorCode": "FS9039",
+            "description": "Fuel tank vent valve malfunction.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 119,
+            "component": "Exhaust",
+            "errorCode": "EX1019",
+            "description": "Exhaust system blockage.",
+            "state": "FAILED"
+          },
+          {
+            "id": 120,
+            "component": "Steering",
+            "errorCode": "ST1131",
+            "description": "Power steering pump failure.",
+            "state": "ACTIVE"
           }
         ]
       },

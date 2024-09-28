@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, signal} from '@angular/core';
 import {
   MatStep,
   MatStepLabel,
@@ -15,6 +15,8 @@ import {
 } from "../../pages/activity-diagnostic-preparation/activity-diagnostic-preparation.component";
 import {ActivityExecutionHeaderComponent} from "../activity-execution-header/activity-execution-header.component";
 import {ActivityMonitoringComponent} from "../../pages/activity-monitoring/activity-monitoring.component";
+import {ActivatedRoute} from "@angular/router";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-activity-header',
@@ -31,11 +33,27 @@ import {ActivityMonitoringComponent} from "../../pages/activity-monitoring/activ
     ActivityInformationComponent,
     ActivityDiagnosticPreparationComponent,
     ActivityExecutionHeaderComponent,
-    ActivityMonitoringComponent
+    ActivityMonitoringComponent,
+    NgIf
   ],
   templateUrl: './activity-header.component.html',
   styleUrl: './activity-header.component.css'
 })
 export class ActivityHeaderComponent {
+  type: string = 'leader';
 
+  constructor(private route: ActivatedRoute) {
+    this.searchQueryParams();
+  }
+
+  ngOnInit() {
+    this.searchQueryParams();
+  }
+
+  searchQueryParams() {
+    this.route.queryParams
+      .subscribe(params => {
+        this.type = params['type'] || 'leader';
+      });
+  }
 }

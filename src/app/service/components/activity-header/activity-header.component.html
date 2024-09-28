@@ -11,7 +11,7 @@
         <app-activity-information/>
       </div>
     </mat-step>
-    <mat-step label="Diagnostic and preparation">
+    <mat-step *ngIf="type === 'leader'" label="Diagnostic and preparation">
       <div class="justify">
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
@@ -29,7 +29,7 @@
         <app-activity-execution-header/>
       </div>
     </mat-step>
-    <mat-step label="Supervision">
+    <mat-step *ngIf="type === 'leader'" label="Supervision">
       <div class="justify">
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button>Finish</button>
