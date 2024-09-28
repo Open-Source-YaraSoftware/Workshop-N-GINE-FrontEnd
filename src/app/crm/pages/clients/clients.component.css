@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.button-new-client {
+  margin-bottom: 1.9rem;
+  border: 0.2rem solid aquamarine;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+td, th {
+  width: 20%;
+}
