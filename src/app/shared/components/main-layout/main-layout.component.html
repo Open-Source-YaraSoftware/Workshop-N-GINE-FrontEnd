@@ -1,0 +1,11 @@
+<div class="container">
+  <app-header-content class="header"/>
+  <mat-drawer-container class="body">
+    <mat-drawer class="sidebar" mode="side" opened>
+      <app-navigation-bar/>
+    </mat-drawer>
+    <mat-drawer-content class="main">
+      <router-outlet/>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
