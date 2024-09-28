@@ -14,10 +14,8 @@ import {MatPaginator} from "@angular/material/paginator";
 import {TaskService} from "../../services/task.service";
 import {RouterLink} from "@angular/router";
 import {MatButton} from "@angular/material/button";
-import { map, Observable, switchMap} from "rxjs";
 import {InterventionsService} from "../../services/interventions.service";
 import {Intervention} from "../../model/intervention.entity";
-import {Task} from "../../model/task.entity";
 import {DatePipe} from "@angular/common";
 
 @Component({
@@ -45,10 +43,10 @@ import {DatePipe} from "@angular/common";
     MatButton,
     DatePipe
   ],
-  templateUrl: './tasks.component.html',
-  styleUrl: './tasks.component.css'
+  templateUrl: './interventions-leader.component.html',
+  styleUrl: './interventions-leader.component.css'
 })
-export class TasksComponent implements AfterViewInit {
+export class InterventionsLeaderComponent implements AfterViewInit {
   dataSource!: MatTableDataSource<Intervention>;
   displayedColumns: string[] = ['id', 'client', 'vehicle', 'date', 'type', 'status'];
 
@@ -58,35 +56,18 @@ export class TasksComponent implements AfterViewInit {
   constructor(){
     this.dataSource = new MatTableDataSource([] as Intervention[]);
     // TODO: Implement this by mechanic id dynamically
-    this.setupFilterPredicate();
-    this.getInterventionForMechanicAssistant()
+    this.setupFilterPredicateForInterventionLeader();
+    this.getInterventionForMechanicLeader();
   }
 
-  getInterventionIdFromTaskOfMechanicId(): Observable<any> {
-    return this.taskService.getByMechanicId(2).pipe(
-      map((data: any) => data.map((task: Task) => task.intervention.id))
-    );
-  }
 
-  getInterventionForMechanicAssistant() {
-    this.getInterventionIdFromTaskOfMechanicId()
-      .pipe(
-        switchMap((taskIds: any) => {
-          return this.interventionService.getAll().pipe(
-            map((interventions: any) => {
-              return interventions.filter((intervention: any) => {
-                return taskIds.includes(intervention.id) && intervention.leader.id !== 2;
-              });
-            })
-          );
-        })
-      )
-      .subscribe((filteredInterventions: Intervention[]) => {
-        this.dataSource.data = filteredInterventions;
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
-        this.updatedSortingAccessor();
-      });
+  getInterventionForMechanicLeader(){
+    this.interventionService.getByMechanicLeaderId(2).subscribe((data: any) => {
+      this.dataSource.data = data;
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
+      this.updatedSortingAccessor();
+    });
   }
 
   ngAfterViewInit() {
@@ -124,7 +105,7 @@ export class TasksComponent implements AfterViewInit {
       }
     };
   }
-  setupFilterPredicate() {
+  setupFilterPredicateForInterventionLeader() {
     this.dataSource.filterPredicate = (data: Intervention, filter: string) => {
       const transformedFilter = filter.trim().toLowerCase();
       const combinedData = `
