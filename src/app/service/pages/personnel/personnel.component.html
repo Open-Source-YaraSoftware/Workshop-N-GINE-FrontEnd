@@ -1,1 +1,26 @@
-<p>personnel works!</p>
+<section class="personnel-container">
+  <div class="header">
+    <h1>Personnel</h1>
+  </div>
+
+  <div *ngIf="!noMechanics" class="controls">
+    <mat-form-field>
+      <input matInput [(ngModel)]="searchQuery" placeholder="Keyword to filter">
+    </mat-form-field>
+    <button mat-icon-button (click)="openCreateModal()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+
+  <div *ngIf="!noMechanics">
+    <app-personnel-list
+      [mechanics]="filteredMechanics()"
+      (editMechanic)="openUpdateModal($event)">
+    </app-personnel-list>
+  </div>
+
+  <div *ngIf="noMechanics" class="no-personnel">
+    <p>No registered personnel</p>
+    <button mat-button color="primary" (click)="openCreateModal()">Register</button>
+  </div>
+</section>
