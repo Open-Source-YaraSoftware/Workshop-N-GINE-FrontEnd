@@ -275,6 +275,9 @@
       "email": "laura.garcia@example.com",
       "age": 30,
       "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
       "vehicles": [
         {
           "id": 1,
@@ -298,6 +301,9 @@
       "email": "miguel.lopez@example.com",
       "age": 45,
       "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
       "vehicles": [
         {
           "id": 3,
@@ -315,6 +321,9 @@
       "email": "ana.martinez@example.com",
       "age": 28,
       "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
       "vehicles": [
         {
           "id": 4,
@@ -338,6 +347,9 @@
       "email": "carlos.hernandez@example.com",
       "age": 38,
       "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
       "vehicles": [
         {
           "id": 6,
@@ -355,6 +367,9 @@
       "email": "sofia.ramirez@example.com",
       "age": 33,
       "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
       "vehicles": [
         {
           "id": 7,
@@ -372,6 +387,9 @@
       "email": "diego.gonzalez@example.com",
       "age": 41,
       "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
       "vehicles": [
         {
           "id": 8,
@@ -395,6 +413,9 @@
       "email": "maria.fernandez@example.com",
       "age": 26,
       "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
       "vehicles": [
         {
           "id": 10,
@@ -412,6 +433,9 @@
       "email": "jorge.sanchez@example.com",
       "age": 50,
       "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
       "vehicles": [
         {
           "id": 11,
@@ -424,6 +448,98 @@
           "licensePlate": "EFG1234",
           "brand": "Audi",
           "model": "A4"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "firstName": "Lucía",
+      "lastName": "Mendoza",
+      "dni": 90123456,
+      "email": "lucia.mendoza@example.com",
+      "age": 34,
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
+      "vehicles": [
+        {
+          "id": 13,
+          "licensePlate": "LMN3456",
+          "brand": "Mercedes",
+          "model": "C200"
+        },
+        {
+          "id": 14,
+          "licensePlate": "OPQ4567",
+          "brand": "Audi",
+          "model": "Q5"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "firstName": "Elena",
+      "lastName": "Gómez",
+      "dni": 91234567,
+      "email": "elena.gomez@example.com",
+      "age": 29,
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
+      "vehicles": [
+        {
+          "id": 15,
+          "licensePlate": "RST5678",
+          "brand": "Volkswagen",
+          "model": "Golf"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "firstName": "Pedro",
+      "lastName": "Ramírez",
+      "dni": 92345678,
+      "email": "pedro.ramirez@example.com",
+      "age": 40,
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
+      "vehicles": [
+        {
+          "id": 16,
+          "licensePlate": "UVW6789",
+          "brand": "Toyota",
+          "model": "Camry"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "firstName": "Isabel",
+      "lastName": "Torres",
+      "dni": 93456789,
+      "email": "isabel.torres@example.com",
+      "age": 37,
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      },
+      "vehicles": [
+        {
+          "id": 17,
+          "licensePlate": "XYZ7890",
+          "brand": "Honda",
+          "model": "Accord"
+        },
+        {
+          "id": 18,
+          "licensePlate": "ABC8901",
+          "brand": "Ford",
+          "model": "Fusion"
         }
       ]
     }
@@ -2044,9 +2160,12 @@
       "firstName": "Andrés",
       "lastName": "García",
       "dni": 81234567,
-      "age":  30,
+      "age": 30,
       "email": "andres.garcia@example.com",
-      "state": "ACTIVE"
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      }
     },
     {
       "id": 2,
@@ -2055,7 +2174,10 @@
       "dni": 82345678,
       "age": 28,
       "email": "beatriz.martinez@example.com",
-      "state": "ACTIVE"
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      }
     },
     {
       "id": 3,
@@ -2064,7 +2186,10 @@
       "dni": 83456789,
       "age": 35,
       "email": "carlos.sanchez@example.com",
-      "state": "ACTIVE"
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      }
     },
     {
       "id": 4,
@@ -2073,7 +2198,10 @@
       "dni": 84567890,
       "age": 32,
       "email": "daniela.torres@example.com",
-      "state": "ACTIVE"
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      }
     },
     {
       "id": 5,
@@ -2082,7 +2210,10 @@
       "dni": 85678901,
       "age": 40,
       "email": "eduardo.diaz@example.com",
-      "state": "ACTIVE"
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      }
     },
     {
       "id": 6,
@@ -2091,7 +2222,10 @@
       "dni": 86789012,
       "age": 27,
       "email": "fernanda.ruiz@example.com",
-      "state": "ACTIVE"
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      }
     },
     {
       "id": 7,
@@ -2100,10 +2234,13 @@
       "dni": 87890123,
       "age": 38,
       "email": "guillermo.herrera@example.com",
-      "state": "ACTIVE"
+      "state": "ACTIVE",
+      "workshop": {
+        "id": 1
+      }
     }
   ],
-  "product-stocks": [
+  "products-stock": [
     {
       "id": 1,
       "workshop": {
@@ -2259,7 +2396,7 @@
       ]
     }
   ],
-  "product-requests": [
+  "products-request": [
     {
       "id": 1,
       "task": {
