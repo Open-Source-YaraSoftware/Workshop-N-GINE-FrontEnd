@@ -4,11 +4,12 @@
   </div>
 
   <div *ngIf="!noMechanics" class="controls">
-    <mat-form-field>
-      <input matInput [(ngModel)]="searchQuery" placeholder="Keyword to filter">
+    <mat-form-field class="filter">
+      <mat-label>Filter</mat-label>
+      <input matInput [(ngModel)]="searchQuery" placeholder="Search...">
     </mat-form-field>
-    <button mat-icon-button (click)="openCreateModal()">
-      <mat-icon>add</mat-icon>
+    <button class="button-new-mechanic" mat-button (click)="openCreateModal()">
+      New Mechanic <mat-icon>add</mat-icon>
     </button>
   </div>
 
