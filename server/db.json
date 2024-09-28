@@ -2,2824 +2,3430 @@
   "users": [
     {
       "id": 1,
-      "workshop_id": 1,
-      "first_name": "Carlos",
-      "last_name": "García",
-      "dni": "00000001A",
-      "email": "carlos.garcia@example.com",
+      "email": "alice.smith@example.com",
       "password": "hashed_password_1",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 1,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 1,
-        "type": "workshop_owner"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 2,
-      "workshop_id": 1,
-      "first_name": "María",
-      "last_name": "López",
-      "dni": "10000002B",
-      "email": "maria.lopez@example.com",
+      "email": "bob.johnson@example.com",
       "password": "hashed_password_2",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 2,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 3,
-      "workshop_id": 1,
-      "first_name": "José",
-      "last_name": "Martínez",
-      "dni": "10000003C",
-      "email": "jose.martinez@example.com",
+      "email": "carol.williams@example.com",
       "password": "hashed_password_3",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 3,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 4,
-      "workshop_id": 1,
-      "first_name": "Laura",
-      "last_name": "Sánchez",
-      "dni": "10000004D",
-      "email": "laura.sanchez@example.com",
+      "email": "david.brown@example.com",
       "password": "hashed_password_4",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 3,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 5,
-      "workshop_id": 1,
-      "first_name": "Antonio",
-      "last_name": "Pérez",
-      "dni": "10000005E",
-      "email": "antonio.perez@example.com",
+      "email": "emma.davis@example.com",
       "password": "hashed_password_5",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 2,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 6,
-      "workshop_id": 1,
-      "first_name": "Ana",
-      "last_name": "Gómez",
-      "dni": "10000006F",
-      "email": "ana.gomez@example.com",
+      "email": "frank.miller@example.com",
       "password": "hashed_password_6",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 1,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 7,
-      "workshop_id": 1,
-      "first_name": "Luis",
-      "last_name": "Fernández",
-      "dni": "10000007G",
-      "email": "luis.fernandez@example.com",
+      "email": "grace.wilson@example.com",
       "password": "hashed_password_7",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 3,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 8,
-      "workshop_id": 1,
-      "first_name": "Elena",
-      "last_name": "Díaz",
-      "dni": "10000008H",
-      "email": "elena.diaz@example.com",
+      "email": "henry.moore@example.com",
       "password": "hashed_password_8",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 2,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 9,
-      "workshop_id": 1,
-      "first_name": "Miguel",
-      "last_name": "Ruiz",
-      "dni": "10000009I",
-      "email": "miguel.ruiz@example.com",
+      "email": "isabella.taylor@example.com",
       "password": "hashed_password_9",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 3,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 10,
-      "workshop_id": 1,
-      "first_name": "Isabel",
-      "last_name": "Hernández",
-      "dni": "10000010J",
-      "email": "isabel.hernandez@example.com",
+      "email": "jack.anderson@example.com",
       "password": "hashed_password_10",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 1,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 11,
-      "workshop_id": 1,
-      "first_name": "Daniel",
-      "last_name": "Torres",
-      "dni": "10000011K",
-      "email": "daniel.torres@example.com",
+      "email": "karen.thomas@example.com",
       "password": "hashed_password_11",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 2,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 12,
-      "workshop_id": 1,
-      "first_name": "Sofía",
-      "last_name": "Ramírez",
-      "dni": "10000012L",
-      "email": "sofia.ramirez@example.com",
+      "email": "liam.jackson@example.com",
       "password": "hashed_password_12",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 3,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 13,
-      "workshop_id": 1,
-      "first_name": "Javier",
-      "last_name": "Flores",
-      "dni": "10000013M",
-      "email": "javier.flores@example.com",
+      "email": "mia.white@example.com",
       "password": "hashed_password_13",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 3,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 14,
-      "workshop_id": 1,
-      "first_name": "Lucía",
-      "last_name": "Santos",
-      "dni": "10000014N",
-      "email": "lucia.santos@example.com",
+      "email": "noah.harris@example.com",
       "password": "hashed_password_14",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 2,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 15,
-      "workshop_id": 1,
-      "first_name": "Manuel",
-      "last_name": "Castro",
-      "dni": "10000015O",
-      "email": "manuel.castro@example.com",
+      "email": "olivia.martin@example.com",
       "password": "hashed_password_15",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 1,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 16,
-      "workshop_id": 1,
-      "first_name": "Carmen",
-      "last_name": "Vargas",
-      "dni": "10000016P",
-      "email": "carmen.vargas@example.com",
+      "email": "peter.thompson@example.com",
       "password": "hashed_password_16",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 3,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 17,
-      "workshop_id": 1,
-      "first_name": "Juan",
-      "last_name": "Gutiérrez",
-      "dni": "10000017Q",
-      "email": "juan.gutierrez@example.com",
+      "email": "quinn.garcia@example.com",
       "password": "hashed_password_17",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 2,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 18,
-      "workshop_id": 1,
-      "first_name": "Patricia",
-      "last_name": "Jiménez",
-      "dni": "10000018R",
-      "email": "patricia.jimenez@example.com",
+      "email": "rachel.martinez@example.com",
       "password": "hashed_password_18",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 3,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 19,
-      "workshop_id": 1,
-      "first_name": "Pedro",
-      "last_name": "Reyes",
-      "dni": "10000019S",
-      "email": "pedro.reyes@example.com",
+      "email": "samuel.robinson@example.com",
       "password": "hashed_password_19",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
+      "role": 1,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
+        "name": "javierworkshops"
       }
     },
     {
       "id": 20,
-      "workshop_id": 1,
-      "first_name": "Sara",
-      "last_name": "Morales",
-      "dni": "10000020T",
-      "email": "sara.morales@example.com",
+      "email": "tina.clark@example.com",
       "password": "hashed_password_20",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
+      "role": 2,
+      "workshop": {
         "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
-      }
-    },
-    {
-      "id": 21,
-      "workshop_id": 1,
-      "first_name": "Diego",
-      "last_name": "Ortega",
-      "dni": "10000021U",
-      "email": "diego.ortega@example.com",
-      "password": "hashed_password_21",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 3,
-        "type": "workshop_client"
-      }
-    },
-    {
-      "id": 22,
-      "workshop_id": 1,
-      "first_name": "Alejandro",
-      "last_name": "Navarro",
-      "dni": "20000022V",
-      "email": "alejandro.navarro@example.com",
-      "password": "hashed_password_22",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 23,
-      "workshop_id": 1,
-      "first_name": "Marta",
-      "last_name": "Romero",
-      "dni": "20000023W",
-      "email": "marta.romero@example.com",
-      "password": "hashed_password_23",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 24,
-      "workshop_id": 1,
-      "first_name": "Fernando",
-      "last_name": "Domínguez",
-      "dni": "20000024X",
-      "email": "fernando.dominguez@example.com",
-      "password": "hashed_password_24",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 25,
-      "workshop_id": 1,
-      "first_name": "Lucía",
-      "last_name": "Alonso",
-      "dni": "20000025Y",
-      "email": "lucia.alonso@example.com",
-      "password": "hashed_password_25",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 26,
-      "workshop_id": 1,
-      "first_name": "Sergio",
-      "last_name": "Gil",
-      "dni": "20000026Z",
-      "email": "sergio.gil@example.com",
-      "password": "hashed_password_26",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 27,
-      "workshop_id": 1,
-      "first_name": "Natalia",
-      "last_name": "Méndez",
-      "dni": "20000027A",
-      "email": "natalia.mendez@example.com",
-      "password": "hashed_password_27",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 28,
-      "workshop_id": 1,
-      "first_name": "Jorge",
-      "last_name": "Cruz",
-      "dni": "20000028B",
-      "email": "jorge.cruz@example.com",
-      "password": "hashed_password_28",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 29,
-      "workshop_id": 1,
-      "first_name": "Eva",
-      "last_name": "Herrera",
-      "dni": "20000029C",
-      "email": "eva.herrera@example.com",
-      "password": "hashed_password_29",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 30,
-      "workshop_id": 1,
-      "first_name": "Alberto",
-      "last_name": "Soto",
-      "dni": "20000030D",
-      "email": "alberto.soto@example.com",
-      "password": "hashed_password_30",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 31,
-      "workshop_id": 1,
-      "first_name": "Raquel",
-      "last_name": "Delgado",
-      "dni": "20000031E",
-      "email": "raquel.delgado@example.com",
-      "password": "hashed_password_31",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 32,
-      "workshop_id": 1,
-      "first_name": "Pablo",
-      "last_name": "Ortiz",
-      "dni": "20000032F",
-      "email": "pablo.ortiz@example.com",
-      "password": "hashed_password_32",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 33,
-      "workshop_id": 1,
-      "first_name": "Silvia",
-      "last_name": "Marín",
-      "dni": "20000033G",
-      "email": "silvia.marin@example.com",
-      "password": "hashed_password_33",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 34,
-      "workshop_id": 1,
-      "first_name": "Víctor",
-      "last_name": "Serrano",
-      "dni": "20000034H",
-      "email": "victor.serrano@example.com",
-      "password": "hashed_password_34",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 35,
-      "workshop_id": 1,
-      "first_name": "Teresa",
-      "last_name": "Blanco",
-      "dni": "20000035I",
-      "email": "teresa.blanco@example.com",
-      "password": "hashed_password_35",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 36,
-      "workshop_id": 1,
-      "first_name": "Andrés",
-      "last_name": "Molina",
-      "dni": "20000036J",
-      "email": "andres.molina@example.com",
-      "password": "hashed_password_36",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 37,
-      "workshop_id": 1,
-      "first_name": "Lorena",
-      "last_name": "Moreno",
-      "dni": "20000037K",
-      "email": "lorena.moreno@example.com",
-      "password": "hashed_password_37",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 38,
-      "workshop_id": 1,
-      "first_name": "Francisco",
-      "last_name": "Carrasco",
-      "dni": "20000038L",
-      "email": "francisco.carrasco@example.com",
-      "password": "hashed_password_38",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 39,
-      "workshop_id": 1,
-      "first_name": "Cristina",
-      "last_name": "Fuentes",
-      "dni": "20000039M",
-      "email": "cristina.fuentes@example.com",
-      "password": "hashed_password_39",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 40,
-      "workshop_id": 1,
-      "first_name": "Rubén",
-      "last_name": "Núñez",
-      "dni": "20000040N",
-      "email": "ruben.nunez@example.com",
-      "password": "hashed_password_40",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 41,
-      "workshop_id": 1,
-      "first_name": "Beatriz",
-      "last_name": "Garrido",
-      "dni": "20000041O",
-      "email": "beatriz.garrido@example.com",
-      "password": "hashed_password_41",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 42,
-      "workshop_id": 1,
-      "first_name": "Adrián",
-      "last_name": "Cortés",
-      "dni": "20000042P",
-      "email": "adrian.cortes@example.com",
-      "password": "hashed_password_42",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 43,
-      "workshop_id": 1,
-      "first_name": "Irene",
-      "last_name": "Castillo",
-      "dni": "20000043Q",
-      "email": "irene.castillo@example.com",
-      "password": "hashed_password_43",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 44,
-      "workshop_id": 1,
-      "first_name": "Oscar",
-      "last_name": "Lara",
-      "dni": "20000044R",
-      "email": "oscar.lara@example.com",
-      "password": "hashed_password_44",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 45,
-      "workshop_id": 1,
-      "first_name": "Claudia",
-      "last_name": "Calvo",
-      "dni": "20000045S",
-      "email": "claudia.calvo@example.com",
-      "password": "hashed_password_45",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
-      }
-    },
-    {
-      "id": 46,
-      "workshop_id": 1,
-      "first_name": "Marcos",
-      "last_name": "Iglesias",
-      "dni": "20000046T",
-      "email": "marcos.iglesias@example.com",
-      "password": "hashed_password_46",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
-      "state": {
-        "id": 1,
-        "name": "ACTIVE"
-      },
-      "user_type": {
-        "id": 2,
-        "type": "mechanic"
+        "name": "javierworkshops"
       }
     }
   ],
-  "account_states": [
+  "workshop-owners": [
     {
       "id": 1,
-      "name": "ACTIVE"
+      "firstName": "Carlos",
+      "lastName": "Mendoza",
+      "dni": 45236789,
+      "email": "carlos.mendoza@example.com",
+      "age": 34,
+      "state": "ACTIVE"
     },
     {
       "id": 2,
-      "name": "INACTIVE"
+      "firstName": "Lucía",
+      "lastName": "Ramírez",
+      "dni": 58923456,
+      "email": "lucia.ramirez@example.com",
+      "age": 29,
+      "state": "ACTIVE"
     },
     {
       "id": 3,
-      "name": "HIDDEN"
-    }
-  ],
-  "user_types": [
-    {
-      "id": 1,
-      "type": "workshop_owner"
-    },
-    {
-      "id": 2,
-      "type": "mechanic"
-    },
-    {
-      "id": 3,
-      "type": "workshop_client"
-    }
-  ],
-  "workshops": [
-    {
-      "id": 1,
-      "owner_id": 1,
-      "name": "AutoFix Garage"
-    }
-  ],
-  "inventory_items": [
-    {
-      "id": 1,
-      "workshop_id": 1,
-      "name": "Filtro de aceite",
-      "amount": 15
-    },
-    {
-      "id": 2,
-      "workshop_id": 1,
-      "name": "Pastillas de freno",
-      "amount": 30
-    },
-    {
-      "id": 3,
-      "workshop_id": 1,
-      "name": "Bujía",
-      "amount": 25
+      "firstName": "Andrés",
+      "lastName": "Torres",
+      "dni": 62348901,
+      "email": "andres.torres@example.com",
+      "age": 42,
+      "state": "ACTIVE"
     },
     {
       "id": 4,
-      "workshop_id": 1,
-      "name": "Aceite de motor",
-      "amount": 50
+      "firstName": "Mariana",
+      "lastName": "González",
+      "dni": 73456128,
+      "email": "mariana.gonzalez@example.com",
+      "age": 37,
+      "state": "ACTIVE"
     },
     {
       "id": 5,
-      "workshop_id": 1,
-      "name": "Filtro de aire",
-      "amount": 20
+      "firstName": "Diego",
+      "lastName": "Vargas",
+      "dni": 84567234,
+      "email": "diego.vargas@example.com",
+      "age": 31,
+      "state": "ACTIVE"
     },
     {
       "id": 6,
-      "workshop_id": 1,
-      "name": "Correa de distribución",
-      "amount": 10
+      "firstName": "Sofía",
+      "lastName": "Hernández",
+      "dni": 95678345,
+      "email": "sofia.hernandez@example.com",
+      "age": 28,
+      "state": "ACTIVE"
     },
     {
       "id": 7,
-      "workshop_id": 1,
-      "name": "Amortiguadores",
-      "amount": 12
-    },
-    {
-      "id": 8,
-      "workshop_id": 1,
-      "name": "Batería",
-      "amount": 8
-    },
-    {
-      "id": 9,
-      "workshop_id": 1,
-      "name": "Neumáticos",
-      "amount": 40
-    },
-    {
-      "id": 10,
-      "workshop_id": 1,
-      "name": "Radiador",
-      "amount": 5
-    },
-    {
-      "id": 11,
-      "workshop_id": 1,
-      "name": "Alternador",
-      "amount": 7
-    },
-    {
-      "id": 12,
-      "workshop_id": 1,
-      "name": "Embrague",
-      "amount": 9
-    },
-    {
-      "id": 13,
-      "workshop_id": 1,
-      "name": "Filtro de combustible",
-      "amount": 18
-    },
-    {
-      "id": 14,
-      "workshop_id": 1,
-      "name": "Disco de freno",
-      "amount": 22
-    },
-    {
-      "id": 15,
-      "workshop_id": 1,
-      "name": "Parabrisas",
-      "amount": 6
-    },
-    {
-      "id": 16,
-      "workshop_id": 1,
-      "name": "Espejo lateral",
-      "amount": 14
-    },
-    {
-      "id": 17,
-      "workshop_id": 1,
-      "name": "Faros delanteros",
-      "amount": 11
-    },
-    {
-      "id": 18,
-      "workshop_id": 1,
-      "name": "Bobina de encendido",
-      "amount": 13
-    },
-    {
-      "id": 19,
-      "workshop_id": 1,
-      "name": "Sensor de oxígeno",
-      "amount": 16
-    },
-    {
-      "id": 20,
-      "workshop_id": 1,
-      "name": "Filtro de habitáculo",
-      "amount": 17
+      "firstName": "Jorge",
+      "lastName": "Pérez",
+      "dni": 16789456,
+      "email": "jorge.perez@example.com",
+      "age": 45,
+      "state": "ACTIVE"
     }
   ],
-  "inventory_requests": [
+  "workshop-clients": [
     {
       "id": 1,
-      "workshop_id": 1,
-      "user_id": 2,
-      "task_id": 1,
-      "item_id": 1,
-      "amount": 2,
-      "description": "Reemplazar filtro de aceite",
-      "date": "2024-09-20T08:30:00",
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
+      "firstName": "Laura",
+      "lastName": "García",
+      "dni": 12345678,
+      "email": "laura.garcia@example.com",
+      "age": 30,
+      "state": "ACTIVE",
+      "vehicles": [
+        {
+          "id": 1,
+          "licensePlate": "ABC1234",
+          "brand": "Toyota",
+          "model": "Corolla"
+        },
+        {
+          "id": 2,
+          "licensePlate": "XYZ5678",
+          "brand": "Honda",
+          "model": "Civic"
+        }
+      ]
     },
     {
       "id": 2,
-      "workshop_id": 1,
-      "user_id": 4,
-      "task_id": 2,
-      "item_id": 2,
-      "amount": 4,
-      "description": "Cambiar pastillas de freno",
-      "date": "2024-09-21T09:15:00",
-      "state": {
-        "id": 2,
-        "name": "APPROVED"
-      }
+      "firstName": "Miguel",
+      "lastName": "López",
+      "dni": 23456789,
+      "email": "miguel.lopez@example.com",
+      "age": 45,
+      "state": "ACTIVE",
+      "vehicles": [
+        {
+          "id": 3,
+          "licensePlate": "DEF2345",
+          "brand": "Ford",
+          "model": "Focus"
+        }
+      ]
     },
     {
       "id": 3,
-      "workshop_id": 1,
-      "user_id": 6,
-      "task_id": 3,
-      "item_id": 3,
-      "amount": 6,
-      "description": "Reemplazar bujías",
-      "date": "2024-09-22T10:45:00",
-      "state": {
-        "id": 3,
-        "name": "REJECTED"
-      }
+      "firstName": "Ana",
+      "lastName": "Martínez",
+      "dni": 34567890,
+      "email": "ana.martinez@example.com",
+      "age": 28,
+      "state": "ACTIVE",
+      "vehicles": [
+        {
+          "id": 4,
+          "licensePlate": "GHI3456",
+          "brand": "Chevrolet",
+          "model": "Cruze"
+        },
+        {
+          "id": 5,
+          "licensePlate": "JKL4567",
+          "brand": "Nissan",
+          "model": "Sentra"
+        }
+      ]
     },
     {
       "id": 4,
-      "workshop_id": 1,
-      "user_id": 8,
-      "task_id": 4,
-      "item_id": 4,
-      "amount": 5,
-      "description": "Cambio de aceite de motor",
-      "date": "2024-09-23T11:00:00",
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
+      "firstName": "Carlos",
+      "lastName": "Hernández",
+      "dni": 45678901,
+      "email": "carlos.hernandez@example.com",
+      "age": 38,
+      "state": "ACTIVE",
+      "vehicles": [
+        {
+          "id": 6,
+          "licensePlate": "MNO5678",
+          "brand": "Hyundai",
+          "model": "Elantra"
+        }
+      ]
     },
     {
       "id": 5,
-      "workshop_id": 1,
-      "user_id": 2,
-      "task_id": 5,
-      "item_id": 5,
-      "amount": 3,
-      "description": "Reemplazar filtro de aire",
-      "date": "2024-09-24T12:30:00",
-      "state": {
-        "id": 2,
-        "name": "APPROVED"
-      }
+      "firstName": "Sofía",
+      "lastName": "Ramírez",
+      "dni": 56789012,
+      "email": "sofia.ramirez@example.com",
+      "age": 33,
+      "state": "ACTIVE",
+      "vehicles": [
+        {
+          "id": 7,
+          "licensePlate": "PQR6789",
+          "brand": "Volkswagen",
+          "model": "Jetta"
+        }
+      ]
     },
     {
       "id": 6,
-      "workshop_id": 1,
-      "user_id": 4,
-      "task_id": 6,
-      "item_id": 6,
-      "amount": 1,
-      "description": "Cambiar correa de distribución",
-      "date": "2024-09-25T13:45:00",
-      "state": {
-        "id": 3,
-        "name": "REJECTED"
-      }
+      "firstName": "Diego",
+      "lastName": "González",
+      "dni": 67890123,
+      "email": "diego.gonzalez@example.com",
+      "age": 41,
+      "state": "ACTIVE",
+      "vehicles": [
+        {
+          "id": 8,
+          "licensePlate": "STU7890",
+          "brand": "Kia",
+          "model": "Forte"
+        },
+        {
+          "id": 9,
+          "licensePlate": "VWX8901",
+          "brand": "Subaru",
+          "model": "Impreza"
+        }
+      ]
     },
     {
       "id": 7,
-      "workshop_id": 1,
-      "user_id": 6,
-      "task_id": 7,
-      "item_id": 7,
-      "amount": 4,
-      "description": "Reemplazar amortiguadores",
-      "date": "2024-09-26T14:15:00",
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
+      "firstName": "María",
+      "lastName": "Fernández",
+      "dni": 78901234,
+      "email": "maria.fernandez@example.com",
+      "age": 26,
+      "state": "ACTIVE",
+      "vehicles": [
+        {
+          "id": 10,
+          "licensePlate": "YZA9012",
+          "brand": "Mazda",
+          "model": "3"
+        }
+      ]
     },
     {
       "id": 8,
-      "workshop_id": 1,
-      "user_id": 8,
-      "task_id": 8,
-      "item_id": 8,
-      "amount": 2,
-      "description": "Cambiar batería",
-      "date": "2024-09-27T15:30:00",
-      "state": {
-        "id": 2,
-        "name": "APPROVED"
-      }
-    },
-    {
-      "id": 9,
-      "workshop_id": 1,
-      "user_id": 2,
-      "task_id": 9,
-      "item_id": 9,
-      "amount": 4,
-      "description": "Reemplazar neumáticos",
-      "date": "2024-09-28T16:00:00",
-      "state": {
-        "id": 3,
-        "name": "REJECTED"
-      }
-    },
-    {
-      "id": 10,
-      "workshop_id": 1,
-      "user_id": 4,
-      "task_id": 10,
-      "item_id": 10,
-      "amount": 1,
-      "description": "Cambiar radiador",
-      "date": "2024-09-29T17:15:00",
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 11,
-      "workshop_id": 1,
-      "user_id": 6,
-      "task_id": 11,
-      "item_id": 11,
-      "amount": 1,
-      "description": "Reemplazar alternador",
-      "date": "2024-09-30T18:30:00",
-      "state": {
-        "id": 2,
-        "name": "APPROVED"
-      }
-    },
-    {
-      "id": 12,
-      "workshop_id": 1,
-      "user_id": 8,
-      "task_id": 12,
-      "item_id": 12,
-      "amount": 1,
-      "description": "Cambiar embrague",
-      "date": "2024-10-01T09:00:00",
-      "state": {
-        "id": 3,
-        "name": "REJECTED"
-      }
-    },
-    {
-      "id": 13,
-      "workshop_id": 1,
-      "user_id": 2,
-      "task_id": 13,
-      "item_id": 13,
-      "amount": 2,
-      "description": "Reemplazar filtro de combustible",
-      "date": "2024-10-02T10:15:00",
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 14,
-      "workshop_id": 1,
-      "user_id": 4,
-      "task_id": 14,
-      "item_id": 14,
-      "amount": 2,
-      "description": "Cambiar discos de freno",
-      "date": "2024-10-03T11:30:00",
-      "state": {
-        "id": 2,
-        "name": "APPROVED"
-      }
-    },
-    {
-      "id": 15,
-      "workshop_id": 1,
-      "user_id": 6,
-      "task_id": 15,
-      "item_id": 15,
-      "amount": 1,
-      "description": "Reemplazar parabrisas",
-      "date": "2024-10-04T12:45:00",
-      "state": {
-        "id": 3,
-        "name": "REJECTED"
-      }
-    },
-    {
-      "id": 16,
-      "workshop_id": 1,
-      "user_id": 8,
-      "task_id": 16,
-      "item_id": 16,
-      "amount": 2,
-      "description": "Cambiar espejos laterales",
-      "date": "2024-10-05T14:00:00",
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 17,
-      "workshop_id": 1,
-      "user_id": 2,
-      "task_id": 17,
-      "item_id": 17,
-      "amount": 2,
-      "description": "Reemplazar faros delanteros",
-      "date": "2024-10-06T15:15:00",
-      "state": {
-        "id": 2,
-        "name": "APPROVED"
-      }
-    },
-    {
-      "id": 18,
-      "workshop_id": 1,
-      "user_id": 4,
-      "task_id": 18,
-      "item_id": 18,
-      "amount": 4,
-      "description": "Cambiar bobina de encendido",
-      "date": "2024-10-07T16:30:00",
-      "state": {
-        "id": 3,
-        "name": "REJECTED"
-      }
-    },
-    {
-      "id": 19,
-      "workshop_id": 1,
-      "user_id": 6,
-      "task_id": 19,
-      "item_id": 19,
-      "amount": 1,
-      "description": "Reemplazar sensor de oxígeno",
-      "date": "2024-10-08T17:45:00",
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 20,
-      "workshop_id": 1,
-      "user_id": 8,
-      "task_id": 20,
-      "item_id": 20,
-      "amount": 1,
-      "description": "Cambiar filtro de habitáculo",
-      "date": "2024-10-09T18:00:00",
-      "state": {
-        "id": 2,
-        "name": "APPROVED"
-      }
-    }
-  ],
-  "inventory_request_states": [
-    {
-      "id": 1,
-      "name": "PENDING"
-    },
-    {
-      "id": 2,
-      "name": "APPROVED"
-    },
-    {
-      "id": 3,
-      "name": "REJECTED"
-    }
-  ],
-  "tasks": [
-    {
-      "id": 1,
-      "user_id": 2,
-      "intervention_id": 1,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 2,
-      "user_id": 4,
-      "intervention_id": 2,
-      "state": {
-        "id": 2,
-        "name": "AWAITING_COMPONENTS"
-      }
-    },
-    {
-      "id": 3,
-      "user_id": 6,
-      "intervention_id": 3,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 4,
-      "user_id": 8,
-      "intervention_id": 4,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 5,
-      "user_id": 2,
-      "intervention_id": 5,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 6,
-      "user_id": 4,
-      "intervention_id": 6,
-      "state": {
-        "id": 2,
-        "name": "AWAITING_COMPONENTS"
-      }
-    },
-    {
-      "id": 7,
-      "user_id": 6,
-      "intervention_id": 7,
-      "state": {
-        "id": 3,
-        "name": "AWAITING_REASSIGNMENT"
-      }
-    },
-    {
-      "id": 8,
-      "user_id": 8,
-      "intervention_id": 8,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 9,
-      "user_id": 2,
-      "intervention_id": 9,
-      "state": {
-        "id": 4,
-        "name": "CANCELED"
-      }
-    },
-    {
-      "id": 10,
-      "user_id": 4,
-      "intervention_id": 10,
-      "state": {
-        "id": 5,
-        "name": "DONE"
-      }
-    },
-    {
-      "id": 11,
-      "user_id": 6,
-      "intervention_id": 11,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 12,
-      "user_id": 8,
-      "intervention_id": 12,
-      "state": {
-        "id": 2,
-        "name": "AWAITING_COMPONENTS"
-      }
-    },
-    {
-      "id": 13,
-      "user_id": 2,
-      "intervention_id": 13,
-      "state": {
-        "id": 3,
-        "name": "AWAITING_REASSIGNMENT"
-      }
-    },
-    {
-      "id": 14,
-      "user_id": 4,
-      "intervention_id": 14,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 15,
-      "user_id": 6,
-      "intervention_id": 15,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 16,
-      "user_id": 8,
-      "intervention_id": 16,
-      "state": {
-        "id": 2,
-        "name": "AWAITING_COMPONENTS"
-      }
-    },
-    {
-      "id": 17,
-      "user_id": 2,
-      "intervention_id": 17,
-      "state": {
-        "id": 3,
-        "name": "AWAITING_REASSIGNMENT"
-      }
-    },
-    {
-      "id": 18,
-      "user_id": 4,
-      "intervention_id": 18,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 19,
-      "user_id": 6,
-      "intervention_id": 19,
-      "state": {
-        "id": 5,
-        "name": "DONE"
-      }
-    },
-    {
-      "id": 20,
-      "user_id": 8,
-      "intervention_id": 20,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 21,
-      "user_id": 2,
-      "intervention_id": 21,
-      "state": {
-        "id": 2,
-        "name": "AWAITING_COMPONENTS"
-      }
-    },
-    {
-      "id": 22,
-      "user_id": 4,
-      "intervention_id": 22,
-      "state": {
-        "id": 3,
-        "name": "AWAITING_REASSIGNMENT"
-      }
-    },
-    {
-      "id": 23,
-      "user_id": 6,
-      "intervention_id": 23,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 24,
-      "user_id": 8,
-      "intervention_id": 24,
-      "state": {
-        "id": 4,
-        "name": "CANCELED"
-      }
-    },
-    {
-      "id": 25,
-      "user_id": 2,
-      "intervention_id": 25,
-      "state": {
-        "id": 5,
-        "name": "DONE"
-      }
-    },
-    {
-      "id": 26,
-      "user_id": 4,
-      "intervention_id": 26,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 27,
-      "user_id": 6,
-      "intervention_id": 27,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 28,
-      "user_id": 8,
-      "intervention_id": 28,
-      "state": {
-        "id": 2,
-        "name": "AWAITING_COMPONENTS"
-      }
-    },
-    {
-      "id": 29,
-      "user_id": 2,
-      "intervention_id": 29,
-      "state": {
-        "id": 3,
-        "name": "AWAITING_REASSIGNMENT"
-      }
-    },
-    {
-      "id": 30,
-      "user_id": 4,
-      "intervention_id": 30,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    }
-  ],
-  "task_states": [
-    {
-      "id": 1,
-      "name": "PENDING"
-    },
-    {
-      "id": 2,
-      "name": "AWAITING_COMPONENTS"
-    },
-    {
-      "id": 3,
-      "name": "AWAITING_REASSIGNMENT"
-    },
-    {
-      "id": 4,
-      "name": "CANCELED"
-    },
-    {
-      "id": 5,
-      "name": "DONE"
-    }
-  ],
-  "intervention_states": [
-    {
-      "id": 1,
-      "name": "PENDING"
-    },
-    {
-      "id": 2,
-      "name": "IN_PROGRESS"
-    },
-    {
-      "id": 3,
-      "name": "UNDER_INSPECTION"
-    },
-    {
-      "id": 4,
-      "name": "COMPLETED"
-    },
-    {
-      "id": 5,
-      "name": "CLOSED"
-    },
-    {
-      "id": 6,
-      "name": "REJECTED"
-    }
-  ],
-  "interventions": [
-    {
-      "id": 1,
-      "workshop_id": 1,
-      "mechanic_leader_id": 2,
-      "vehicle_id": 1,
-      "client_id": 3,
-      "registration_date": "2024-09-20T08:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 2,
-      "workshop_id": 1,
-      "mechanic_leader_id": 4,
-      "vehicle_id": 2,
-      "client_id": 5,
-      "registration_date": "2024-09-21T09:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 2,
-        "name": "IN_PROGRESS"
-      }
-    },
-    {
-      "id": 3,
-      "workshop_id": 1,
-      "mechanic_leader_id": 6,
-      "vehicle_id": 3,
-      "client_id": 7,
-      "registration_date": "2024-09-22T10:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 4,
-      "workshop_id": 1,
-      "mechanic_leader_id": 8,
-      "vehicle_id": 4,
-      "client_id": 9,
-      "registration_date": "2024-09-23T11:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 5,
-      "workshop_id": 1,
-      "mechanic_leader_id": 2,
-      "vehicle_id": 5,
-      "client_id": 3,
-      "registration_date": "2024-09-24T12:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 2,
-        "name": "IN_PROGRESS"
-      }
-    },
-    {
-      "id": 6,
-      "workshop_id": 1,
-      "mechanic_leader_id": 4,
-      "vehicle_id": 6,
-      "client_id": 5,
-      "registration_date": "2024-09-25T13:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 3,
-        "name": "UNDER_INSPECTION"
-      }
-    },
-    {
-      "id": 7,
-      "workshop_id": 1,
-      "mechanic_leader_id": 6,
-      "vehicle_id": 7,
-      "client_id": 7,
-      "registration_date": "2024-09-26T14:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 8,
-      "workshop_id": 1,
-      "mechanic_leader_id": 8,
-      "vehicle_id": 8,
-      "client_id": 9,
-      "registration_date": "2024-09-27T15:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 4,
-        "name": "COMPLETED"
-      }
-    },
-    {
-      "id": 9,
-      "workshop_id": 1,
-      "mechanic_leader_id": 2,
-      "vehicle_id": 9,
-      "client_id": 3,
-      "registration_date": "2024-09-28T16:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 5,
-        "name": "CLOSED"
-      }
-    },
-    {
-      "id": 10,
-      "workshop_id": 1,
-      "mechanic_leader_id": 4,
-      "vehicle_id": 10,
-      "client_id": 5,
-      "registration_date": "2024-09-29T17:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 11,
-      "workshop_id": 1,
-      "mechanic_leader_id": 6,
-      "vehicle_id": 11,
-      "client_id": 7,
-      "registration_date": "2024-09-30T18:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 2,
-        "name": "IN_PROGRESS"
-      }
-    },
-    {
-      "id": 12,
-      "workshop_id": 1,
-      "mechanic_leader_id": 8,
-      "vehicle_id": 12,
-      "client_id": 9,
-      "registration_date": "2024-10-01T09:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 3,
-        "name": "UNDER_INSPECTION"
-      }
-    },
-    {
-      "id": 13,
-      "workshop_id": 1,
-      "mechanic_leader_id": 2,
-      "vehicle_id": 13,
-      "client_id": 3,
-      "registration_date": "2024-10-02T10:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 14,
-      "workshop_id": 1,
-      "mechanic_leader_id": 4,
-      "vehicle_id": 14,
-      "client_id": 5,
-      "registration_date": "2024-10-03T11:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 4,
-        "name": "COMPLETED"
-      }
-    },
-    {
-      "id": 15,
-      "workshop_id": 1,
-      "mechanic_leader_id": 6,
-      "vehicle_id": 15,
-      "client_id": 7,
-      "registration_date": "2024-10-04T12:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 5,
-        "name": "CLOSED"
-      }
-    },
-    {
-      "id": 16,
-      "workshop_id": 1,
-      "mechanic_leader_id": 8,
-      "vehicle_id": 16,
-      "client_id": 9,
-      "registration_date": "2024-10-05T13:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 17,
-      "workshop_id": 1,
-      "mechanic_leader_id": 2,
-      "vehicle_id": 17,
-      "client_id": 3,
-      "registration_date": "2024-10-06T14:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 2,
-        "name": "IN_PROGRESS"
-      }
-    },
-    {
-      "id": 18,
-      "workshop_id": 1,
-      "mechanic_leader_id": 4,
-      "vehicle_id": 18,
-      "client_id": 5,
-      "registration_date": "2024-10-07T15:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 3,
-        "name": "UNDER_INSPECTION"
-      }
-    },
-    {
-      "id": 19,
-      "workshop_id": 1,
-      "mechanic_leader_id": 6,
-      "vehicle_id": 19,
-      "client_id": 7,
-      "registration_date": "2024-10-08T16:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 20,
-      "workshop_id": 1,
-      "mechanic_leader_id": 8,
-      "vehicle_id": 20,
-      "client_id": 9,
-      "registration_date": "2024-10-09T17:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 4,
-        "name": "COMPLETED"
-      }
-    },
-    {
-      "id": 21,
-      "workshop_id": 1,
-      "mechanic_leader_id": 2,
-      "vehicle_id": 21,
-      "client_id": 3,
-      "registration_date": "2024-10-10T18:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 5,
-        "name": "CLOSED"
-      }
-    },
-    {
-      "id": 22,
-      "workshop_id": 1,
-      "mechanic_leader_id": 4,
-      "vehicle_id": 22,
-      "client_id": 5,
-      "registration_date": "2024-10-11T09:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 23,
-      "workshop_id": 1,
-      "mechanic_leader_id": 6,
-      "vehicle_id": 23,
-      "client_id": 7,
-      "registration_date": "2024-10-12T10:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 2,
-        "name": "IN_PROGRESS"
-      }
-    },
-    {
-      "id": 24,
-      "workshop_id": 1,
-      "mechanic_leader_id": 8,
-      "vehicle_id": 24,
-      "client_id": 9,
-      "registration_date": "2024-10-13T11:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 3,
-        "name": "UNDER_INSPECTION"
-      }
-    },
-    {
-      "id": 25,
-      "workshop_id": 1,
-      "mechanic_leader_id": 2,
-      "vehicle_id": 25,
-      "client_id": 3,
-      "registration_date": "2024-10-14T12:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 26,
-      "workshop_id": 1,
-      "mechanic_leader_id": 4,
-      "vehicle_id": 26,
-      "client_id": 5,
-      "registration_date": "2024-10-15T13:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 4,
-        "name": "COMPLETED"
-      }
-    },
-    {
-      "id": 27,
-      "workshop_id": 1,
-      "mechanic_leader_id": 6,
-      "vehicle_id": 27,
-      "client_id": 7,
-      "registration_date": "2024-10-16T14:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 5,
-        "name": "CLOSED"
-      }
-    },
-    {
-      "id": 28,
-      "workshop_id": 1,
-      "mechanic_leader_id": 8,
-      "vehicle_id": 28,
-      "client_id": 9,
-      "registration_date": "2024-10-17T15:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 1,
-        "name": "PENDING"
-      }
-    },
-    {
-      "id": 29,
-      "workshop_id": 1,
-      "mechanic_leader_id": 2,
-      "vehicle_id": 29,
-      "client_id": 3,
-      "registration_date": "2024-10-18T16:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 2,
-        "name": "IN_PROGRESS"
-      }
-    },
-    {
-      "id": 30,
-      "workshop_id": 1,
-      "mechanic_leader_id": 4,
-      "vehicle_id": 30,
-      "client_id": 5,
-      "registration_date": "2024-10-19T17:00:00",
-      "completion_date": null,
-      "state": {
-        "id": 3,
-        "name": "UNDER_INSPECTION"
-      }
+      "firstName": "Jorge",
+      "lastName": "Sánchez",
+      "dni": 89012345,
+      "email": "jorge.sanchez@example.com",
+      "age": 50,
+      "state": "ACTIVE",
+      "vehicles": [
+        {
+          "id": 11,
+          "licensePlate": "BCD0123",
+          "brand": "BMW",
+          "model": "320i"
+        },
+        {
+          "id": 12,
+          "licensePlate": "EFG1234",
+          "brand": "Audi",
+          "model": "A4"
+        }
+      ]
     }
   ],
   "vehicles": [
     {
       "id": 1,
-      "user_id": 3,
-      "license_plate": "ABC-123",
+      "licensePlate": "ABC1234",
       "brand": "Toyota",
-      "model": "Corolla"
+      "model": "Corolla",
+      "owner": {
+        "id": 1,
+        "firstName": "Laura",
+        "lastName": "García"
+      },
+      "iotDispositive": {
+        "id": 1,
+        "codeList": [
+          {
+            "id": 1,
+            "component": "Engine",
+            "errorCode": "E1001",
+            "description": "Engine overheating detected.",
+            "state": "ACTIVE"
+          },
+          {
+            "id": 2,
+            "component": "Transmission",
+            "errorCode": "T2002",
+            "description": "Transmission fluid low.",
+            "state": "INACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 1,
+          "completionDate": "2024-08-15T10:30:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 2,
+          "completionDate": "2024-09-20T14:45:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 3,
+          "completionDate": "2024-10-05T09:00:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 4,
+          "completionDate": "2024-10-20T11:15:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        },
+        {
+          "id": 5,
+          "completionDate": "2024-11-01T16:30:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        }
+      ]
     },
     {
       "id": 2,
-      "user_id": 5,
-      "license_plate": "DEF-456",
+      "licensePlate": "XYZ5678",
       "brand": "Honda",
-      "model": "Civic"
+      "model": "Civic",
+      "owner": {
+        "id": 1,
+        "firstName": "Laura",
+        "lastName": "García"
+      },
+      "iotDispositive": {
+        "id": 2,
+        "codeList": [
+          {
+            "id": 3,
+            "component": "Brakes",
+            "errorCode": "B3003",
+            "description": "Brake pads wear detected.",
+            "state": "ACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 6,
+          "completionDate": "2024-07-25T09:15:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 7,
+          "completionDate": "2024-08-10T13:45:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 8,
+          "completionDate": "2024-09-05T10:00:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        },
+        {
+          "id": 9,
+          "completionDate": "2024-09-25T14:30:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        },
+        {
+          "id": 10,
+          "completionDate": "2024-10-10T11:00:00",
+          "leader": {
+            "id": 7,
+            "firstName": "Jorge",
+            "lastName": "Pérez"
+          }
+        }
+      ]
     },
     {
       "id": 3,
-      "user_id": 7,
-      "license_plate": "GHI-789",
+      "licensePlate": "DEF2345",
       "brand": "Ford",
-      "model": "Focus"
+      "model": "Focus",
+      "owner": {
+        "id": 2,
+        "firstName": "Miguel",
+        "lastName": "López"
+      },
+      "iotDispositive": {
+        "id": 3,
+        "codeList": [
+          {
+            "id": 4,
+            "component": "Air Conditioning",
+            "errorCode": "AC4004",
+            "description": "Air conditioning malfunction.",
+            "state": "FAILED"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 11,
+          "completionDate": "2024-08-05T11:00:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        },
+        {
+          "id": 12,
+          "completionDate": "2024-08-20T15:30:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        },
+        {
+          "id": 13,
+          "completionDate": "2024-09-10T10:45:00",
+          "leader": {
+            "id": 7,
+            "firstName": "Jorge",
+            "lastName": "Pérez"
+          }
+        },
+        {
+          "id": 14,
+          "completionDate": "2024-09-25T13:15:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 15,
+          "completionDate": "2024-10-05T09:30:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 16,
+          "completionDate": "2024-10-20T14:00:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        }
+      ]
     },
     {
       "id": 4,
-      "user_id": 9,
-      "license_plate": "JKL-012",
+      "licensePlate": "GHI3456",
       "brand": "Chevrolet",
-      "model": "Cruze"
+      "model": "Cruze",
+      "owner": {
+        "id": 3,
+        "firstName": "Ana",
+        "lastName": "Martínez"
+      },
+      "iotDispositive": {
+        "id": 4,
+        "codeList": [
+          {
+            "id": 5,
+            "component": "Battery",
+            "errorCode": "BT5005",
+            "description": "Battery voltage irregularity.",
+            "state": "ACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 17,
+          "completionDate": "2024-07-30T13:20:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        },
+        {
+          "id": 18,
+          "completionDate": "2024-08-15T10:30:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 19,
+          "completionDate": "2024-09-05T12:45:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 20,
+          "completionDate": "2024-09-20T14:15:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 21,
+          "completionDate": "2024-10-01T16:00:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        }
+      ]
     },
     {
       "id": 5,
-      "user_id": 3,
-      "license_plate": "MNO-345",
+      "licensePlate": "JKL4567",
       "brand": "Nissan",
-      "model": "Sentra"
+      "model": "Sentra",
+      "owner": {
+        "id": 3,
+        "firstName": "Ana",
+        "lastName": "Martínez"
+      },
+      "iotDispositive": {
+        "id": 5,
+        "codeList": [
+          {
+            "id": 6,
+            "component": "Suspension",
+            "errorCode": "S6006",
+            "description": "Suspension system imbalance.",
+            "state": "ACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 22,
+          "completionDate": "2024-09-10T16:00:00",
+          "leader": {
+            "id": 7,
+            "firstName": "Jorge",
+            "lastName": "Pérez"
+          }
+        },
+        {
+          "id": 23,
+          "completionDate": "2024-09-25T10:30:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 24,
+          "completionDate": "2024-10-05T11:45:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 25,
+          "completionDate": "2024-10-20T13:15:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        }
+      ]
     },
     {
       "id": 6,
-      "user_id": 5,
-      "license_plate": "PQR-678",
-      "brand": "Volkswagen",
-      "model": "Jetta"
+      "licensePlate": "MNO5678",
+      "brand": "Hyundai",
+      "model": "Elantra",
+      "owner": {
+        "id": 4,
+        "firstName": "Carlos",
+        "lastName": "Hernández"
+      },
+      "iotDispositive": {
+        "id": 6,
+        "codeList": [
+          {
+            "id": 7,
+            "component": "Tires",
+            "errorCode": "TR7007",
+            "description": "Tire pressure low.",
+            "state": "ACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 26,
+          "completionDate": "2024-08-22T10:45:00",
+          "leader": {
+            "id": 7,
+            "firstName": "Jorge",
+            "lastName": "Pérez"
+          }
+        },
+        {
+          "id": 27,
+          "completionDate": "2024-09-05T09:00:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 28,
+          "completionDate": "2024-09-20T14:30:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 29,
+          "completionDate": "2024-10-01T16:15:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 30,
+          "completionDate": "2024-10-15T11:30:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        }
+      ]
     },
     {
       "id": 7,
-      "user_id": 7,
-      "license_plate": "STU-901",
-      "brand": "Hyundai",
-      "model": "Elantra"
+      "licensePlate": "PQR6789",
+      "brand": "Volkswagen",
+      "model": "Jetta",
+      "owner": {
+        "id": 5,
+        "firstName": "Sofía",
+        "lastName": "Ramírez"
+      },
+      "iotDispositive": {
+        "id": 7,
+        "codeList": [
+          {
+            "id": 8,
+            "component": "Fuel System",
+            "errorCode": "FS8008",
+            "description": "Fuel pump malfunction.",
+            "state": "FAILED"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 31,
+          "completionDate": "2024-07-18T09:30:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 32,
+          "completionDate": "2024-08-10T10:00:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 33,
+          "completionDate": "2024-09-01T14:45:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 34,
+          "completionDate": "2024-09-15T11:15:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        },
+        {
+          "id": 35,
+          "completionDate": "2024-10-01T13:00:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        }
+      ]
     },
     {
       "id": 8,
-      "user_id": 9,
-      "license_plate": "VWX-234",
+      "licensePlate": "STU7890",
       "brand": "Kia",
-      "model": "Forte"
+      "model": "Forte",
+      "owner": {
+        "id": 6,
+        "firstName": "Diego",
+        "lastName": "González"
+      },
+      "iotDispositive": {
+        "id": 8,
+        "codeList": [
+          {
+            "id": 9,
+            "component": "Electrical",
+            "errorCode": "EL9009",
+            "description": "Electrical short detected in dashboard.",
+            "state": "ACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 36,
+          "completionDate": "2024-08-30T15:00:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 37,
+          "completionDate": "2024-09-10T10:30:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 38,
+          "completionDate": "2024-09-25T14:00:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 39,
+          "completionDate": "2024-10-05T11:45:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        },
+        {
+          "id": 40,
+          "completionDate": "2024-10-20T13:30:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        }
+      ]
     },
     {
       "id": 9,
-      "user_id": 3,
-      "license_plate": "YZA-567",
+      "licensePlate": "VWX8901",
       "brand": "Subaru",
-      "model": "Impreza"
+      "model": "Impreza",
+      "owner": {
+        "id": 6,
+        "firstName": "Diego",
+        "lastName": "González"
+      },
+      "iotDispositive": {
+        "id": 9,
+        "codeList": [
+          {
+            "id": 10,
+            "component": "Exhaust",
+            "errorCode": "EX1010",
+            "description": "Exhaust leak detected.",
+            "state": "INACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 41,
+          "completionDate": "2024-09-05T11:30:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 42,
+          "completionDate": "2024-09-20T14:30:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 43,
+          "completionDate": "2024-10-05T10:15:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        },
+        {
+          "id": 44,
+          "completionDate": "2024-10-20T12:00:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        },
+        {
+          "id": 45,
+          "completionDate": "2024-11-01T09:30:00",
+          "leader": {
+            "id": 7,
+            "firstName": "Jorge",
+            "lastName": "Pérez"
+          }
+        }
+      ]
     },
     {
       "id": 10,
-      "user_id": 5,
-      "license_plate": "BCD-890",
+      "licensePlate": "YZA9012",
       "brand": "Mazda",
-      "model": "Mazda3"
+      "model": "3",
+      "owner": {
+        "id": 7,
+        "firstName": "María",
+        "lastName": "Fernández"
+      },
+      "iotDispositive": {
+        "id": 10,
+        "codeList": [
+          {
+            "id": 11,
+            "component": "Steering",
+            "errorCode": "ST1111",
+            "description": "Steering alignment issue.",
+            "state": "ACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 46,
+          "completionDate": "2024-08-12T14:00:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 47,
+          "completionDate": "2024-08-25T10:30:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 48,
+          "completionDate": "2024-09-05T12:15:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 49,
+          "completionDate": "2024-09-20T13:45:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        },
+        {
+          "id": 50,
+          "completionDate": "2024-10-05T15:00:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        }
+      ]
     },
     {
       "id": 11,
-      "user_id": 7,
-      "license_plate": "EFG-123",
+      "licensePlate": "BCD0123",
       "brand": "BMW",
-      "model": "3 Series"
+      "model": "320i",
+      "owner": {
+        "id": 8,
+        "firstName": "Jorge",
+        "lastName": "Sánchez"
+      },
+      "iotDispositive": {
+        "id": 11,
+        "codeList": [
+          {
+            "id": 12,
+            "component": "Transmission",
+            "errorCode": "T2002",
+            "description": "Transmission fluid low.",
+            "state": "ACTIVE"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 51,
+          "completionDate": "2024-09-15T10:00:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        },
+        {
+          "id": 52,
+          "completionDate": "2024-09-30T12:30:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        },
+        {
+          "id": 53,
+          "completionDate": "2024-10-10T14:00:00",
+          "leader": {
+            "id": 7,
+            "firstName": "Jorge",
+            "lastName": "Pérez"
+          }
+        },
+        {
+          "id": 54,
+          "completionDate": "2024-10-25T16:15:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 55,
+          "completionDate": "2024-11-05T09:45:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        }
+      ]
     },
     {
       "id": 12,
-      "user_id": 9,
-      "license_plate": "HIJ-456",
-      "brand": "Mercedes-Benz",
-      "model": "C-Class"
+      "licensePlate": "EFG1234",
+      "brand": "Audi",
+      "model": "A4",
+      "owner": {
+        "id": 8,
+        "firstName": "Jorge",
+        "lastName": "Sánchez"
+      },
+      "iotDispositive": {
+        "id": 12,
+        "codeList": [
+          {
+            "id": 13,
+            "component": "Airbags",
+            "errorCode": "AB1212",
+            "description": "Airbag sensor malfunction.",
+            "state": "FAILED"
+          }
+        ]
+      },
+      "interventionRegister": [
+        {
+          "id": 56,
+          "completionDate": "2024-10-01T09:45:00",
+          "leader": {
+            "id": 6,
+            "firstName": "Sofía",
+            "lastName": "Hernández"
+          }
+        },
+        {
+          "id": 57,
+          "completionDate": "2024-10-15T10:30:00",
+          "leader": {
+            "id": 2,
+            "firstName": "Lucía",
+            "lastName": "Ramírez"
+          }
+        },
+        {
+          "id": 58,
+          "completionDate": "2024-10-30T14:15:00",
+          "leader": {
+            "id": 3,
+            "firstName": "Andrés",
+            "lastName": "Torres"
+          }
+        },
+        {
+          "id": 59,
+          "completionDate": "2024-11-10T11:00:00",
+          "leader": {
+            "id": 4,
+            "firstName": "Mariana",
+            "lastName": "González"
+          }
+        },
+        {
+          "id": 60,
+          "completionDate": "2024-11-25T16:30:00",
+          "leader": {
+            "id": 5,
+            "firstName": "Diego",
+            "lastName": "Vargas"
+          }
+        }
+      ]
+    }
+  ],
+  "workshops": [
+    {
+      "id": 1,
+      "name": "javierworkshops",
+      "membershipType": "REGULAR",
+      "owner": {
+        "id": 1,
+        "firstName": "Carlos",
+        "state": "ACTIVE"
+      }
+    }
+  ],
+  "mechanics": [
+    {
+      "id": 1,
+      "firstName": "Andrés",
+      "lastName": "García",
+      "dni": 81234567,
+      "age":  30,
+      "email": "andres.garcia@example.com",
+      "state": "ACTIVE"
+    },
+    {
+      "id": 2,
+      "firstName": "Beatriz",
+      "lastName": "Martínez",
+      "dni": 82345678,
+      "age": 28,
+      "email": "beatriz.martinez@example.com",
+      "state": "ACTIVE"
+    },
+    {
+      "id": 3,
+      "firstName": "Carlos",
+      "lastName": "Sánchez",
+      "dni": 83456789,
+      "age": 35,
+      "email": "carlos.sanchez@example.com",
+      "state": "ACTIVE"
+    },
+    {
+      "id": 4,
+      "firstName": "Daniela",
+      "lastName": "Torres",
+      "dni": 84567890,
+      "age": 32,
+      "email": "daniela.torres@example.com",
+      "state": "ACTIVE"
+    },
+    {
+      "id": 5,
+      "firstName": "Eduardo",
+      "lastName": "Díaz",
+      "dni": 85678901,
+      "age": 40,
+      "email": "eduardo.diaz@example.com",
+      "state": "ACTIVE"
+    },
+    {
+      "id": 6,
+      "firstName": "Fernanda",
+      "lastName": "Ruiz",
+      "dni": 86789012,
+      "age": 27,
+      "email": "fernanda.ruiz@example.com",
+      "state": "ACTIVE"
+    },
+    {
+      "id": 7,
+      "firstName": "Guillermo",
+      "lastName": "Herrera",
+      "dni": 87890123,
+      "age": 38,
+      "email": "guillermo.herrera@example.com",
+      "state": "ACTIVE"
+    }
+  ],
+  "product-stocks": [
+    {
+      "id": 1,
+      "workshop": {
+        "id": 1,
+        "name": "javierworkshops"
+      },
+      "amount": 50,
+      "productType": {
+        "id": 1,
+        "name": "Neumático"
+      },
+      "taskRequestList": [
+        {
+          "id": 1,
+          "task": {
+            "id": 1
+          },
+          "quantityUsed": 5,
+          "requestedDate": "2024-06-06T17:15:00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "workshop": {
+        "id": 1,
+        "name": "javierworkshops"
+      },
+      "amount": 30,
+      "productType": {
+        "id": 2,
+        "name": "Pastillas de Freno"
+      },
+      "taskRequestList": [
+        {
+          "id": 2,
+          "task": {
+            "id": 1
+          },
+          "quantityUsed": 10,
+          "requestedDate": "2024-06-10T12:00:00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "workshop": {
+        "id": 1,
+        "name": "javierworkshops"
+      },
+      "amount": 100,
+      "productType": {
+        "id": 3,
+        "name": "Aceite de Motor"
+      },
+      "taskRequestList": [
+        {
+          "id": 3,
+          "task": {
+            "id": 1
+          },
+          "quantityUsed": 20,
+          "requestedDate": "2024-06-15T09:30:00"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "workshop": {
+        "id": 1,
+        "name": "javierworkshops"
+      },
+      "amount": 40,
+      "productType": {
+        "id": 4,
+        "name": "Filtros de Aire"
+      },
+      "taskRequestList": [
+        {
+          "id": 4,
+          "task": {
+            "id": 1
+          },
+          "quantityUsed": 8,
+          "requestedDate": "2024-06-20T14:45:00"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "workshop": {
+        "id": 1,
+        "name": "javierworkshops"
+      },
+      "amount": 60,
+      "productType": {
+        "id": 5,
+        "name": "Baterías"
+      },
+      "taskRequestList": [
+        {
+          "id": 5,
+          "task": {
+            "id": 1
+          },
+          "quantityUsed": 4,
+          "requestedDate": "2024-06-25T11:00:00"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "workshop": {
+        "id": 1,
+        "name": "javierworkshops"
+      },
+      "amount": 25,
+      "productType": {
+        "id": 6,
+        "name": "Filtros de Aceite"
+      },
+      "taskRequestList": [
+        {
+          "id": 6,
+          "task": {
+            "id": 1
+          },
+          "quantityUsed": 3,
+          "requestedDate": "2024-07-01T10:30:00"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "workshop": {
+        "id": 1,
+        "name": "javierworkshops"
+      },
+      "amount": 15,
+      "productType": {
+        "id": 7,
+        "name": "Líquido de Frenos"
+      },
+      "taskRequestList": [
+        {
+          "id": 7,
+          "task": {
+            "id": 1
+          },
+          "quantityUsed": 2,
+          "requestedDate": "2024-07-05T14:00:00"
+        }
+      ]
+    }
+  ],
+  "product-requests": [
+    {
+      "id": 1,
+      "task": {
+        "id": 1
+      },
+      "name": "Neumático Request",
+      "requestedQuantity": 20,
+      "requestedDate": "2024-06-06T17:15:00",
+      "status": "PENDING"
+    },
+    {
+      "id": 2,
+      "task": {
+        "id": 1
+      },
+      "name": "Pastillas de Freno Request",
+      "requestedQuantity": 15,
+      "requestedDate": "2024-06-10T12:00:00",
+      "status": "PENDING"
+    },
+    {
+      "id": 3,
+      "task": {
+        "id": 1
+      },
+      "name": "Aceite de Motor Request",
+      "requestedQuantity": 50,
+      "requestedDate": "2024-06-15T09:30:00",
+      "status": "APPROVED"
+    },
+    {
+      "id": 4,
+      "task": {
+        "id": 1
+      },
+      "name": "Filtros de Aire Request",
+      "requestedQuantity": 10,
+      "requestedDate": "2024-06-20T14:45:00",
+      "status": "PENDING"
+    },
+    {
+      "id": 5,
+      "task": {
+        "id": 1
+      },
+      "name": "Baterías Request",
+      "requestedQuantity": 5,
+      "requestedDate": "2024-06-25T11:00:00",
+      "status": "REJECTED"
+    },
+    {
+      "id": 6,
+      "task": {
+        "id": 1
+      },
+      "name": "Filtros de Aceite Request",
+      "requestedQuantity": 8,
+      "requestedDate": "2024-07-01T10:30:00",
+      "status": "PENDING"
+    },
+    {
+      "id": 7,
+      "task": {
+        "id": 1
+      },
+      "name": "Líquido de Frenos Request",
+      "requestedQuantity": 12,
+      "requestedDate": "2024-07-05T14:00:00",
+      "status": "APPROVED"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Maintenance of the gearbox",
+      "state": "PENDING",
+      "intervention": {
+        "id": 1
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
+    },
+    {
+      "id": 2,
+      "description": "Brake system overhaul",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 2
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
+    },
+    {
+      "id": 3,
+      "description": "Engine tuning and diagnostics",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 3
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
+    },
+    {
+      "id": 4,
+      "description": "Air conditioning repair",
+      "state": "PENDING",
+      "intervention": {
+        "id": 4
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
+    },
+    {
+      "id": 5,
+      "description": "Electrical system diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 5
+      },
+      "assistant": {
+        "id": 5,
+        "firstName": "Eduardo",
+        "lastName": "Díaz"
+      }
+    },
+    {
+      "id": 6,
+      "description": "Suspension alignment",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 6
+      },
+      "assistant": {
+        "id": 6,
+        "firstName": "Fernanda",
+        "lastName": "Ruiz"
+      }
+    },
+    {
+      "id": 7,
+      "description": "Fuel system maintenance",
+      "state": "PENDING",
+      "intervention": {
+        "id": 7
+      },
+      "assistant": {
+        "id": 7,
+        "firstName": "Guillermo",
+        "lastName": "Herrera"
+      }
+    },
+    {
+      "id": 8,
+      "description": "Brake pad replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 13
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
+    },
+    {
+      "id": 9,
+      "description": "Engine performance diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 14
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
+    },
+    {
+      "id": 10,
+      "description": "Alternator replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 15
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
+    },
+    {
+      "id": 11,
+      "description": "Fuel pump maintenance",
+      "state": "PENDING",
+      "intervention": {
+        "id": 16
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
+    },
+    {
+      "id": 12,
+      "description": "Alternator replacement",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 19
+      },
+      "assistant": {
+        "id": 5,
+        "firstName": "Eduardo",
+        "lastName": "Díaz"
+      }
     },
     {
       "id": 13,
-      "user_id": 3,
-      "license_plate": "KLM-789",
-      "brand": "Audi",
-      "model": "A4"
+      "description": "Engine diagnostics",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 3
+      },
+      "assistant": {
+        "id": 6,
+        "firstName": "Fernanda",
+        "lastName": "Ruiz"
+      }
     },
     {
       "id": 14,
-      "user_id": 5,
-      "license_plate": "NOP-012",
-      "brand": "Lexus",
-      "model": "IS"
+      "description": "Fuel pump replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 7
+      },
+      "assistant": {
+        "id": 7,
+        "firstName": "Guillermo",
+        "lastName": "Herrera"
+      }
     },
     {
       "id": 15,
-      "user_id": 7,
-      "license_plate": "QRS-345",
-      "brand": "Acura",
-      "model": "TLX"
+      "description": "Battery replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 25
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
     },
     {
       "id": 16,
-      "user_id": 9,
-      "license_plate": "TUV-678",
-      "brand": "Infiniti",
-      "model": "Q50"
+      "description": "Transmission diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 26
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
     },
     {
       "id": 17,
-      "user_id": 3,
-      "license_plate": "WXY-901",
-      "brand": "Volvo",
-      "model": "S60"
+      "description": "Exhaust manifold replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 27
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
     },
     {
       "id": 18,
-      "user_id": 5,
-      "license_plate": "ZAB-234",
-      "brand": "Jaguar",
-      "model": "XE"
+      "description": "Steering column replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 28
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
     },
     {
       "id": 19,
-      "user_id": 7,
-      "license_plate": "CDE-567",
-      "brand": "Alfa Romeo",
-      "model": "Giulia"
+      "description": "Air conditioning compressor replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 18
+      },
+      "assistant": {
+        "id": 5,
+        "firstName": "Eduardo",
+        "lastName": "Díaz"
+      }
     },
     {
       "id": 20,
-      "user_id": 9,
-      "license_plate": "FGH-890",
-      "brand": "Tesla",
-      "model": "Model 3"
+      "description": "Transmission filter replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 22
+      },
+      "assistant": {
+        "id": 6,
+        "firstName": "Fernanda",
+        "lastName": "Ruiz"
+      }
     },
     {
       "id": 21,
-      "user_id": 3,
-      "license_plate": "IJK-123",
-      "brand": "Genesis",
-      "model": "G70"
+      "description": "Air conditioning compressor replacement",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 18
+      },
+      "assistant": {
+        "id": 7,
+        "firstName": "Guillermo",
+        "lastName": "Herrera"
+      }
     },
     {
       "id": 22,
-      "user_id": 5,
-      "license_plate": "LMN-456",
-      "brand": "Cadillac",
-      "model": "ATS"
+      "description": "Exhaust system diagnostics",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 8
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
     },
     {
       "id": 23,
-      "user_id": 7,
-      "license_plate": "OPQ-789",
-      "brand": "Lincoln",
-      "model": "MKZ"
+      "description": "Airbag sensor replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 10
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
     },
     {
       "id": 24,
-      "user_id": 9,
-      "license_plate": "RST-012",
-      "brand": "Buick",
-      "model": "Regal"
+      "description": "Steering rack replacement",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 21
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
     },
     {
       "id": 25,
-      "user_id": 3,
-      "license_plate": "UVW-345",
-      "brand": "Chrysler",
-      "model": "200"
+      "description": "Transmission filter replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 22
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
     },
     {
       "id": 26,
-      "user_id": 5,
-      "license_plate": "XYZ-678",
-      "brand": "Dodge",
-      "model": "Dart"
+      "description": "Exhaust manifold replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 27
+      },
+      "assistant": {
+        "id": 5,
+        "firstName": "Eduardo",
+        "lastName": "Díaz"
+      }
     },
     {
       "id": 27,
-      "user_id": 7,
-      "license_plate": "ABC-901",
-      "brand": "Mitsubishi",
-      "model": "Lancer"
+      "description": "Steering column replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 28
+      },
+      "assistant": {
+        "id": 6,
+        "firstName": "Fernanda",
+        "lastName": "Ruiz"
+      }
     },
     {
       "id": 28,
-      "user_id": 9,
-      "license_plate": "DEF-234",
-      "brand": "Suzuki",
-      "model": "Kizashi"
+      "description": "Brake pad replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 13
+      },
+      "assistant": {
+        "id": 7,
+        "firstName": "Guillermo",
+        "lastName": "Herrera"
+      }
     },
     {
       "id": 29,
-      "user_id": 3,
-      "license_plate": "GHI-567",
-      "brand": "Peugeot",
-      "model": "508"
+      "description": "Engine performance diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 14
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
     },
     {
       "id": 30,
-      "user_id": 5,
-      "license_plate": "JKL-890",
-      "brand": "Renault",
-      "model": "Talisman"
+      "description": "Alternator replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 15
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
+    },
+    {
+      "id": 31,
+      "description": "Fuel pump maintenance",
+      "state": "PENDING",
+      "intervention": {
+        "id": 16
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
+    },
+    {
+      "id": 32,
+      "description": "Engine diagnostics",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 17
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
+    },
+    {
+      "id": 33,
+      "description": "Transmission diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 26
+      },
+      "assistant": {
+        "id": 5,
+        "firstName": "Eduardo",
+        "lastName": "Díaz"
+      }
+    },
+    {
+      "id": 34,
+      "description": "Exhaust system diagnostics",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 8
+      },
+      "assistant": {
+        "id": 6,
+        "firstName": "Fernanda",
+        "lastName": "Ruiz"
+      }
+    },
+    {
+      "id": 35,
+      "description": "Air conditioning compressor replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 18
+      },
+      "assistant": {
+        "id": 7,
+        "firstName": "Guillermo",
+        "lastName": "Herrera"
+      }
+    },
+    {
+      "id": 36,
+      "description": "Transmission fluid replacement",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 19
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
+    },
+    {
+      "id": 37,
+      "description": "Battery replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 25
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
+    },
+    {
+      "id": 38,
+      "description": "Brake pad replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 13
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
+    },
+    {
+      "id": 39,
+      "description": "Engine tuning and diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 14
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
+    },
+    {
+      "id": 40,
+      "description": "Fuel pump replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 16
+      },
+      "assistant": {
+        "id": 5,
+        "firstName": "Eduardo",
+        "lastName": "Díaz"
+      }
+    },
+    {
+      "id": 41,
+      "description": "Transmission diagnostics",
+      "state": "PENDING",
+      "intervention": {
+        "id": 26
+      },
+      "assistant": {
+        "id": 6,
+        "firstName": "Fernanda",
+        "lastName": "Ruiz"
+      }
+    },
+    {
+      "id": 42,
+      "description": "Exhaust manifold replacement",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 27
+      },
+      "assistant": {
+        "id": 7,
+        "firstName": "Guillermo",
+        "lastName": "Herrera"
+      }
+    },
+    {
+      "id": 43,
+      "description": "Steering column replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 28
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
+    },
+    {
+      "id": 44,
+      "description": "Brake system overhaul",
+      "state": "PENDING",
+      "intervention": {
+        "id": 2
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
+    },
+    {
+      "id": 45,
+      "description": "Engine performance diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 14
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
+    },
+    {
+      "id": 46,
+      "description": "Fuel pump maintenance",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 16
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
+    },
+    {
+      "id": 47,
+      "description": "Air conditioning compressor replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 18
+      },
+      "assistant": {
+        "id": 5,
+        "firstName": "Eduardo",
+        "lastName": "Díaz"
+      }
+    },
+    {
+      "id": 48,
+      "description": "Transmission filter replacement",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 22
+      },
+      "assistant": {
+        "id": 6,
+        "firstName": "Fernanda",
+        "lastName": "Ruiz"
+      }
+    },
+    {
+      "id": 49,
+      "description": "Exhaust system diagnostics",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 8
+      },
+      "assistant": {
+        "id": 7,
+        "firstName": "Guillermo",
+        "lastName": "Herrera"
+      }
+    },
+    {
+      "id": 50,
+      "description": "Battery replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 25
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
+    },
+    {
+      "id": 51,
+      "description": "Brake system overhaul",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 2
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
+    },
+    {
+      "id": 52,
+      "description": "Engine tuning and diagnostics",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 3
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
+    },
+    {
+      "id": 53,
+      "description": "Air conditioning repair",
+      "state": "PENDING",
+      "intervention": {
+        "id": 4
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
+    },
+    {
+      "id": 54,
+      "description": "Electrical system diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 5
+      },
+      "assistant": {
+        "id": 5,
+        "firstName": "Eduardo",
+        "lastName": "Díaz"
+      }
+    },
+    {
+      "id": 55,
+      "description": "Suspension alignment",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 6
+      },
+      "assistant": {
+        "id": 6,
+        "firstName": "Fernanda",
+        "lastName": "Ruiz"
+      }
+    },
+    {
+      "id": 56,
+      "description": "Fuel system maintenance",
+      "state": "PENDING",
+      "intervention": {
+        "id": 7
+      },
+      "assistant": {
+        "id": 7,
+        "firstName": "Guillermo",
+        "lastName": "Herrera"
+      }
+    },
+    {
+      "id": 57,
+      "description": "Transmission diagnostics",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 26
+      },
+      "assistant": {
+        "id": 1,
+        "firstName": "Andrés",
+        "lastName": "García"
+      }
+    },
+    {
+      "id": 58,
+      "description": "Exhaust manifold replacement",
+      "state": "COMPLETED",
+      "intervention": {
+        "id": 27
+      },
+      "assistant": {
+        "id": 2,
+        "firstName": "Beatriz",
+        "lastName": "Martínez"
+      }
+    },
+    {
+      "id": 59,
+      "description": "Steering column replacement",
+      "state": "PENDING",
+      "intervention": {
+        "id": 28
+      },
+      "assistant": {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "Sánchez"
+      }
+    },
+    {
+      "id": 60,
+      "description": "Brake system overhaul",
+      "state": "IN_PROGRESS",
+      "intervention": {
+        "id": 2
+      },
+      "assistant": {
+        "id": 4,
+        "firstName": "Daniela",
+        "lastName": "Torres"
+      }
     }
   ],
-  "scans": [
+  "interventions": [
     {
       "id": 1,
-      "vehicle_id": 1,
-      "license_plate": "ABC-123",
-      "date": "2024-09-20T08:15:00"
+      "state": "PENDING",
+      "registrationDate": "2024-01-15T09:00:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Repair of the gearbox to fix the slipping issue.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 1,
+        "licensePlate": "ABC1234",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
     },
     {
       "id": 2,
-      "vehicle_id": 2,
-      "license_plate": "DEF-456",
-      "date": "2024-09-21T09:30:00"
+      "state": "IN_PROGRESS",
+      "registrationDate": "2024-02-10T10:30:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Regular maintenance of the brake system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 2,
+        "licensePlate": "XYZ5678",
+        "brand": "Honda",
+        "model": "Civic",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
     },
     {
       "id": 3,
-      "vehicle_id": 3,
-      "license_plate": "GHI-789",
-      "date": "2024-09-22T10:45:00"
+      "state": "COMPLETED",
+      "registrationDate": "2024-03-05T14:45:00",
+      "completionDate": "2024-03-20T16:00:00",
+      "interventionType": "INSTALLATION",
+      "description": "Installation of new air conditioning unit.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 3,
+        "licensePlate": "DEF2345",
+        "brand": "Ford",
+        "model": "Focus",
+        "owner": {
+          "id": 2,
+          "firstName": "Miguel",
+          "lastName": "López"
+        }
+      }
     },
     {
       "id": 4,
-      "vehicle_id": 4,
-      "license_plate": "JKL-012",
-      "date": "2024-09-23T11:15:00"
+      "state": "PENDING",
+      "registrationDate": "2024-04-12T11:15:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Repair of the vehicle's battery due to voltage irregularity.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 4,
+        "licensePlate": "GHI3456",
+        "brand": "Chevrolet",
+        "model": "Cruze",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
     },
     {
       "id": 5,
-      "vehicle_id": 5,
-      "license_plate": "MNO-345",
-      "date": "2024-09-24T12:30:00"
+      "state": "IN_PROGRESS",
+      "registrationDate": "2024-05-18T13:30:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Overhaul of the vehicle's electrical system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 5,
+        "licensePlate": "JKL4567",
+        "brand": "Nissan",
+        "model": "Sentra",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
     },
     {
       "id": 6,
-      "vehicle_id": 6,
-      "license_plate": "PQR-678",
-      "date": "2024-09-25T13:45:00"
+      "state": "COMPLETED",
+      "registrationDate": "2024-06-22T09:45:00",
+      "completionDate": "2024-07-05T10:30:00",
+      "interventionType": "REPARATION",
+      "description": "Fixing the tire pressure issues in the front left tire.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 6,
+        "licensePlate": "MNO5678",
+        "brand": "Hyundai",
+        "model": "Elantra",
+        "owner": {
+          "id": 4,
+          "firstName": "Carlos",
+          "lastName": "Hernández"
+        }
+      }
     },
     {
       "id": 7,
-      "vehicle_id": 7,
-      "license_plate": "STU-901",
-      "date": "2024-09-26T14:00:00"
+      "state": "PENDING",
+      "registrationDate": "2024-07-30T15:00:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Comprehensive inspection of the fuel system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 7,
+        "licensePlate": "PQR6789",
+        "brand": "Volkswagen",
+        "model": "Jetta",
+        "owner": {
+          "id": 5,
+          "firstName": "Sofía",
+          "lastName": "Ramírez"
+        }
+      }
     },
     {
       "id": 8,
-      "vehicle_id": 8,
-      "license_plate": "VWX-234",
-      "date": "2024-09-27T15:15:00"
+      "state": "IN_PROGRESS",
+      "registrationDate": "2024-08-10T10:00:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Repair of the electrical short in the dashboard.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 8,
+        "licensePlate": "STU7890",
+        "brand": "Kia",
+        "model": "Forte",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
     },
     {
       "id": 9,
-      "vehicle_id": 9,
-      "license_plate": "YZA-567",
-      "date": "2024-09-28T16:30:00"
+      "state": "COMPLETED",
+      "registrationDate": "2024-09-05T11:30:00",
+      "completionDate": "2024-09-20T12:00:00",
+      "interventionType": "MAINTENANCE",
+      "description": "Alignment and balancing of the exhaust system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 9,
+        "licensePlate": "VWX8901",
+        "brand": "Subaru",
+        "model": "Impreza",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
     },
     {
       "id": 10,
-      "vehicle_id": 10,
-      "license_plate": "BCD-890",
-      "date": "2024-09-29T17:45:00"
+      "state": "PENDING",
+      "registrationDate": "2024-10-01T09:45:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Steering alignment and adjustment.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 10,
+        "licensePlate": "YZA9012",
+        "brand": "Mazda",
+        "model": "3",
+        "owner": {
+          "id": 7,
+          "firstName": "María",
+          "lastName": "Fernández"
+        }
+      }
     },
     {
       "id": 11,
-      "vehicle_id": 11,
-      "license_plate": "EFG-123",
-      "date": "2024-09-30T18:00:00"
+      "state": "IN_PROGRESS",
+      "registrationDate": "2024-11-15T14:00:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of new transmission components.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 11,
+        "licensePlate": "BCD0123",
+        "brand": "BMW",
+        "model": "320i",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
     },
     {
       "id": 12,
-      "vehicle_id": 12,
-      "license_plate": "HIJ-456",
-      "date": "2024-10-01T09:15:00"
+      "state": "COMPLETED",
+      "registrationDate": "2024-12-05T10:15:00",
+      "completionDate": "2024-12-20T16:30:00",
+      "interventionType": "REPARATION",
+      "description": "Airbag sensor malfunction diagnosis and repair.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 12,
+        "licensePlate": "EFG1234",
+        "brand": "Audi",
+        "model": "A4",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
     },
     {
       "id": 13,
-      "vehicle_id": 13,
-      "license_plate": "KLM-789",
-      "date": "2024-10-02T10:30:00"
+      "state": "PENDING",
+      "registrationDate": "2024-01-20T08:30:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Inspection of the vehicle's suspension system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 1,
+        "licensePlate": "ABC1234",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
     },
     {
       "id": 14,
-      "vehicle_id": 14,
-      "license_plate": "NOP-012",
-      "date": "2024-10-03T11:45:00"
+      "state": "IN_PROGRESS",
+      "registrationDate": "2024-02-25T13:20:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Regular oil change and engine diagnostics.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 2,
+        "licensePlate": "XYZ5678",
+        "brand": "Honda",
+        "model": "Civic",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
     },
     {
       "id": 15,
-      "vehicle_id": 15,
-      "license_plate": "QRS-345",
-      "date": "2024-10-04T12:00:00"
+      "state": "COMPLETED",
+      "registrationDate": "2024-03-10T11:00:00",
+      "completionDate": "2024-03-25T14:30:00",
+      "interventionType": "REPARATION",
+      "description": "Fixing the air conditioning malfunction.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 3,
+        "licensePlate": "DEF2345",
+        "brand": "Ford",
+        "model": "Focus",
+        "owner": {
+          "id": 2,
+          "firstName": "Miguel",
+          "lastName": "López"
+        }
+      }
     },
     {
       "id": 16,
-      "vehicle_id": 16,
-      "license_plate": "TUV-678",
-      "date": "2024-10-05T13:15:00"
+      "state": "PENDING",
+      "registrationDate": "2024-04-18T10:00:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of new battery components.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 4,
+        "licensePlate": "GHI3456",
+        "brand": "Chevrolet",
+        "model": "Cruze",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
     },
     {
       "id": 17,
-      "vehicle_id": 17,
-      "license_plate": "WXY-901",
-      "date": "2024-10-06T14:30:00"
+      "state": "IN_PROGRESS",
+      "registrationDate": "2024-05-22T09:30:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Suspension system alignment and balancing.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 5,
+        "licensePlate": "JKL4567",
+        "brand": "Nissan",
+        "model": "Sentra",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
     },
     {
       "id": 18,
-      "vehicle_id": 18,
-      "license_plate": "ZAB-234",
-      "date": "2024-10-07T15:45:00"
+      "state": "COMPLETED",
+      "registrationDate": "2024-06-15T14:15:00",
+      "completionDate": "2024-06-30T16:45:00",
+      "interventionType": "REPARATION",
+      "description": "Repair of the tire pressure issue in the rear right tire.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 6,
+        "licensePlate": "MNO5678",
+        "brand": "Hyundai",
+        "model": "Elantra",
+        "owner": {
+          "id": 4,
+          "firstName": "Carlos",
+          "lastName": "Hernández"
+        }
+      }
     },
     {
       "id": 19,
-      "vehicle_id": 19,
-      "license_plate": "CDE-567",
-      "date": "2024-10-08T16:00:00"
+      "state": "PENDING",
+      "registrationDate": "2024-07-05T12:00:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Inspection and maintenance of the fuel system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 7,
+        "licensePlate": "PQR6789",
+        "brand": "Volkswagen",
+        "model": "Jetta",
+        "owner": {
+          "id": 5,
+          "firstName": "Sofía",
+          "lastName": "Ramírez"
+        }
+      }
     },
     {
       "id": 20,
-      "vehicle_id": 20,
-      "license_plate": "FGH-890",
-      "date": "2024-10-09T17:15:00"
-    }
-  ],
-  "codes": [
-    {
-      "id": 1,
-      "scan_id": 1,
-      "code": "P001",
-      "description": "Falla en el motor"
-    },
-    {
-      "id": 2,
-      "scan_id": 2,
-      "code": "P002",
-      "description": "Problema en la transmisión"
-    },
-    {
-      "id": 3,
-      "scan_id": 3,
-      "code": "P003",
-      "description": "Mal funcionamiento del sistema de frenos"
-    },
-    {
-      "id": 4,
-      "scan_id": 4,
-      "code": "P004",
-      "description": "Sensor de oxígeno defectuoso"
-    },
-    {
-      "id": 5,
-      "scan_id": 5,
-      "code": "P005",
-      "description": "Falla en el sistema de combustible"
-    },
-    {
-      "id": 6,
-      "scan_id": 6,
-      "code": "P006",
-      "description": "Problema en el sistema de enfriamiento"
-    },
-    {
-      "id": 7,
-      "scan_id": 7,
-      "code": "P007",
-      "description": "Falla en el sistema eléctrico"
-    },
-    {
-      "id": 8,
-      "scan_id": 8,
-      "code": "P008",
-      "description": "Mal funcionamiento del catalizador"
-    },
-    {
-      "id": 9,
-      "scan_id": 9,
-      "code": "P009",
-      "description": "Problema en el sistema de escape"
-    },
-    {
-      "id": 10,
-      "scan_id": 10,
-      "code": "P010",
-      "description": "Falla en el sensor de temperatura"
-    },
-    {
-      "id": 11,
-      "scan_id": 11,
-      "code": "P011",
-      "description": "Sensor de presión defectuoso"
-    },
-    {
-      "id": 12,
-      "scan_id": 12,
-      "code": "P012",
-      "description": "Problema en el sistema de admisión"
-    },
-    {
-      "id": 13,
-      "scan_id": 13,
-      "code": "P013",
-      "description": "Falla en el sistema de encendido"
-    },
-    {
-      "id": 14,
-      "scan_id": 14,
-      "code": "P014",
-      "description": "Mal funcionamiento del EGR"
-    },
-    {
-      "id": 15,
-      "scan_id": 15,
-      "code": "P015",
-      "description": "Problema en el sensor de flujo de aire"
-    },
-    {
-      "id": 16,
-      "scan_id": 16,
-      "code": "P016",
-      "description": "Falla en el sistema de carga"
-    },
-    {
-      "id": 17,
-      "scan_id": 17,
-      "code": "P017",
-      "description": "Sensor de detonación defectuoso"
-    },
-    {
-      "id": 18,
-      "scan_id": 18,
-      "code": "P018",
-      "description": "Problema en el sistema de dirección"
-    },
-    {
-      "id": 19,
-      "scan_id": 19,
-      "code": "P019",
-      "description": "Falla en el sistema de suspensión"
-    },
-    {
-      "id": 20,
-      "scan_id": 20,
-      "code": "P020",
-      "description": "Mal funcionamiento del ABS"
+      "state": "IN_PROGRESS",
+      "registrationDate": "2024-08-10T10:45:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Repair of electrical short detected in the dashboard.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 8,
+        "licensePlate": "STU7890",
+        "brand": "Kia",
+        "model": "Forte",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
     },
     {
       "id": 21,
-      "scan_id": 1,
-      "code": "P021",
-      "description": "Falla en el sistema de airbags"
+      "state": "COMPLETED",
+      "registrationDate": "2024-09-05T11:30:00",
+      "completionDate": "2024-09-20T13:00:00",
+      "interventionType": "MAINTENANCE",
+      "description": "Alignment and balancing of the exhaust system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 9,
+        "licensePlate": "VWX8901",
+        "brand": "Subaru",
+        "model": "Impreza",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
     },
     {
       "id": 22,
-      "scan_id": 2,
-      "code": "P022",
-      "description": "Problema en el sistema de tracción"
+      "state": "PENDING",
+      "registrationDate": "2024-10-01T09:15:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Steering alignment and adjustment.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 10,
+        "licensePlate": "YZA9012",
+        "brand": "Mazda",
+        "model": "3",
+        "owner": {
+          "id": 7,
+          "firstName": "María",
+          "lastName": "Fernández"
+        }
+      }
     },
     {
       "id": 23,
-      "scan_id": 3,
-      "code": "P023",
-      "description": "Falla en el sistema de emisiones"
+      "state": "IN_PROGRESS",
+      "registrationDate": "2024-11-10T14:30:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of new transmission components.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 11,
+        "licensePlate": "BCD0123",
+        "brand": "BMW",
+        "model": "320i",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
     },
     {
       "id": 24,
-      "scan_id": 4,
-      "code": "P024",
-      "description": "Sensor de velocidad defectuoso"
+      "state": "COMPLETED",
+      "registrationDate": "2024-12-05T10:00:00",
+      "completionDate": "2024-12-20T15:30:00",
+      "interventionType": "REPARATION",
+      "description": "Airbag sensor malfunction diagnosis and repair.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 12,
+        "licensePlate": "EFG1234",
+        "brand": "Audi",
+        "model": "A4",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
     },
     {
       "id": 25,
-      "scan_id": 5,
-      "code": "P025",
-      "description": "Problema en el sistema de climatización"
-    }
-  ],
-  "notification_states": [
-    {
-      "id": 1,
-      "name": "READ"
+      "state": "PENDING",
+      "registrationDate": "2025-01-10T08:00:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Comprehensive inspection of the vehicle's suspension system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 1,
+        "licensePlate": "ABC1234",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
     },
     {
-      "id": 2,
-      "name": "UNREAD"
+      "id": 26,
+      "state": "PENDING",
+      "registrationDate": "2025-02-05T10:00:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Repair of the transmission system to fix shifting issues.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 3,
+        "licensePlate": "DEF2345",
+        "brand": "Ford",
+        "model": "Focus",
+        "owner": {
+          "id": 2,
+          "firstName": "Miguel",
+          "lastName": "López"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2025-03-10T09:30:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Regular oil change and engine diagnostics.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 2,
+        "licensePlate": "XYZ5678",
+        "brand": "Honda",
+        "model": "Civic",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "state": "COMPLETED",
+      "registrationDate": "2025-04-15T14:00:00",
+      "completionDate": "2025-04-25T16:30:00",
+      "interventionType": "INSTALLATION",
+      "description": "Installation of a new exhaust system for improved performance.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 4,
+        "licensePlate": "GHI3456",
+        "brand": "Chevrolet",
+        "model": "Cruze",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "state": "PENDING",
+      "registrationDate": "2025-05-20T11:45:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Comprehensive inspection of the vehicle's suspension system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 5,
+        "licensePlate": "JKL4567",
+        "brand": "Nissan",
+        "model": "Sentra",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2025-06-25T13:30:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Brake system check and maintenance.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 6,
+        "licensePlate": "MNO5678",
+        "brand": "Hyundai",
+        "model": "Elantra",
+        "owner": {
+          "id": 4,
+          "firstName": "Carlos",
+          "lastName": "Hernández"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "state": "COMPLETED",
+      "registrationDate": "2025-07-30T10:15:00",
+      "completionDate": "2025-08-10T12:45:00",
+      "interventionType": "REPARATION",
+      "description": "Fixing the air conditioning malfunction in the rear cabin.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 7,
+        "licensePlate": "PQR6789",
+        "brand": "Volkswagen",
+        "model": "Jetta",
+        "owner": {
+          "id": 5,
+          "firstName": "Sofía",
+          "lastName": "Ramírez"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "state": "PENDING",
+      "registrationDate": "2025-08-05T09:00:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Steering alignment and adjustment for better handling.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 8,
+        "licensePlate": "STU7890",
+        "brand": "Kia",
+        "model": "Forte",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2025-09-10T14:20:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of new transmission components for enhanced performance.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 11,
+        "licensePlate": "BCD0123",
+        "brand": "BMW",
+        "model": "320i",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "state": "COMPLETED",
+      "registrationDate": "2025-10-15T16:00:00",
+      "completionDate": "2025-10-25T18:30:00",
+      "interventionType": "REPARATION",
+      "description": "Airbag sensor malfunction diagnosis and repair.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 12,
+        "licensePlate": "EFG1234",
+        "brand": "Audi",
+        "model": "A4",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "state": "PENDING",
+      "registrationDate": "2025-11-20T08:30:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Inspection of the vehicle's electrical system for faults.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 1,
+        "licensePlate": "ABC1234",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2025-12-25T12:45:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Regular brake pad replacement and system check.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 2,
+        "licensePlate": "XYZ5678",
+        "brand": "Honda",
+        "model": "Civic",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "state": "COMPLETED",
+      "registrationDate": "2026-01-10T10:30:00",
+      "completionDate": "2026-01-25T14:00:00",
+      "interventionType": "REPARATION",
+      "description": "Fixing the engine overheating issue due to coolant leak.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 3,
+        "licensePlate": "DEF2345",
+        "brand": "Ford",
+        "model": "Focus",
+        "owner": {
+          "id": 2,
+          "firstName": "Miguel",
+          "lastName": "López"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "state": "PENDING",
+      "registrationDate": "2026-02-15T09:15:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of high-performance air filters.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 4,
+        "licensePlate": "GHI3456",
+        "brand": "Chevrolet",
+        "model": "Cruze",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2026-03-20T11:00:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Transmission fluid replacement and system diagnostics.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 5,
+        "licensePlate": "JKL4567",
+        "brand": "Nissan",
+        "model": "Sentra",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "state": "COMPLETED",
+      "registrationDate": "2026-04-25T14:30:00",
+      "completionDate": "2026-05-05T16:45:00",
+      "interventionType": "REPARATION",
+      "description": "Fixing the tire pressure issue in the rear left tire.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 6,
+        "licensePlate": "MNO5678",
+        "brand": "Hyundai",
+        "model": "Elantra",
+        "owner": {
+          "id": 4,
+          "firstName": "Carlos",
+          "lastName": "Hernández"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "state": "PENDING",
+      "registrationDate": "2026-05-30T10:00:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Inspection and maintenance of the vehicle's braking system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 7,
+        "licensePlate": "PQR6789",
+        "brand": "Volkswagen",
+        "model": "Jetta",
+        "owner": {
+          "id": 5,
+          "firstName": "Sofía",
+          "lastName": "Ramírez"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2026-06-10T13:20:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Repair of the dashboard electrical short.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 8,
+        "licensePlate": "STU7890",
+        "brand": "Kia",
+        "model": "Forte",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "state": "COMPLETED",
+      "registrationDate": "2026-07-15T09:45:00",
+      "completionDate": "2026-07-25T12:15:00",
+      "interventionType": "MAINTENANCE",
+      "description": "Exhaust system alignment and balancing.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 9,
+        "licensePlate": "VWX8901",
+        "brand": "Subaru",
+        "model": "Impreza",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "state": "PENDING",
+      "registrationDate": "2026-08-20T10:30:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Steering alignment and adjustment for improved handling.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 10,
+        "licensePlate": "YZA9012",
+        "brand": "Mazda",
+        "model": "3",
+        "owner": {
+          "id": 7,
+          "firstName": "María",
+          "lastName": "Fernández"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2026-09-25T14:50:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of new transmission components for enhanced performance.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 11,
+        "licensePlate": "BCD0123",
+        "brand": "BMW",
+        "model": "320i",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
     }
   ],
   "notifications": [
     {
       "id": 1,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 3,
-      "date": "2024-09-20T08:00:00",
-      "content": "Necesita cambio de aceite",
-      "endpoint": "/interventions/1"
+      "date": "2024-05-27T12:10:00",
+      "content": "New task assigned: Maintenance of the gearbox",
+      "userid": 1,
+      "state": "UNREAD"
     },
     {
       "id": 2,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 5,
-      "date": "2024-09-21T09:00:00",
-      "content": "Reemplazo de pastillas de freno",
-      "endpoint": "/interventions/2"
+      "date": "2024-06-05T09:30:00",
+      "content": "Product request approved: Neumático",
+      "userid": 2,
+      "state": "UNREAD"
     },
     {
       "id": 3,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 2,
-      "date": "2024-09-22T10:00:00",
-      "content": "Diagnóstico de motor completado",
-      "endpoint": "/tasks/3"
+      "date": "2024-06-15T14:45:00",
+      "content": "Intervention completed: Brake system overhaul",
+      "userid": 3,
+      "state": "READ"
     },
     {
       "id": 4,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 7,
-      "date": "2024-09-23T11:00:00",
-      "content": "Cambio de batería necesario",
-      "endpoint": "/interventions/4"
+      "date": "2024-07-01T10:00:00",
+      "content": "Product request pending: Aceite de Motor",
+      "userid": 4,
+      "state": "UNREAD"
     },
     {
       "id": 5,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 9,
-      "date": "2024-09-24T12:00:00",
-      "content": "Revisión de sistema de frenos",
-      "endpoint": "/interventions/5"
+      "date": "2024-07-10T16:20:00",
+      "content": "New intervention scheduled: Air conditioning repair",
+      "userid": 5,
+      "state": "UNREAD"
     },
     {
       "id": 6,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 4,
-      "date": "2024-09-25T13:00:00",
-      "content": "Tarea asignada: reemplazo de correa",
-      "endpoint": "/tasks/6"
+      "date": "2024-08-02T11:15:00",
+      "content": "Task update: Electrical system diagnostics is now IN_PROGRESS",
+      "userid": 1,
+      "state": "READ"
     },
     {
       "id": 7,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 6,
-      "date": "2024-09-26T14:00:00",
-      "content": "Solicitud de piezas aprobada",
-      "endpoint": "/inventory_requests/7"
+      "date": "2024-08-20T13:50:00",
+      "content": "Product request approved: Filtros de Aire",
+      "userid": 2,
+      "state": "UNREAD"
     },
     {
       "id": 8,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 8,
-      "date": "2024-09-27T15:00:00",
-      "content": "Intervención finalizada",
-      "endpoint": "/interventions/8"
+      "date": "2024-09-05T09:00:00",
+      "content": "Intervention pending: Suspension alignment",
+      "userid": 3,
+      "state": "UNREAD"
     },
     {
       "id": 9,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 3,
-      "date": "2024-09-28T16:00:00",
-      "content": "Cambio de neumáticos recomendado",
-      "endpoint": "/interventions/9"
+      "date": "2024-09-18T14:30:00",
+      "content": "Task completed: Fuel system maintenance",
+      "userid": 4,
+      "state": "READ"
     },
     {
       "id": 10,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 5,
-      "date": "2024-09-29T17:00:00",
-      "content": "Actualización de estado de intervención",
-      "endpoint": "/interventions/10"
-    },
-    {
-      "id": 11,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 2,
-      "date": "2024-09-30T18:00:00",
-      "content": "Nueva tarea asignada",
-      "endpoint": "/tasks/11"
-    },
-    {
-      "id": 12,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 4,
-      "date": "2024-10-01T09:00:00",
-      "content": "Revisión de sistema eléctrico",
-      "endpoint": "/interventions/12"
-    },
-    {
-      "id": 13,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 6,
-      "date": "2024-10-02T10:00:00",
-      "content": "Solicitud de piezas pendiente",
-      "endpoint": "/inventory_requests/13"
-    },
-    {
-      "id": 14,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 8,
-      "date": "2024-10-03T11:00:00",
-      "content": "Intervención cancelada",
-      "endpoint": "/interventions/14"
-    },
-    {
-      "id": 15,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 3,
-      "date": "2024-10-04T12:00:00",
-      "content": "Reemplazo de parabrisas necesario",
-      "endpoint": "/interventions/15"
-    },
-    {
-      "id": 16,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 5,
-      "date": "2024-10-05T13:00:00",
-      "content": "Actualización de tareas",
-      "endpoint": "/tasks/16"
-    },
-    {
-      "id": 17,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 7,
-      "date": "2024-10-06T14:00:00",
-      "content": "Mantenimiento programado",
-      "endpoint": "/interventions/17"
-    },
-    {
-      "id": 18,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 9,
-      "date": "2024-10-07T15:00:00",
-      "content": "Cambio de aceite realizado",
-      "endpoint": "/interventions/18"
-    },
-    {
-      "id": 19,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 2,
-      "date": "2024-10-08T16:00:00",
-      "content": "Nueva solicitud de piezas",
-      "endpoint": "/inventory_requests/19"
-    },
-    {
-      "id": 20,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 4,
-      "date": "2024-10-09T17:00:00",
-      "content": "Intervención en espera",
-      "endpoint": "/interventions/20"
-    },
-    {
-      "id": 21,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 6,
-      "date": "2024-10-10T18:00:00",
-      "content": "Diagnóstico completado",
-      "endpoint": "/interventions/21"
-    },
-    {
-      "id": 22,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 8,
-      "date": "2024-10-11T09:00:00",
-      "content": "Reparación de sistema de escape",
-      "endpoint": "/interventions/22"
-    },
-    {
-      "id": 23,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 3,
-      "date": "2024-10-12T10:00:00",
-      "content": "Recordatorio de mantenimiento",
-      "endpoint": "/interventions/23"
-    },
-    {
-      "id": 24,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 5,
-      "date": "2024-10-13T11:00:00",
-      "content": "Cambio de correa necesario",
-      "endpoint": "/interventions/24"
-    },
-    {
-      "id": 25,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 7,
-      "date": "2024-10-14T12:00:00",
-      "content": "Actualización de intervención",
-      "endpoint": "/interventions/25"
-    },
-    {
-      "id": 26,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 9,
-      "date": "2024-10-15T13:00:00",
-      "content": "Próxima cita programada",
-      "endpoint": "/interventions/26"
-    },
-    {
-      "id": 27,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 2,
-      "date": "2024-10-16T14:00:00",
-      "content": "Solicitud de reasignación de tarea",
-      "endpoint": "/tasks/27"
-    },
-    {
-      "id": 28,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 4,
-      "date": "2024-10-17T15:00:00",
-      "content": "Piezas recibidas",
-      "endpoint": "/inventory_requests/28"
-    },
-    {
-      "id": 29,
-      "state": {
-        "id": 1,
-        "name": "READ"
-      },
-      "user_id": 6,
-      "date": "2024-10-18T16:00:00",
-      "content": "Intervención rechazada",
-      "endpoint": "/interventions/29"
-    },
-    {
-      "id": 30,
-      "state": {
-        "id": 2,
-        "name": "UNREAD"
-      },
-      "user_id": 8,
-      "date": "2024-10-19T17:00:00",
-      "content": "Informe de intervención disponible",
-      "endpoint": "/interventions/30"
+      "date": "2024-10-01T10:45:00",
+      "content": "Product request rejected: Líquido de Frenos",
+      "userid": 5,
+      "state": "READ"
     }
   ]
 }

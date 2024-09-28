@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './activity-diagnostic-preparation.component.css'
 })
 export class ActivityDiagnosticPreparationComponent {
-
+  ngOnInit() {
+  }
 }
