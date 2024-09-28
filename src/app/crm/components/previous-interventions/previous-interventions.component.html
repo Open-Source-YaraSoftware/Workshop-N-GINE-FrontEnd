@@ -1,0 +1,29 @@
+<section>
+  <h2>Previous interventions</h2>
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Register</mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="timeline">
+        <div class="timeline-item" *ngFor="let intervention of previousInterventions">
+          <div class="timeline-icon">
+            <mat-icon >event</mat-icon>
+          </div>
+          <mat-card class="timeline-content">
+            <mat-card-header>
+              <mat-card-title># {{ intervention.id }}</mat-card-title>
+              <mat-card-subtitle>{{ intervention.completionDate  | date}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>By {{ intervention.leader.firstName }} {{intervention.leader.lastName}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button [routerLink]="['/interventions', intervention.id]" mat-button color="primary">Read more</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</section>

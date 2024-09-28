@@ -8,7 +8,7 @@
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Id</th>
         <td mat-cell *matCellDef="let data">
-          <button mat-button [routerLink]="['/activities', data.id]" [queryParams]="{type: 'assistant'}">{{ data.id }}</button>
+          <button mat-button [routerLink]="['/activities', data.id]" [queryParams]="{type: 'assistant', cardId: data.vehicle.id}">{{ data.id }}</button>
         </td>
       </ng-container>
       <ng-container matColumnDef="client">
