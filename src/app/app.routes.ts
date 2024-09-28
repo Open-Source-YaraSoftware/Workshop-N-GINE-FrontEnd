@@ -83,17 +83,17 @@ export const routes: Routes = [
           {
             path: '',
             pathMatch: 'full',
-            redirectTo: 'tasks',
+            redirectTo: 'assistant',
           },
           {
-            path: 'tasks',
-            title: 'tasks',
+            path: 'assistant',
+            title: 'assistant',
             loadComponent: () => import('./service/pages/tasks/tasks.component').then(m => m.TasksComponent),
           },
           {
-            path: 'interventions',
-            title: 'interventions',
-            loadComponent: () => import('./service/pages/interventions/interventions.component').then(m => m.InterventionsComponent),
+            path: 'leader',
+            title: 'leader',
+            loadComponent: () => import('./service/pages/interventions-leader/interventions-leader.component').then(m => m.InterventionsLeaderComponent),
           }
         ]
       },

@@ -27,4 +27,11 @@ export class InterventionsService extends BaseService<Intervention> {
         catchError(this.handleError)
       );
   }
+  getByMechanicLeaderId(leaderId: number){
+    return this.http.get<Intervention>(`${this.resourcePath()}?leader.id=${leaderId}`, this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError)
+      );
+  }
 }
