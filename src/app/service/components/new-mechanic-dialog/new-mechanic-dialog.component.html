@@ -1,6 +1,6 @@
 <h1 mat-dialog-title>{{ mechanic.id ? 'Edit Mechanic' : 'New Mechanic' }}</h1>
 
-<div mat-dialog-content>
+<div mat-dialog-content class="form">
   <mat-form-field>
     <label>First Name</label>
     <input matInput [(ngModel)]="mechanic.firstName" required>
