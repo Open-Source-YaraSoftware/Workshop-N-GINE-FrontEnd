@@ -2914,6 +2914,446 @@
           "lastName": "García"
         }
       }
+    },
+    {
+      "id": 26,
+      "state": "PENDING",
+      "registrationDate": "2025-02-05T10:00:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Repair of the transmission system to fix shifting issues.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 3,
+        "licensePlate": "DEF2345",
+        "brand": "Ford",
+        "model": "Focus",
+        "owner": {
+          "id": 2,
+          "firstName": "Miguel",
+          "lastName": "López"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2025-03-10T09:30:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Regular oil change and engine diagnostics.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 2,
+        "licensePlate": "XYZ5678",
+        "brand": "Honda",
+        "model": "Civic",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "state": "COMPLETED",
+      "registrationDate": "2025-04-15T14:00:00",
+      "completionDate": "2025-04-25T16:30:00",
+      "interventionType": "INSTALLATION",
+      "description": "Installation of a new exhaust system for improved performance.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 4,
+        "licensePlate": "GHI3456",
+        "brand": "Chevrolet",
+        "model": "Cruze",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "state": "PENDING",
+      "registrationDate": "2025-05-20T11:45:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Comprehensive inspection of the vehicle's suspension system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 5,
+        "licensePlate": "JKL4567",
+        "brand": "Nissan",
+        "model": "Sentra",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2025-06-25T13:30:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Brake system check and maintenance.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 6,
+        "licensePlate": "MNO5678",
+        "brand": "Hyundai",
+        "model": "Elantra",
+        "owner": {
+          "id": 4,
+          "firstName": "Carlos",
+          "lastName": "Hernández"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "state": "COMPLETED",
+      "registrationDate": "2025-07-30T10:15:00",
+      "completionDate": "2025-08-10T12:45:00",
+      "interventionType": "REPARATION",
+      "description": "Fixing the air conditioning malfunction in the rear cabin.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 7,
+        "licensePlate": "PQR6789",
+        "brand": "Volkswagen",
+        "model": "Jetta",
+        "owner": {
+          "id": 5,
+          "firstName": "Sofía",
+          "lastName": "Ramírez"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "state": "PENDING",
+      "registrationDate": "2025-08-05T09:00:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Steering alignment and adjustment for better handling.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 8,
+        "licensePlate": "STU7890",
+        "brand": "Kia",
+        "model": "Forte",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2025-09-10T14:20:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of new transmission components for enhanced performance.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 11,
+        "licensePlate": "BCD0123",
+        "brand": "BMW",
+        "model": "320i",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "state": "COMPLETED",
+      "registrationDate": "2025-10-15T16:00:00",
+      "completionDate": "2025-10-25T18:30:00",
+      "interventionType": "REPARATION",
+      "description": "Airbag sensor malfunction diagnosis and repair.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 12,
+        "licensePlate": "EFG1234",
+        "brand": "Audi",
+        "model": "A4",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "state": "PENDING",
+      "registrationDate": "2025-11-20T08:30:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Inspection of the vehicle's electrical system for faults.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 1,
+        "licensePlate": "ABC1234",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2025-12-25T12:45:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Regular brake pad replacement and system check.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 2,
+        "licensePlate": "XYZ5678",
+        "brand": "Honda",
+        "model": "Civic",
+        "owner": {
+          "id": 1,
+          "firstName": "Laura",
+          "lastName": "García"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "state": "COMPLETED",
+      "registrationDate": "2026-01-10T10:30:00",
+      "completionDate": "2026-01-25T14:00:00",
+      "interventionType": "REPARATION",
+      "description": "Fixing the engine overheating issue due to coolant leak.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 3,
+        "licensePlate": "DEF2345",
+        "brand": "Ford",
+        "model": "Focus",
+        "owner": {
+          "id": 2,
+          "firstName": "Miguel",
+          "lastName": "López"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "state": "PENDING",
+      "registrationDate": "2026-02-15T09:15:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of high-performance air filters.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 4,
+        "licensePlate": "GHI3456",
+        "brand": "Chevrolet",
+        "model": "Cruze",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2026-03-20T11:00:00",
+      "completionDate": null,
+      "interventionType": "MAINTENANCE",
+      "description": "Transmission fluid replacement and system diagnostics.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 5,
+        "licensePlate": "JKL4567",
+        "brand": "Nissan",
+        "model": "Sentra",
+        "owner": {
+          "id": 3,
+          "firstName": "Ana",
+          "lastName": "Martínez"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "state": "COMPLETED",
+      "registrationDate": "2026-04-25T14:30:00",
+      "completionDate": "2026-05-05T16:45:00",
+      "interventionType": "REPARATION",
+      "description": "Fixing the tire pressure issue in the rear left tire.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 6,
+        "licensePlate": "MNO5678",
+        "brand": "Hyundai",
+        "model": "Elantra",
+        "owner": {
+          "id": 4,
+          "firstName": "Carlos",
+          "lastName": "Hernández"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "state": "PENDING",
+      "registrationDate": "2026-05-30T10:00:00",
+      "completionDate": null,
+      "interventionType": "INSPECTION",
+      "description": "Inspection and maintenance of the vehicle's braking system.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 7,
+        "licensePlate": "PQR6789",
+        "brand": "Volkswagen",
+        "model": "Jetta",
+        "owner": {
+          "id": 5,
+          "firstName": "Sofía",
+          "lastName": "Ramírez"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2026-06-10T13:20:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Repair of the dashboard electrical short.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 8,
+        "licensePlate": "STU7890",
+        "brand": "Kia",
+        "model": "Forte",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "state": "COMPLETED",
+      "registrationDate": "2026-07-15T09:45:00",
+      "completionDate": "2026-07-25T12:15:00",
+      "interventionType": "MAINTENANCE",
+      "description": "Exhaust system alignment and balancing.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 9,
+        "licensePlate": "VWX8901",
+        "brand": "Subaru",
+        "model": "Impreza",
+        "owner": {
+          "id": 6,
+          "firstName": "Diego",
+          "lastName": "González"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "state": "PENDING",
+      "registrationDate": "2026-08-20T10:30:00",
+      "completionDate": null,
+      "interventionType": "REPARATION",
+      "description": "Steering alignment and adjustment for improved handling.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 10,
+        "licensePlate": "YZA9012",
+        "brand": "Mazda",
+        "model": "3",
+        "owner": {
+          "id": 7,
+          "firstName": "María",
+          "lastName": "Fernández"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "state": "IN_PROGRESS",
+      "registrationDate": "2026-09-25T14:50:00",
+      "completionDate": null,
+      "interventionType": "INSTALLATION",
+      "description": "Installation of new transmission components for enhanced performance.",
+      "leader": {
+        "id": 1
+      },
+      "vehicle": {
+        "id": 11,
+        "licensePlate": "BCD0123",
+        "brand": "BMW",
+        "model": "320i",
+        "owner": {
+          "id": 8,
+          "firstName": "Jorge",
+          "lastName": "Sánchez"
+        }
+      }
     }
   ],
   "notifications": [
