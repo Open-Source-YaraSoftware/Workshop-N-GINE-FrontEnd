@@ -1,0 +1,21 @@
+<section class="content">
+  <h2>General information</h2>
+  <div class="information">
+    <mat-form-field>
+      <mat-label>Brand</mat-label>
+      <input matInput [value]="vehicle.brand" disabled/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Model</mat-label>
+      <input matInput [value]="vehicle.model" disabled/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>License Plate</mat-label>
+      <input matInput [value]="vehicle.licensePlate" disabled/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Owner</mat-label>
+      <input matInput [value]="vehicle.owner.firstName + ' ' + vehicle.owner.lastName" disabled/>
+    </mat-form-field>
+  </div>
+</section>
