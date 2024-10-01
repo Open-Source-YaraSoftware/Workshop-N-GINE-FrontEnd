@@ -1,0 +1,13 @@
+<mat-card class="vehicle-card">
+  <mat-card-header>
+    <img mat-card-image
+         [src]="vehicle.image || 'assets/images/default-car.png'"
+         alt="Vehicle Image"
+         class="vehicle-image"
+    >
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <h3>Car {{ index }} </h3>
+    <h3>{{ vehicle.brand }} {{ vehicle.model }}</h3>
+  </mat-card-content>
+</mat-card>
