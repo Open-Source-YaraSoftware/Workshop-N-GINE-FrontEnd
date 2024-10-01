@@ -7,7 +7,8 @@
     >
   </mat-card-header>
   <mat-card-content class="card-content">
-    <h3>Car {{ index }} </h3>
-    <h3>{{ vehicle.brand }} {{ vehicle.model }}</h3>
+    <h4>Car {{ index }} </h4>
+    <h4>{{ vehicle.brand }} {{ vehicle.model }}</h4>
+    <h4>Last Intervention: {{vehicle.interventionRegister[vehicle.interventionRegister.length-1].completionDate | date}}</h4>
   </mat-card-content>
 </mat-card>
