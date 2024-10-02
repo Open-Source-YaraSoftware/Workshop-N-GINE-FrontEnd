@@ -1,0 +1,19 @@
+<section>
+  <mat-card class="notification-card">
+    <mat-card-header class="notification-header">
+      <mat-card-title-group>
+        <mat-card-title>{{notification.date | date: 'short' }}</mat-card-title>
+      </mat-card-title-group>
+    </mat-card-header>
+
+    <mat-card-content class="notification-body">
+      <h3>
+        <mat-icon>{{notification.state === "READ" ? 'notifications' : 'notification_important'}}</mat-icon>
+        {{notification.content}}
+        <a href="{{notification.endpoint}}" (click)="changeIcon()">Go to the section</a>
+      </h3>
+    </mat-card-content>
+
+  </mat-card>
+</section>
+
