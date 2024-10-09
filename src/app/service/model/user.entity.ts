@@ -11,8 +11,10 @@ export class User {
   email: string;
   password: string;
   role: Role;
+  age: number;
+  location: string;
   workshop: Workshop;
-  accountState: AccountState;
+  state: AccountState;
   notificationList: Notification[];
 
   constructor() {
@@ -24,11 +26,11 @@ export class User {
     this.email = '';
     this.password = '';
     this.role = Role.CLIENT;
+    this.age = 0;
+    this.location = '';
     this.workshop = new Workshop();
-    this.accountState = AccountState.ACTIVE;
+    this.state = AccountState.ACTIVE;
     this.notificationList = [];
   }
 
-  logIn(): boolean { return true; }
-  logOut(): boolean { return true; }
 }
