@@ -45,7 +45,7 @@
     </div>
     <div class="client-info-actions">
       <button mat-icon-button color="warn" aria-label="Delete" (click)="deleteClient()">
-        <mat-icon>delete</mat-icon>
+        <mat-icon >delete</mat-icon>
       </button>
       <button mat-icon-button color="primary" aria-label="Save" (click)="updateClient()">
         <mat-icon>save</mat-icon>
@@ -57,9 +57,9 @@
 <div class="section-header">
   <h2 class="section-title">Vehicles:</h2>
   <!--(click)="openDialog()"-->
-  <button mat-raised-button color="primary">+ New vehicle</button>
+  <button mat-raised-button color="primary" (click)="startVehicleRegistration()">+ New vehicle</button>
 </div>
 
 <div class="client-cars-container">
-  <app-vehicle-item *ngFor="let vehicle of vehicles; let i = index" [vehicle]="vehicle" [index]="i + 1"></app-vehicle-item>
+  <app-vehicle-item *ngFor="let vehicle of vehicles; let i = index" [vehicle]="vehicle" [index]="i + 1" (selectedVehicle)="viewVehicleDetail($event)"></app-vehicle-item>
 </div>
