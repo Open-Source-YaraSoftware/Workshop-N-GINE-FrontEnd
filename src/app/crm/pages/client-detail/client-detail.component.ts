@@ -1,39 +1,35 @@
-import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ActivatedRoute, Router } from '@angular/router';
-import { MatFormField } from "@angular/material/form-field";
-import { MatOption, MatSelect } from "@angular/material/select";
-import { MatIcon, MatIconModule } from "@angular/material/icon";
-import { VehicleItemComponent } from "../../components/vehicle-item/vehicle-item.component";
-import { NgForOf } from "@angular/common";
-import { MatInput, MatLabel } from "@angular/material/input";
-import { MatButton, MatIconButton } from "@angular/material/button";
-import { FormsModule } from '@angular/forms';
+import { WorkshopClientService } from '../../services/workshop-client.service';
+import { VehicleService } from '../../services/vehicle.service';
+import { WorkshopClient } from '../../model/workshop-client.entity';
+import { Vehicle } from '../../../service/model/vehicle.entity';
 
-@Component({
-  selector: 'app-client-detail',
-  standalone: true,
-  imports: [
-    MatFormField,
-    MatSelect,
-    MatOption,
-    MatIcon,
-    MatIconModule,
-    VehicleItemComponent,
-    NgForOf,
-    MatInput,
-    MatLabel,
-    MatButton,
-    FormsModule,
-    MatIconButton
-  ],
-  templateUrl: './client-detail.component.html',
-  styleUrl: './client-detail.component.css'
-})
 export class ClientDetailComponent {
-  protected clientId: number = 0;
-  protected workshopClient: any = {};
-  protected vehicles: any[] = [];
+  private workshopClientService: WorkshopClientService = inject(WorkshopClientService);
+  protected vehicleService: VehicleService = inject(VehicleService);
 
-  constructor(private router: Router, private route: ActivatedRoute, private dialog: MatDialog) {}
+  constructor(private router: Router, private route: ActivatedRoute, private dialog: MatDialog) {
+    this.searchQueryParams();
+    this.getClient();
+    this.getVehicles();
+  };
+
+  private searchQueryParams() {
+    this.route.params.subscribe(params => {
+      this.clientId = params['id'] || 0;
+    });
+  }
+
+  private getClient() {
+    this.workshopClientService.getById(this.clientId)
+      .subscribe((workshopClient: WorkshopClient) => {
+        this.workshopClient = workshopClient;
+      });
+  }
+
+  private getVehicles() {
+    this.vehicleService.getByClientId(this.clientId)
+      .subscribe((vehicles: Vehicle[]) => {
+        this.vehicles = vehicles;
+      });
+  }
 }
