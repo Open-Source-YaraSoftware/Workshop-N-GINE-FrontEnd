@@ -14,6 +14,7 @@ import { NgForOf } from "@angular/common";
 import { MatInput, MatLabel } from "@angular/material/input";
 import {MatButton, MatIconButton} from "@angular/material/button";
 import { FormsModule } from '@angular/forms';
+import {NewVehicleDialogComponent} from "../../components/new-vehicle-dialog/new-vehicle-dialog.component";
 
 @Component({
   selector: 'app-client-detail',
@@ -43,53 +44,74 @@ export class ClientDetailComponent {
   protected vehicles: Vehicle[] = [];
 
   constructor(private router : Router, private route: ActivatedRoute, private dialog: MatDialog) {
-    this.searchQueryParams();
-    this.getClient();
-    this.getVehicles();
+    this.loadClientIdFromRoute();
+    this.loadClientData();
+    this.loadVehiclesData();
   };
 
-  private searchQueryParams() {
+  private loadClientIdFromRoute() {
     this.route.params.subscribe(params => {
       this.clientId = params['id'] || 0;
     });
-  };
-
-  private getClient() {
-    this.workshopClientService.getById(this.clientId)
-      .subscribe((workshopClient: WorkshopClient) => {
-        this.workshopClient = workshopClient;
-      });
   }
 
-  private getVehicles() {
-    this.vehicleService.getByClientId(this.clientId)
-      .subscribe((vehicles: Vehicle[]) => {
-        this.vehicles = vehicles;
-      });
+  private loadClientData() {
+    if (this.clientId) {
+      this.workshopClientService.getById(this.clientId).subscribe(
+        (client: WorkshopClient) => this.workshopClient = client
+      );
+    }
+  }
+
+  private loadVehiclesData() {
+    this.vehicleService.getByClientId(this.clientId).subscribe(
+      (vehicles: Vehicle[]) => this.vehicles = vehicles
+    );
   }
 
   protected updateClient() {
-    const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
-      data: { message: 'Are you sure you want to update this client?' }
-    });
-
-    dialogRef.componentInstance.confirm.subscribe(() => {
-      this.workshopClientService.update(this.clientId, this.workshopClient)
-        .subscribe(() => {
-          this.getClient();
-        });
-    });
+    this.openConfirmationDialog('Are you sure you want to update this client?')
+      .subscribe(() => this.workshopClientService.update(this.clientId, this.workshopClient)
+        .subscribe(() => this.loadClientData())
+      );
   }
 
   protected deleteClient() {
+    this.openConfirmationDialog('Are you sure you want to delete this client?')
+      .subscribe(() => this.workshopClientService.delete(this.clientId)
+        .subscribe(() => this.router.navigate(['/clients']))
+      );
+  }
+
+  protected startVehicleRegistration() {
+    const dialogRef = this.dialog.open(NewVehicleDialogComponent, {
+      width: '400px',
+      disableClose: true
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.registerNewVehicle(result);
+      }
+    });
+  }
+
+  private registerNewVehicle(newVehicle: Vehicle) {
+    newVehicle.owner.id = this.workshopClient.id;
+    this.vehicleService.create(newVehicle).subscribe(() => {
+      this.loadVehiclesData();
+    });
+  }
+
+  private openConfirmationDialog(message: string) {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
-      data: { message: 'Are you sure you want to delete this client?' }
+      data: { message }
     });
-    dialogRef.componentInstance.confirm.subscribe(() => {
-      this.workshopClientService.delete(this.clientId)
-        .subscribe(() => {
-          this.router.navigate(['/clients']).then(r => r);
-        });
-    });
+
+    return dialogRef.componentInstance.confirm;
+  }
+
+  protected viewVehicleDetail(vehicle: Vehicle) {
+    // Implement vehicle detail logic here
   }
 }
