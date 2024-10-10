@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.form-task {
+  display: flex;
+  flex-direction: column;
+}
+.buttons{
+  display: flex;
+  gap: 2rem;
+}
+.button {
+  width: fit-content;
+  border: 0.2rem solid aqua;
+}
+td, th {
+  width: 33.3%;
+}
