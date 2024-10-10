@@ -1,0 +1,48 @@
+.vehicle-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vehicle-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.mat-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.vehicle-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main-content {
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  position: relative;
+}
+
+.information-container {
+  margin-top: 20px;
+}
+
+.previous-interventions-container app-previous-interventions {
+  width: 100%;
+}
