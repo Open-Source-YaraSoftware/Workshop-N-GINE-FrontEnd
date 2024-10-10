@@ -1,1 +1,26 @@
-<p>vehicle-detail works!</p>
+<div class="vehicle-header">
+  <h1>{{ vehicle.brand }} {{ vehicle.model }} ( {{ vehicle.licensePlate }} )</h1>
+  <mat-toolbar>
+    <button mat-raised-button (click)="showActivityLog()">Activity log</button>
+    <span class="spacer"></span>
+    <button mat-raised-button (click)="showActivityLog()">IoT Information</button>
+    <span class="spacer"></span>
+    <span class="spacer"></span>
+    <span class="spacer"></span>
+    <button>
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-toolbar>
+</div>
+
+<div class="vehicle-details">
+  <div class="main-content">
+    <div class="information-container">
+      <app-previous-interventions
+        *ngIf="currentView === 'activityLog'"
+        [vehicle]="vehicle"
+        [isPanelActive]="true">
+      </app-previous-interventions>
+    </div>
+  </div>
+</div>

@@ -51,6 +51,7 @@ interface TimelineEvent {
 })
 export class PreviousInterventionsComponent {
   @Input() vehicle!: Vehicle;
+  @Input() isPanelActive: boolean = false;
 
   previousInterventions!: Intervention[];
 
