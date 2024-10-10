@@ -40,7 +40,6 @@ export class ActivityInformationComponent {
     this.vehicleService.getById(this.cardId)
       .subscribe((vehicle: Vehicle) => {
         this.vehicle.set(vehicle);
-        console.log(this.vehicle());
       });
   }
 }
