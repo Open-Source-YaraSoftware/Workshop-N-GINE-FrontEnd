@@ -8,6 +8,7 @@ export class Vehicle {
   brand: string;
   model: string;
   owner: User;
+  image: string;
   iotDispositive: IotDispositive;
   interventionRegister: Intervention[];
 
@@ -17,6 +18,7 @@ export class Vehicle {
     this.brand = '';
     this.model = '';
     this.owner = new User();
+    this.image = '';
     this.iotDispositive = new IotDispositive();
     this.interventionRegister = [];
   }
