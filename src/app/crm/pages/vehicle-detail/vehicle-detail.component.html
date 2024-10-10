@@ -3,7 +3,7 @@
   <mat-toolbar>
     <button mat-raised-button (click)="showActivityLog()">Activity log</button>
     <span class="spacer"></span>
-    <button mat-raised-button (click)="showActivityLog()">IoT Information</button>
+    <button mat-raised-button (click)="showIotInformation()">IoT Information</button>
     <span class="spacer"></span>
     <span class="spacer"></span>
     <span class="spacer"></span>
@@ -21,6 +21,10 @@
         [vehicle]="vehicle"
         [isPanelActive]="true">
       </app-previous-interventions>
+      <app-iot-information
+        *ngIf="currentView === 'iotInformation'"
+        [vehicle]="vehicle">
+      </app-iot-information>
     </div>
   </div>
 </div>
