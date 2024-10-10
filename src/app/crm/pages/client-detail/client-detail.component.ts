@@ -121,6 +121,6 @@ export class ClientDetailComponent {
   }
 
   protected viewVehicleDetail(vehicle: Vehicle) {
-    // Implement vehicle detail logic here
+    this.router.navigate([`/vehicles`, vehicle.id]);
   }
 }
