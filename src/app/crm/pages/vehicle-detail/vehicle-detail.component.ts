@@ -38,7 +38,7 @@ export class VehicleDetailComponent {
   private loadVehicleData() {
     this.vehicleService.getById(this.vehicleId).subscribe(vehicle => {
       this.vehicle = vehicle;
-      this.showActivityLog(); // Default to showing Activity Log when vehicle data is loaded
+      this.showActivityLog();
     });
   }
 
@@ -52,4 +52,7 @@ export class VehicleDetailComponent {
     this.currentView = 'activityLog';
   }
 
+  showIotInformation() {
+    this.currentView = 'iotInformation';
+  }
 }

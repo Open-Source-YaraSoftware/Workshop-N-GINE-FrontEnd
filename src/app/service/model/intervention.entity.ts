@@ -16,6 +16,7 @@ export class Intervention {
   completionDate: Date;
   interventionType: InterventionType;
   taskList: Task[];
+  description: string;
 
   constructor() {
     this.id = 0;
@@ -27,6 +28,7 @@ export class Intervention {
     this.completionDate = new Date();
     this.interventionType = InterventionType.REPARATION;
     this.taskList = [];
+    this.description = '';
   }
 
   updateInterventionState(state: InterventionState): void {}
