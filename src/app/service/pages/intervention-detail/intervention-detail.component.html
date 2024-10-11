@@ -1,1 +1,32 @@
-<p>intervention-detail works!</p>
+<div class="intervention-header">
+  <h1>Intervention #{{intervention.id}}</h1>
+  <mat-toolbar>
+    <button mat-raised-button (click)="showGeneralInformation()">General information</button>
+    <span class="spacer"></span>
+    <button mat-raised-button (click)="showInterventionSummary()">Intervention summary</button>
+    <span class="spacer"></span>
+    <span class="spacer"></span>
+    <span class="spacer"></span>
+    <button mat-flat-button>{{intervention.state.toString() | replaceUnderscore | titlecase}}</button>
+  </mat-toolbar>
+</div>
+
+<div class="intervention-details">
+  <div class="main-content">
+    <div class="information-container">
+      <app-general-information
+        *ngIf="currentView === 'generalInformation'"
+        [intervention]="intervention"
+        [mechanics]="mechanics"
+        [vehicles]="vehicles"
+        [isOwner]="true">
+      </app-general-information>
+      <!--
+     <app-intervention-summary
+       *ngIf="currentView === 'interventionSummary'"
+       [intervention]="intervention">
+     </app-intervention-summary>
+     -->
+    </div>
+  </div>
+</div>
