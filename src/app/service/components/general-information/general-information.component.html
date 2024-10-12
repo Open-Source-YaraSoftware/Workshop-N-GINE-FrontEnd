@@ -1,17 +1,17 @@
 <div class="center-form-container">
-  <form [formGroup]="interventionForm" (ngSubmit)="onSubmit()" class="intervention-form">
+  <form [formGroup]="interventionForm" (ngSubmit)="updateInterventionInformation()" class="intervention-form">
     <div class="inputs-container">
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill" *ngIf="isOwner">
         <mat-label>DNI</mat-label>
         <input matInput formControlName="dni">
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill" *ngIf="isOwner">
         <mat-label>Client</mat-label>
         <input matInput formControlName="client">
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill" *ngIf="isOwner">
         <mat-label>License plate</mat-label>
         <mat-select formControlName="licensePlate">
           <mat-option *ngFor="let vehicle of vehicles" [value]="vehicle.licensePlate">
@@ -20,12 +20,12 @@
         </mat-select>
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill" *ngIf="isOwner">
         <mat-label>Brand</mat-label>
         <input matInput formControlName="brand">
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill" *ngIf="isOwner">
         <mat-label>Model</mat-label>
         <input matInput formControlName="model">
       </mat-form-field>

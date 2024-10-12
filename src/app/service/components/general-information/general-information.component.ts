@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Intervention} from "../../model/intervention.entity";
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {MatFormField, MatSuffix} from "@angular/material/form-field";
@@ -7,7 +7,7 @@ import {MatOption, MatSelect} from "@angular/material/select";
 import {MatDatepicker, MatDatepickerInput, MatDatepickerToggle} from "@angular/material/datepicker";
 import {MatButton, MatFabButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 import {Mechanic} from "../../model/mechanic.entity";
 import {Vehicle} from "../../model/vehicle.entity";
 
@@ -28,7 +28,8 @@ import {Vehicle} from "../../model/vehicle.entity";
     MatButton,
     MatIcon,
     MatFabButton,
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './general-information.component.html',
   styleUrl: './general-information.component.css'
@@ -38,6 +39,7 @@ export class GeneralInformationComponent implements OnInit {
   @Input() mechanics!: Mechanic[];
   @Input() vehicles!: Vehicle[];
   @Input() isOwner: boolean = false;
+  @Output() updateIntervention = new EventEmitter<Intervention>();
 
   interventionForm!: FormGroup
 
@@ -67,9 +69,13 @@ export class GeneralInformationComponent implements OnInit {
 
   }
 
-  onSubmit(): void {
+  protected updateInterventionInformation(): void {
     if (this.interventionForm.valid) {
-      console.log('Valid form, sending data...', this.interventionForm.value);
+      const updatedIntervention: Intervention = {
+        ...this.intervention,
+        ...this.interventionForm.value
+      };
+      this.updateIntervention.emit(updatedIntervention);
     }
   }
 }
