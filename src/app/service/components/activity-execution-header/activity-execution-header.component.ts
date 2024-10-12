@@ -5,6 +5,14 @@ import {TaskService} from "../../services/task.service";
 import {MatButton} from "@angular/material/button";
 import {ActivityRequestsComponent} from "../activity-requests/activity-requests.component";
 import {ActivityTrackingComponent} from "../activity-tracking/activity-tracking.component";
+import {TaskState} from "../../model/task-state.enum";
+import {MatDialog} from "@angular/material/dialog";
+import {
+  ConfirmationDialogComponent
+} from "../../../shared/components/confirmation-dialog/confirmation-dialog.component";
+import {MatSnackBar} from "@angular/material/snack-bar";
+import {BaseMessageComponent} from "../../../shared/components/base-message/base-message.component";
+import {NotificationMessagesService} from "../../../shared/services/notification-messages.service";
 
 @Component({
   selector: 'app-activity-execution-header',
@@ -25,6 +33,8 @@ export class ActivityExecutionHeaderComponent {
   protected interventionId= signal(0);
   protected tasks  = signal<Task[]>([]);
   private taskService: TaskService = inject(TaskService);
+  private confirmDialogRef = inject(MatDialog);
+  private notificationMessagesService:NotificationMessagesService = inject(NotificationMessagesService);
 
   constructor(private route: ActivatedRoute) {
     this.searchQueryParams();
@@ -52,5 +62,39 @@ export class ActivityExecutionHeaderComponent {
 
   protected onOptionSelected(option: string) {
     this.selectedOption.set(option);
+  }
+
+  protected onFinishTask() {
+    this.finishTask();
+  }
+
+  private finishTask() {
+    const confirmDialog = this.confirmDialogRef.open(ConfirmationDialogComponent,{
+      data: { message: 'Confirm completion? Lead mechanic will be notified, and changes may be limited.' }
+    });
+    confirmDialog.componentInstance.confirm.subscribe(() => {
+      this.showMessage('Task completed successfully', 1);
+      this.updateStateTask();
+    });
+  }
+
+  private updateStateTask() {
+    const currentTask = this.selectedTask();
+    currentTask.state = TaskState.DONE;
+    this.taskService.update(currentTask.id, currentTask)
+      .subscribe(() => {
+        this.nextTask();
+      });
+  }
+
+  private nextTask() {
+    const currentTask = this.selectedTask();
+    const index = this.tasks().findIndex(task => task.id === currentTask.id);
+    if (index === this.tasks().length - 1) return;
+    this.selectedTask.set(this.tasks()[index + 1]);
+  }
+
+  private showMessage(message: string, level: number) {
+    this.notificationMessagesService.openMessage(message, level);
   }
 }
