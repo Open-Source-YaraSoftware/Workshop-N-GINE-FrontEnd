@@ -1,0 +1,7 @@
+.form-requests {
+  display: flex;
+  flex-direction: column;
+}
+.amount-available {
+  padding: 1rem 0 2rem;
+}
