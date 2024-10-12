@@ -19,7 +19,9 @@
         [intervention]="intervention"
         [mechanics]="mechanics"
         [vehicles]="vehicles"
-        [isOwner]="true">
+        [isOwner]="isOwner"
+        (updateIntervention)="updateIntervention($event)"
+      >
       </app-general-information>
       <!--
      <app-intervention-summary

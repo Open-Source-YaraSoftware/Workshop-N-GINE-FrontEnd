@@ -1,4 +1,4 @@
-import {Component, OnInit, inject} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {InterventionsService} from '../../services/interventions.service';
 import {ActivatedRoute} from '@angular/router';
 import {Intervention} from '../../model/intervention.entity';
@@ -12,6 +12,12 @@ import {PersonnelService} from "../../services/personnel.service";
 import {Mechanic} from "../../model/mechanic.entity";
 import {VehicleService} from "../../../crm/services/vehicle.service";
 import {Vehicle} from "../../model/vehicle.entity";
+import {
+  ConfirmationDialogComponent
+} from "../../../shared/components/confirmation-dialog/confirmation-dialog.component";
+import {MatDialog} from "@angular/material/dialog";
+import {MatSnackBar} from "@angular/material/snack-bar";
+import {InterventionState} from "../../model/intervention-state.enum";
 
 @Component({
   selector: 'app-intervention-detail',
@@ -36,14 +42,22 @@ export class InterventionDetailComponent implements OnInit {
   protected interventionId: string = '';
   protected currentView: 'generalInformation' | 'interventionSummary' | null = null;
   protected intervention: Intervention = new Intervention();
-  protected mechanics : Mechanic[] = [];
+  protected mechanics: Mechanic[] = [];
   protected vehicles: Vehicle[] = [];
+  protected isOwner: boolean = true;
+
+  private dialog = inject(MatDialog);
+  private snackBar = inject(MatSnackBar);
 
   ngOnInit(): void {
     this.loadInterventionId();
     this.loadPersonnelData();
     this.loadInterventionData();
     this.loadVehiclesData();
+  }
+
+  loadAccordingRole() {
+    // TODO: Implement this method
   }
 
   private loadInterventionId() {
@@ -62,13 +76,13 @@ export class InterventionDetailComponent implements OnInit {
 
   private loadPersonnelData() {
     this.personnelService.getAll().subscribe(personnel => {
-        this.mechanics = personnel;
+      this.mechanics = personnel;
     });
   }
 
   private loadVehiclesData() {
     this.vehicleService.getByClientDni(this.intervention.vehicle.owner.dni).subscribe(vehicles => {
-        this.vehicles = vehicles;
+      this.vehicles = vehicles;
     });
   }
 
@@ -78,5 +92,45 @@ export class InterventionDetailComponent implements OnInit {
 
   protected showInterventionSummary() {
     this.currentView = 'interventionSummary';
+  }
+
+  protected updateIntervention(intervention: Intervention) {
+    const stateAsEnum = InterventionState[this.intervention.state as unknown as keyof typeof InterventionState];
+
+    if (stateAsEnum === InterventionState.PENDING) {
+      this.showConfirmationDialog(intervention);
+    } else {
+      this.showSnackBar('Cannot update an intervention that is not in PENDING state.');
+    }
+  }
+
+  private showConfirmationDialog(intervention: Intervention): void {
+    const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
+      data: {
+        message: 'Are you sure you want to update this intervention?'
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.updateInterventionData(intervention);
+      }
+    });
+  }
+
+  private updateInterventionData(intervention: Intervention): void {
+    this.interventionService.update(this.interventionId, intervention).subscribe({
+      next: updatedIntervention => {
+        this.intervention = updatedIntervention;
+      }
+    });
+  }
+
+  private showSnackBar(message: string): void {
+    this.snackBar.open(message, 'Close', {
+      duration: 4000,
+      horizontalPosition: 'right',
+      verticalPosition: 'top',
+    });
   }
 }
