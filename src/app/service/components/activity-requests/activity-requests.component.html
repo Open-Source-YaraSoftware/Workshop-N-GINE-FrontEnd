@@ -35,75 +35,32 @@
       }
     </div>
   </form>
-  <header>
+  <header class="options">
     @for (option of options(); track option){
-      <button mat-button (click)="onOptionSelected(option)">{{option}}</button>
+      <button
+        mat-button
+        (click)="onOptionSelected(option)"
+        [class.selected]="option === selectedOption()"
+      >{{option}}</button>
     }
   </header>
   <div>
     @if (selectedOption() === options()[1]){
-      <table mat-table [dataSource]="productsRequested()" matSort>
-        <ng-container matColumnDef="part">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Part</th>
-          <td mat-cell *matCellDef="let data">{{data.name}}</td>
-        </ng-container>
-        <ng-container matColumnDef="quantity">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Quantity</th>
-          <td mat-cell *matCellDef="let data">{{data.requestedQuantity}}</td>
-        </ng-container>
-        <ng-container matColumnDef="observation">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Observation</th>
-          <td mat-cell *matCellDef="let data">{{data.observation}}</td>
-        </ng-container>
-        <ng-container matColumnDef="status">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
-          <td mat-cell *matCellDef="let data">{{data.status}}</td>
-        </ng-container>
-        <ng-container matColumnDef="actions">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>
-          <td mat-cell *matCellDef="let data">
-            @if (!isEditMode()){
-              <button mat-icon-button color="warn" aria-label="Delete" (click)="onDeleteProductRequest(data.id)">
-                <mat-icon>delete</mat-icon>
-              </button>
-              <button mat-icon-button color="primary" aria-label="Edit" (click)="onEditProductRequest(data)">
-                <mat-icon>edit</mat-icon>
-              </button>
-            }
-          </td>
-        </ng-container>
-        <tr mat-header-row *matHeaderRowDef="displayedColumnsProductRequest"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumnsProductRequest;"></tr>
-      </table>
-      <mat-paginator [pageSizeOptions]="[5,10,15]"></mat-paginator>
+      <app-task-product-request-list
+        [productsRequested]="productsRequested()"
+        [isEditMode]="isEditMode()"
+        (productRequestDeleteRequested)="onDeleteProductRequest($event)"
+        (productRequestEditRequested)="onEditProductRequest($event)"
+      />
     }
     @if (selectedOption() === options()[0]){
-      <table mat-table [dataSource]="taskProductsUsageCompletedInformation()" matSort>
-        <ng-container matColumnDef="part">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Part</th>
-          <td mat-cell *matCellDef="let data">{{data.productStock?.name}}</td>
-        </ng-container>
-        <ng-container matColumnDef="quantity">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Quantity</th>
-          <td mat-cell *matCellDef="let data">{{data.quantityUsed}}</td>
-        </ng-container>
-        <ng-container matColumnDef="actions">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>
-          <td mat-cell *matCellDef="let data">
-            @if (!isEditMode()){
-              <button mat-icon-button color="warn" aria-label="Delete" (click)="onDeleteTaskProductUsage(data.id)">
-                <mat-icon>delete</mat-icon>
-              </button>
-              <button mat-icon-button color="primary" aria-label="Edit" (click)="onEditTaskProductUsage(data)">
-                <mat-icon>edit</mat-icon>
-              </button>
-            }
-          </td>
-        </ng-container>
-        <tr mat-header-row *matHeaderRowDef="displayedColumnsTaskProductUsage"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumnsTaskProductUsage;"></tr>
-      </table>
-      <mat-paginator [pageSizeOptions]="[5,10,15]"></mat-paginator>
+      <app-task-product-stock-list
+        [taskProductsUsage]="taskProductsUsage()"
+        [productsStock]="productsStock()"
+        [isEditMode]="isEditMode()"
+        (taskProductUsageDeleteRequested)="onDeleteTaskProductUsage($event)"
+        (taskProductUsageEditRequested)="onEditTaskProductUsage($event)"
+      />
     }
   </div>
 </section>

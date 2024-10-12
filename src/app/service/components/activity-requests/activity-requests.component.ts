@@ -11,17 +11,8 @@ import {ProductRequestService} from "../../services/product-request.service";
 import {TaskProductUsageService} from "../../services/task-product-usage.service";
 import {ProductRequest} from "../../model/product-request.entity";
 import {TaskProductUsage} from "../../model/task-product-usage.entity";
-import {
-  MatCell,
-  MatCellDef,
-  MatColumnDef,
-  MatHeaderCell,
-  MatHeaderCellDef,
-  MatHeaderRow, MatHeaderRowDef, MatNoDataRow, MatRow, MatRowDef,
-  MatTable
-} from "@angular/material/table";
-import {MatSort, MatSortHeader} from "@angular/material/sort";
-import {MatPaginator} from "@angular/material/paginator";
+import {TaskProductStockListComponent} from "../task-product-stock-list/task-product-stock-list.component";
+import {TaskProductRequestListComponent} from "../task-product-request-list/task-product-request-list.component";
 
 @Component({
   selector: 'app-activity-requests',
@@ -35,21 +26,9 @@ import {MatPaginator} from "@angular/material/paginator";
     MatInput,
     MatButton,
     MatIcon,
-    MatTable,
-    MatSort,
-    MatColumnDef,
-    MatHeaderCell,
-    MatCell,
-    MatHeaderCellDef,
-    MatCellDef,
-    MatSortHeader,
     MatIconButton,
-    MatHeaderRow,
-    MatRow,
-    MatNoDataRow,
-    MatRowDef,
-    MatHeaderRowDef,
-    MatPaginator
+    TaskProductStockListComponent,
+    TaskProductRequestListComponent
   ],
   templateUrl: './activity-requests.component.html',
   styleUrl: './activity-requests.component.css'
@@ -84,8 +63,6 @@ export class ActivityRequestsComponent {
   private productStockService: ProductStockService = inject(ProductStockService);
   private productRequestService: ProductRequestService = inject(ProductRequestService);
   private taskProductsUsageService: TaskProductUsageService = inject(TaskProductUsageService);
-  protected displayedColumnsProductRequest: string[] = ['part', 'quantity', 'observation', 'status', 'actions'];
-  protected displayedColumnsTaskProductUsage: string[] = ['part', 'quantity', 'actions'];
   protected isEditMode = signal(false);
   protected taskProductUsageSelected = signal<TaskProductUsage>(new TaskProductUsage());
   protected productRequestSelected = signal<ProductRequest>(new ProductRequest());

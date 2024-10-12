@@ -5,3 +5,11 @@
 .amount-available {
   padding: 1rem 0 2rem;
 }
+.options{
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.selected {
+  border: 0.1rem solid white;
+}
