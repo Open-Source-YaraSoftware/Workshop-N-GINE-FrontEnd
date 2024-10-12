@@ -34,6 +34,8 @@
         />
         <app-activity-tracking
           [hidden]="selectedOption() === options()[0]"
+          [taskSelectedId]="selectedTask().id"
+          [interventionId]="interventionId()"
         />
       </section>
     </section>
