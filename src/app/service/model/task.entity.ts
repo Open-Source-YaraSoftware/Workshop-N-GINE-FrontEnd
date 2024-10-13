@@ -25,7 +25,4 @@ export class Task {
     this.checkpoint = new Checkpoint();
     this.description = '';
   }
-
-  updateTaskState(state: TaskState): void {}
-  getTaskDetails(): string { return ''; }
 }
