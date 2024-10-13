@@ -1,0 +1,66 @@
+<section>
+  <form class="form-requests" [formGroup]="requestsForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Required replacement part</mat-label>
+      <mat-select formControlName="requiredPart">
+        @for (productStock of productsStock(); track productStock.id){
+          <mat-option [value]="productStock.id">{{productStock?.name}}</mat-option>
+        }
+        <mat-option [value]="0">Other</mat-option>
+      </mat-select>
+    </mat-form-field>
+    @if (requiredPartSelected() == -1 ){
+      <mat-form-field>
+        <mat-label>Other part</mat-label>
+        <input matInput formControlName="otherPart" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Observation</mat-label>
+        <textarea matInput formControlName="observation"></textarea>
+      </mat-form-field>
+    }
+    @if(requiredPartSelected() && requiredPartSelected() != -1){
+      <label class="amount-available">
+        <span>Total available: {{productStockSelected()?.amount}}</span>
+      </label>
+    }
+    <mat-form-field>
+      <mat-label>Quantity</mat-label>
+      <input matInput type="number" formControlName="quantity" required>
+    </mat-form-field>
+    <div class="buttons">
+      <button mat-button class="button" type="submit">{{isEditMode()?"Save": "Add"}}</button>
+      @if(isEditMode()){
+        <button mat-button class="button" type="button" (click)="onCancelRequest()">Cancel</button>
+      }
+    </div>
+  </form>
+  <header class="options">
+    @for (option of options(); track option){
+      <button
+        mat-button
+        (click)="onOptionSelected(option)"
+        [class.selected]="option === selectedOption()"
+      >{{option}}</button>
+    }
+  </header>
+  <div>
+    @if (selectedOption() === options()[1]){
+      <app-task-product-request-list
+        [productsRequested]="productsRequested()"
+        [isEditMode]="isEditMode()"
+        (productRequestDeleteRequested)="onDeleteProductRequest($event)"
+        (productRequestEditRequested)="onEditProductRequest($event)"
+      />
+    }
+    @if (selectedOption() === options()[0]){
+      <app-task-product-stock-list
+        [taskProductsUsage]="taskProductsUsage()"
+        [productsStock]="productsStock()"
+        [isEditMode]="isEditMode()"
+        (taskProductUsageDeleteRequested)="onDeleteTaskProductUsage($event)"
+        (taskProductUsageEditRequested)="onEditTaskProductUsage($event)"
+      />
+    }
+  </div>
+</section>
