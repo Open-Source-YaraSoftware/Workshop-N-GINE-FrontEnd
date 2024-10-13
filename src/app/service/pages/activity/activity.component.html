@@ -27,7 +27,7 @@
         <button mat-button matStepperNext>Next</button>
       </div>
       <div>
-        <app-activity-execution/>
+        <app-activity-execution #execution/>
       </div>
     </mat-step>
     <mat-step *ngIf="type === 'leader'" label="Supervision">

@@ -39,6 +39,10 @@ export class ActivityExecutionComponent {
     this.getTasksByInterventionId();
   }
 
+  public load() {
+    this.getTasksByInterventionId();
+  }
+
   private searchQueryParams() {
     this.route.params
       .subscribe(params => {

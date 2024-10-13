@@ -41,6 +41,7 @@ import {NgIf} from "@angular/common";
 })
 export class ActivityComponent {
   type: string = 'leader';
+  @ViewChild('execution') execution!: ActivityExecutionComponent;
   @ViewChild('supervision') supervision!: ActivityMonitoringComponent;
 
   constructor(private route: ActivatedRoute) {
@@ -52,8 +53,27 @@ export class ActivityComponent {
   }
 
   protected onStepChange(event: any) {
-    if(event.selectedIndex === 3) {
-      this.supervision.load();
+    this.notify(event.selectedIndex);
+  }
+
+  private notify(step: number) {
+    switch (step) {
+      case 0: {
+        return;
+      }
+      case 1: {
+        return;
+      }
+      case 2: {
+        this.execution.load();
+        return;
+      }
+      case 3: {
+        this.supervision.load();
+        return;
+      }
+      default:
+        return '';
     }
   }
 
