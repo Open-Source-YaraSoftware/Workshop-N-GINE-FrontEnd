@@ -10,8 +10,6 @@ import {MatDialog} from "@angular/material/dialog";
 import {
   ConfirmationDialogComponent
 } from "../../../shared/components/confirmation-dialog/confirmation-dialog.component";
-import {MatSnackBar} from "@angular/material/snack-bar";
-import {BaseMessageComponent} from "../../../shared/components/base-message/base-message.component";
 import {NotificationMessagesService} from "../../../shared/services/notification-messages.service";
 
 @Component({
