@@ -1,12 +1,16 @@
-import {Component, EventEmitter, Input, Output, signal, SimpleChanges, ViewChild} from '@angular/core';
+import {Component, EventEmitter, Input, Output, SimpleChanges, ViewChild} from '@angular/core';
 import {
   MatCell,
   MatCellDef,
   MatColumnDef,
-  MatHeaderCell, MatHeaderCellDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
   MatHeaderRow,
   MatHeaderRowDef,
-  MatRow, MatRowDef, MatTable, MatTableDataSource
+  MatRow,
+  MatRowDef,
+  MatTable,
+  MatTableDataSource
 } from "@angular/material/table";
 import {MatIcon} from "@angular/material/icon";
 import {MatIconButton} from "@angular/material/button";
@@ -53,14 +57,13 @@ export class TaskProductStockListComponent {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['taskProductsUsage'] && this.taskProductsUsage) {
-      const taskProductUsageWithPartName = this.taskProductsUsage.map(taskProductUsage => {
+      this.dataSource.data = this.taskProductsUsage.map(taskProductUsage => {
         const product = this.productsStock.find(p => p.id === taskProductUsage.productStockId);
         return {
           ...taskProductUsage,
           partName: product ? product.name : 'Unknown'
         };
       });
-      this.dataSource.data = taskProductUsageWithPartName;
     }
   }
 

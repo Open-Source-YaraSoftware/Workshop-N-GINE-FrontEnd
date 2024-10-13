@@ -3,16 +3,21 @@ import {
   MatCell,
   MatCellDef,
   MatColumnDef,
-  MatHeaderCell, MatHeaderCellDef,
+  MatHeaderCell,
+  MatHeaderCellDef,
   MatHeaderRow,
   MatHeaderRowDef,
-  MatRow, MatRowDef, MatTable, MatTableDataSource
+  MatRow,
+  MatRowDef,
+  MatTable,
+  MatTableDataSource
 } from "@angular/material/table";
 import {MatIcon} from "@angular/material/icon";
 import {MatIconButton} from "@angular/material/button";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSort, MatSortHeader} from "@angular/material/sort";
 import {ProductRequest} from "../../model/product-request.entity";
+import {ProductRequestState} from "../../model/product-request-state.enum";
 
 @Component({
   selector: 'app-task-product-request-list',
@@ -44,6 +49,7 @@ export class TaskProductRequestListComponent {
   @Output() productRequestEditRequested = new EventEmitter<ProductRequest>();
   protected dataSource!: MatTableDataSource<ProductRequest>;
   protected displayedColumnsProductRequest: string[] = ['name', 'requestedQuantity', 'observation', 'status', 'actions'];
+  protected readonly ProductRequestState = ProductRequestState;
 
   constructor() {
     this.dataSource = new MatTableDataSource(this.productsRequested);
