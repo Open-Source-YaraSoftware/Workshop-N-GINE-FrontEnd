@@ -62,9 +62,8 @@ export class ActivityDiagnosticPreparationComponent {
 
   private createTask() {
     this.taskService.create(this.taskData)
-      .subscribe((response: Task) => {
-        this.taskData = response;
-        this.tasks.set([...this.tasks(), this.taskData]);
+      .subscribe(() => {
+        this.getTasksByInterventionId();
       });
   }
 
