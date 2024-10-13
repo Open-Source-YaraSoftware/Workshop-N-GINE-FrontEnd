@@ -1,0 +1,36 @@
+<h1 mat-dialog-title class="modal-title">Edit</h1>
+
+<div mat-dialog-content class="modal-content">
+  <section class="form-section">
+    <h2>Name</h2>
+    <mat-form-field appearance="outline">
+      <input matInput [(ngModel)]="item.name">
+    </mat-form-field>
+  </section>
+
+  <section class="form-section">
+    <h2>Type</h2>
+    <mat-form-field appearance="outline">
+      <input matInput [(ngModel)]="item.productType.name">
+    </mat-form-field>
+  </section>
+
+  <section class="form-section">
+    <h2>Amount</h2>
+    <mat-form-field appearance="outline">
+      <input matInput [(ngModel)]="item.amount">
+    </mat-form-field>
+  </section>
+
+  <section class="form-section">
+    <h2>Limit</h2>
+    <mat-form-field appearance="outline">
+      <input matInput [(ngModel)]="item.limit">
+    </mat-form-field>
+  </section>
+</div>
+
+<div mat-dialog-actions class="modal-actions">
+  <button mat-button color="warn" (click)="onConfirm()">Confirm</button>
+  <button mat-button (click)="onCancel()">Cancel</button>
+</div>

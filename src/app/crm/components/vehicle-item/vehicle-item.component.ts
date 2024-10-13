@@ -25,12 +25,12 @@ export class VehicleItemComponent {
   @Input() vehicle!: Vehicle;
   @Input() index!: number;
 
-  @Output() selectVehicle = new EventEmitter<Vehicle>();
+  @Output() selectedVehicle = new EventEmitter<Vehicle>();
 
   constructor() {
 
   }
-  onCardClick(): void {
-    this.selectVehicle.emit(this.vehicle);
+  selectVehicle(): void {
+    this.selectedVehicle.emit(this.vehicle);
   }
 }

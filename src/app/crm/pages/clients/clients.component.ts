@@ -15,8 +15,9 @@ import {MatPaginator} from "@angular/material/paginator";
 import {MatSort, MatSortHeader} from "@angular/material/sort";
 import {RouterLink} from "@angular/router";
 import {WorkshopClient} from "../../model/workshop-client.entity";
-import {Intervention} from "../../../service/model/intervention.entity";
 import {WorkshopClientService} from "../../services/workshop-client.service";
+import {MatDialog} from "@angular/material/dialog";
+import {NewClientDialogComponent} from "../../components/new-client-dialog/new-client-dialog.component";
 
 @Component({
   selector: 'app-clients',
@@ -40,23 +41,24 @@ import {WorkshopClientService} from "../../services/workshop-client.service";
     MatTable,
     RouterLink,
     MatHeaderCellDef,
-    MatNoDataRow
+    MatNoDataRow,
+    NewClientDialogComponent
   ],
   templateUrl: './clients.component.html',
   styleUrl: './clients.component.css'
 })
 export class ClientsComponent {
   dataSource!: MatTableDataSource<WorkshopClient>;
-  displayedColumns: string[] = ['id','firstName', 'lastName', 'dni', 'email'];
+  displayedColumns: string[] = ['id', 'firstName', 'lastName', 'dni', 'email'];
 
   workshopClientService: WorkshopClientService = inject(WorkshopClientService);
+  dialog: MatDialog = inject(MatDialog);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor(){
     this.dataSource = new MatTableDataSource([] as WorkshopClient[]);
-    // TODO: Implement this by mechanic id dynamically
     this.getClientsByWorkshop();
   }
 
@@ -81,5 +83,11 @@ export class ClientsComponent {
     if(this.dataSource.paginator){
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  openNewClientDialog(): void {
+    this.dialog.open(NewClientDialogComponent, {
+      width: '400px'
+    });
   }
 }

@@ -1,0 +1,23 @@
+<h2 mat-dialog-title class="dialog-title">New car registration</h2>
+
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>License plate</mat-label>
+    <input matInput [(ngModel)]="vehicle.licensePlate">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Brand</mat-label>
+    <input matInput [(ngModel)]="vehicle.brand">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Model</mat-label>
+    <input matInput [(ngModel)]="vehicle.model">
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button class="action-button" color="primary" (click)="onSave()">Create</button>
+  <button mat-button class="action-button" color="warn" (click)="onCancel()">Cancel</button>
+</div>

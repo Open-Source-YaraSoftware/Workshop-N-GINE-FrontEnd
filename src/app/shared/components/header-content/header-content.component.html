@@ -10,11 +10,17 @@
     <span>Help</span>
     <mat-icon>arrow_drop_down</mat-icon>
   </a>
-  <div class="profile center">
-    <mat-icon></mat-icon>
-    <div class="center space">
-      <span>Account</span>
-      <mat-icon>account_circle</mat-icon>
+  <div class="right-section center space">
+    <div class="auth-buttons center space">
+      <button mat-button [routerLink]="'/login'">Log-in</button>
+      <button mat-button [routerLink]="'/register'">Register</button>
+    </div>
+    <div class="profile center space">
+      <mat-icon></mat-icon>
+      <div class="center space">
+        <span>Account</span>
+        <mat-icon>account_circle</mat-icon>
+      </div>
     </div>
   </div>
 </mat-toolbar>
