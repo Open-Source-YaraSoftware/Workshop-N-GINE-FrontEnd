@@ -14,8 +14,8 @@ import {NotificationManager} from "../../model/notification-manager.entity";
   styleUrl: './notifications.component.css'
 })
 export class NotificationsComponent implements OnInit{
-  notificationManager=signal<NotificationManager>(new NotificationManager());
-  notificationsService: NotificationService=inject(NotificationService)
+  protected notificationManager=signal<NotificationManager>(new NotificationManager());
+  private notificationsService: NotificationService=inject(NotificationService)
 
   ngOnInit(): void{
     this.notificationsService.getByUserId(2)

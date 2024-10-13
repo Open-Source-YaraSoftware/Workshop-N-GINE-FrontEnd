@@ -10,7 +10,7 @@ import { Mechanic } from '../../model/mechanic.entity';
 import { Role } from '../../model/role.enum';
 import { Workshop } from '../../model/workshop.entity';
 import { AccountState } from '../../model/account-state.enum';
-import { Notification } from '../../model/notification.entity'; // Ensure this is imported
+import { Notification } from "../../../communication/model/notification.entity";// Ensure this is imported
 import { Task } from '../../model/task.entity';
 import {MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";

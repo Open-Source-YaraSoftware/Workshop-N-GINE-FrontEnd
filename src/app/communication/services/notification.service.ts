@@ -17,4 +17,9 @@ export class NotificationService extends BaseService<Notification>{
       .pipe(retry(2),catchError(this.handleError));
   }
 
+  public updateState(notification: Notification, newState: number): Observable<Notification>{
+    const updateData = {state: newState}
+    return this.http.patch<Notification>(`${this.resourcePath()}/${notification.id}`, updateData, this.httpOptions)
+  }
+
 }

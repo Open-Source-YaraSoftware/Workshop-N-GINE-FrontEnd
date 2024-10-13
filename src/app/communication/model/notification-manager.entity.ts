@@ -6,7 +6,4 @@ export class NotificationManager {
   constructor() {
     this.notifications = [];
   }
-
-  //createNotification(notification: Notification): void {}
-  //sendNotification(notification: Notification): void {}
 }

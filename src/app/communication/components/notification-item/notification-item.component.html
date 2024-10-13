@@ -7,11 +7,11 @@
     </mat-card-header>
 
     <mat-card-content class="notification-body">
-      <h3>
-        <mat-icon>{{notification.state === "READ" ? 'notifications' : 'notification_important'}}</mat-icon>
+      <span>
+        <mat-icon>{{notification.state === 0 ? 'notifications' : 'notification_important'}}</mat-icon>
         {{notification.content}}
-        <a href="{{notification.endpoint}}" (click)="changeIcon()">Go to the section</a>
-      </h3>
+      </span>
+      <a href="{{notification.endpoint}}" (click)="changeIcon()">Go to the section</a>
     </mat-card-content>
 
   </mat-card>
