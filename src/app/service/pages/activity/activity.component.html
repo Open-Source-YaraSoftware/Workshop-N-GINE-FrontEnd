@@ -33,7 +33,7 @@
     <mat-step *ngIf="type === 'leader'" label="Supervision">
       <div class="justify">
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button>Finish</button>
+        <button mat-button (click)="onFinishIntervention()">Finish</button>
       </div>
       <div>
         <app-activity-monitoring #supervision/>
