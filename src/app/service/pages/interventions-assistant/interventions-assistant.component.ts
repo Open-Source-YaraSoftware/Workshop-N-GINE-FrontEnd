@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, inject, signal, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, inject, ViewChild} from '@angular/core';
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {
@@ -21,7 +21,7 @@ import {Task} from "../../model/task.entity";
 import {DatePipe} from "@angular/common";
 
 @Component({
-  selector: 'app-tasks',
+  selector: 'app-interventions-assistant',
   standalone: true,
   imports: [
     MatFormField,
@@ -45,10 +45,10 @@ import {DatePipe} from "@angular/common";
     MatButton,
     DatePipe
   ],
-  templateUrl: './tasks.component.html',
-  styleUrl: './tasks.component.css'
+  templateUrl: './interventions-assistant.component.html',
+  styleUrl: './interventions-assistant.component.css'
 })
-export class TasksComponent implements AfterViewInit {
+export class InterventionsAssistantComponent implements AfterViewInit {
   dataSource!: MatTableDataSource<Intervention>;
   displayedColumns: string[] = ['id', 'client', 'vehicle', 'date', 'type', 'status'];
 
