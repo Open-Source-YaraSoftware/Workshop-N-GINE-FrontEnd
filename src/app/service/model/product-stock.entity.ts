@@ -1,27 +1,29 @@
-import {Workshop} from "./workshop.entity";
 import {ProductType} from "./product-type.entity";
-import {TaskStock} from "./task-stock.entity";
 
 export class ProductStock {
   id: number;
-  workshop: Workshop;
+  name: string;
   amount: number;
+  workshopId: number;
+  productTypeId: number;
+  limit: number;
   productType: ProductType;
-  taskStockList: TaskStock[];
 
-  constructor() {
-    this.id = 0;
-    this.workshop = new Workshop();
-    this.amount = 0;
-    this.productType = new ProductType();
-    this.taskStockList = [];
-  }
-
-  updateStock(quantity: number): void {
-    this.amount += quantity; // Ejemplo de cómo actualizar el stock
-  }
-
-  getItemDetails(): string {
-    return `Product: ${this.productType.name}, Amount: ${this.amount}`;
+  constructor({
+                id = 0,
+                name = '',
+                amount = 0,
+                workshopId = 0,
+                productTypeId = 0,
+                limit = 0,
+                productType =  new ProductType()
+              }={}) {
+    this.id = id;
+    this.name = name;
+    this.amount = amount;
+    this.workshopId = workshopId;
+    this.productTypeId = productTypeId;
+    this.limit = limit;
+    this.productType = productType;
   }
 }

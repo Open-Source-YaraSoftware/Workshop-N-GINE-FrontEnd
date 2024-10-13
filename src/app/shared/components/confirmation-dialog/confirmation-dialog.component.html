@@ -1,0 +1,8 @@
+<mat-dialog-content class="dialog">
+  <h2 class="message-content">{{data.message}}</h2>
+  <div class="spacer"></div>
+  <div class="action-buttons-container">
+    <button mat-raised-button color="primary" (click)="onConfirm()">Confirm</button>
+    <button mat-raised-button color="warn" (click)="onDismiss()">Cancel</button>
+  </div>
+</mat-dialog-content>

@@ -4,20 +4,31 @@ import {ProductRequestState} from "./product-request-state.enum";
 
 export class ProductRequest {
   id: number;
-  workshop: Workshop;
-  task: Task;
-  requestedDate: Date;
-  requestedQuantity: number;
-  status: ProductRequestState;
   name: string;
+  requestedQuantity: number;
+  workshopId: number;
+  taskId: number;
+  requestedDate: Date;
+  observation: string;
+  status: ProductRequestState;
 
-  constructor() {
-    this.id = 0;
-    this.workshop = new Workshop();
-    this.task = new Task();
-    this.requestedDate = new Date();
-    this.requestedQuantity = 0;
-    this.status = ProductRequestState.PENDING;
-    this.name = '';
+  constructor({
+                id = 0,
+                name = '',
+                requestedQuantity = 0,
+                workshopId = 0,
+                taskId = 0,
+                requestedDate = '',
+                observation = '',
+                status = ProductRequestState.PENDING
+              }={}) {
+    this.id = id;
+    this.name = name;
+    this.requestedQuantity = requestedQuantity;
+    this.workshopId = workshopId;
+    this.taskId = taskId;
+    this.requestedDate = requestedDate? new Date(requestedDate): new Date();
+    this.observation = observation;
+    this.status = status;
   }
 }

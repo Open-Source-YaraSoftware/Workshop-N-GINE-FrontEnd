@@ -63,7 +63,7 @@ export class TasksComponent implements AfterViewInit {
   }
 
   getInterventionIdFromTaskOfMechanicId(): Observable<any> {
-    return this.taskService.getByMechanicId(2).pipe(
+    return this.taskService.getByMechanicId(1).pipe(
       map((data: any) => data.map((task: Task) => task.intervention.id))
     );
   }
@@ -75,7 +75,7 @@ export class TasksComponent implements AfterViewInit {
           return this.interventionService.getAll().pipe(
             map((interventions: any) => {
               return interventions.filter((intervention: any) => {
-                return taskIds.includes(intervention.id) && intervention.leader.id !== 2;
+                return taskIds.includes(intervention.id) && intervention.leader.id !== 1;
               });
             })
           );
