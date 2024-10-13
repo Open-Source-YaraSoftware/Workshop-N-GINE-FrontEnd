@@ -13,7 +13,7 @@ import {
 import {NotificationMessagesService} from "../../../shared/services/notification-messages.service";
 
 @Component({
-  selector: 'app-activity-execution-header',
+  selector: 'app-activity-execution',
   standalone: true,
   imports: [
     RouterOutlet,
@@ -21,10 +21,10 @@ import {NotificationMessagesService} from "../../../shared/services/notification
     ActivityRequestsComponent,
     ActivityTrackingComponent
   ],
-  templateUrl: './activity-execution-header.component.html',
-  styleUrl: './activity-execution-header.component.css'
+  templateUrl: './activity-execution.component.html',
+  styleUrl: './activity-execution.component.css'
 })
-export class ActivityExecutionHeaderComponent {
+export class ActivityExecutionComponent {
   protected options = signal(['requests', 'tracking']);
   protected selectedOption = signal('requests');
   protected selectedTask = signal<Task>(new Task());

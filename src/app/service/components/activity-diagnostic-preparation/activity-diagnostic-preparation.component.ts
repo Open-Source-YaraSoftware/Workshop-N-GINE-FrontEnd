@@ -1,8 +1,8 @@
 import {Component, inject, signal} from '@angular/core';
-import {TaskDistributionComponent} from "../../components/task-distribution/task-distribution.component";
+import {TaskDistributionComponent} from "../task-distribution/task-distribution.component";
 import {
   InterventionDiagnosticComponent
-} from "../../components/intervention-diagnostic/intervention-diagnostic.component";
+} from "../intervention-diagnostic/intervention-diagnostic.component";
 import {ActivatedRoute} from "@angular/router";
 import {TaskService} from "../../services/task.service";
 import {Task} from "../../model/task.entity";
@@ -74,7 +74,7 @@ export class ActivityDiagnosticPreparationComponent {
 
   private deleteTask(id: number){
     this.taskService.delete(id)
-      .subscribe((response: Task)=>{
+      .subscribe(()=>{
         this.tasks.set(this.tasks().filter((task: Task) => task.id !== id));
       })
   }

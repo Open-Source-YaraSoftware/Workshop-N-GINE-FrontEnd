@@ -1,4 +1,4 @@
-import {Component, signal} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {
   MatStep,
   MatStepLabel,
@@ -9,17 +9,17 @@ import {
 } from "@angular/material/stepper";
 import {MatButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
-import {ActivityInformationComponent} from "../../pages/activity-information/activity-information.component";
+import {ActivityInformationComponent} from "../../components/activity-information/activity-information.component";
 import {
   ActivityDiagnosticPreparationComponent
-} from "../../pages/activity-diagnostic-preparation/activity-diagnostic-preparation.component";
-import {ActivityExecutionHeaderComponent} from "../activity-execution-header/activity-execution-header.component";
-import {ActivityMonitoringComponent} from "../../pages/activity-monitoring/activity-monitoring.component";
+} from "../../components/activity-diagnostic-preparation/activity-diagnostic-preparation.component";
+import {ActivityExecutionComponent} from "../../components/activity-execution/activity-execution.component";
+import {ActivityMonitoringComponent} from "../../components/activity-monitoring/activity-monitoring.component";
 import {ActivatedRoute} from "@angular/router";
 import {NgIf} from "@angular/common";
 
 @Component({
-  selector: 'app-activity-header',
+  selector: 'app-activity',
   standalone: true,
   imports: [
     MatStepper,
@@ -32,15 +32,16 @@ import {NgIf} from "@angular/common";
     MatStepperPrevious,
     ActivityInformationComponent,
     ActivityDiagnosticPreparationComponent,
-    ActivityExecutionHeaderComponent,
+    ActivityExecutionComponent,
     ActivityMonitoringComponent,
     NgIf
   ],
-  templateUrl: './activity-header.component.html',
-  styleUrl: './activity-header.component.css'
+  templateUrl: './activity.component.html',
+  styleUrl: './activity.component.css'
 })
-export class ActivityHeaderComponent {
+export class ActivityComponent {
   type: string = 'leader';
+  @ViewChild('supervision') supervision!: ActivityMonitoringComponent;
 
   constructor(private route: ActivatedRoute) {
     this.searchQueryParams();
@@ -50,7 +51,13 @@ export class ActivityHeaderComponent {
     this.searchQueryParams();
   }
 
-  searchQueryParams() {
+  protected onStepChange(event: any) {
+    if(event.selectedIndex === 3) {
+      this.supervision.load();
+    }
+  }
+
+  private searchQueryParams() {
     this.route.queryParams
       .subscribe(params => {
         this.type = params['type'] || 'leader';
