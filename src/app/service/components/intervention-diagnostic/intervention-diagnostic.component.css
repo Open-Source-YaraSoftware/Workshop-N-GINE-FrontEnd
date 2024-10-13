@@ -1,0 +1,10 @@
+.diagnostic {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

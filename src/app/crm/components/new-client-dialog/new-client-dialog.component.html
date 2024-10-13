@@ -1,0 +1,47 @@
+<h2 mat-dialog-title>New Client Registration</h2>
+<mat-dialog-content>
+  <form>
+    <mat-form-field>
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder="Enter first name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Paternal surname</mat-label>
+      <input matInput placeholder="Enter paternal surname">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Maternal surname</mat-label>
+      <input matInput placeholder="Enter maternal surname">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Document type</mat-label>
+      <mat-select>
+        <mat-option value="dni">DNI</mat-option>
+        <mat-option value="passport">Passport</mat-option>
+        <mat-option value="other">Other</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Document No</mat-label>
+      <input matInput placeholder="Enter document number">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Age</mat-label>
+      <input matInput type="number" placeholder="Enter age">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Location</mat-label>
+      <input matInput placeholder="Enter location">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary">Create</button>
+</mat-dialog-actions>

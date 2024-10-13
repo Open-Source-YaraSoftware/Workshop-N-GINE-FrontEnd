@@ -2238,6 +2238,23 @@
       "workshop": {
         "id": 1
       }
+    },
+    {
+      "id": 8,
+      "firstName": "Pedro",
+      "lastName": "Alvarez",
+      "dni": "60844135",
+      "email": "juan@gmail.com",
+      "password": "abcde1234",
+      "role": 0,
+      "workshop": {
+        "id": 0,
+        "name": "",
+        "membershipType": 0
+      },
+      "accountState": 0,
+      "notificationList": [],
+      "taskList": []
     }
   ],
   "products-stock": [

@@ -1,0 +1,16 @@
+<mat-card class="vehicle-card" (click)="selectVehicle()">
+  <mat-card-header>
+    <img mat-card-image
+         [src]="vehicle.image || 'assets/images/default-car.png'"
+         alt="Vehicle Image"
+         class="vehicle-image"
+    >
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <h4>Car {{ index }} </h4>
+    <h4>{{ vehicle.brand }} {{ vehicle.model }}</h4>
+      @if (vehicle.interventionRegister.length > 0) {
+          <h4>Last Intervention: {{vehicle.interventionRegister[vehicle.interventionRegister.length-1].completionDate | date}}</h4>
+      }
+  </mat-card-content>
+</mat-card>

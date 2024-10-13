@@ -1,4 +1,5 @@
 export enum ProductRequestState {
   PENDING,
-  DELIVERED
+  REJECTED,
+  APPROVED
 }

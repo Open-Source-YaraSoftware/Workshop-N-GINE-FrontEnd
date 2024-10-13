@@ -1,0 +1,14 @@
+.controls {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.filter{
+  flex-grow: 1;
+}
+.button-new-mechanic {
+  border: 0.2rem solid aquamarine;
+  margin-bottom: 1rem;
+}
