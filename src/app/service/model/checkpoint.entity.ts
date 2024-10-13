@@ -1,9 +1,15 @@
 export class Checkpoint {
   id: number;
   name: string;
+  taskId: number;
 
-  constructor() {
-    this.id = 0;
-    this.name = '';
+  constructor({
+    id = 0,
+    name = '',
+    taskId = 0
+  }={}) {
+    this.id = id;
+    this.name = name;
+    this.taskId = taskId;
   }
 }
