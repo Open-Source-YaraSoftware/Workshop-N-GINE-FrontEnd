@@ -1,32 +1,32 @@
-import {Workshop} from "./workshop.entity";
-import {Task} from "./task.entity";
 import {ProductRequestState} from "./product-request-state.enum";
-import {ProductType} from "./product-type.entity";
 
 export class ProductRequest {
   id: number;
-  workshop: Workshop;
-  task: Task;
-  requestedDate: String;
-  requestedQuantity: number;
-  status: ProductRequestState;
   name: string;
+  requestedQuantity: number;
+  workshopId: number;
+  taskId: number;
+  requestedDate: Date;
+  observation: string;
+  status: ProductRequestState;
 
   constructor({
                 id = 0,
-                workshop = new Workshop(),
-                task = new Task(),
-                requestedDate = '',
+                name = '',
                 requestedQuantity = 0,
-                status = ProductRequestState.PENDING,
-                name =  ''
+                workshopId = 0,
+                taskId = 0,
+                requestedDate = '',
+                observation = '',
+                status = ProductRequestState.PENDING
               }={}) {
     this.id = id;
-    this.workshop = workshop;
-    this.task = task;
-    this.requestedDate = requestedDate;
-    this.requestedQuantity = requestedQuantity;
-    this.status = status;
     this.name = name;
+    this.requestedQuantity = requestedQuantity;
+    this.workshopId = workshopId;
+    this.taskId = taskId;
+    this.requestedDate = requestedDate? new Date(requestedDate): new Date();
+    this.observation = observation;
+    this.status = status;
   }
 }
