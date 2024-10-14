@@ -16,11 +16,11 @@ export class ProductRequestService extends BaseService<ProductRequest> {
 
   public getAllByTaskId(taskId: number): Observable<ProductRequest[]> {
     return this.http.get<ProductRequest[]>(`${this.resourcePath()}?taskId=${taskId}`, this.httpOptions)
-      .pipe(retry(2),catchError(this.handleError));
+        .pipe(retry(2),catchError(this.handleError));
   }
-  
+
   public getByWorkshopId(workshopId: number){
-    return this.http.get<ProductRequest[]>(`${this.resourcePath()}?workshopId=${workshopId}&status=PENDING&_expand=task`, this.httpOptions)
+    return this.http.get<ProductRequest[]>(`${this.resourcePath()}?workshopId=${workshopId}&status=0`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 

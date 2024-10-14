@@ -20,6 +20,8 @@ import {
   ConfirmationDialogComponent
 } from "../../../shared/components/confirmation-dialog/confirmation-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
+import {Task} from "../../model/task.entity";
+import {TaskService} from "../../services/task.service";
 
 @Component({
   selector: 'app-requests',
@@ -49,8 +51,10 @@ import {MatDialog} from "@angular/material/dialog";
 export class RequestsComponent {
 
   protected requestData!: MatTableDataSource<ProductRequest>;
+  protected requestTask: Array<Task>=[];
+  private taskService: TaskService=inject(TaskService);
   private requestService: ProductRequestService = inject(ProductRequestService);
-  protected displayedColumns: string[] = ['select', 'name', 'amount', 'mechanic', 'date', 'observation'];
+  protected displayedColumns: string[] = ['select', 'name', 'requestedQuantity', 'mechanic', 'requestedDate', 'observation'];
   protected dialog: MatDialog = inject(MatDialog);
 
   protected selection = new SelectionModel<ProductRequest>(true, []);
@@ -61,6 +65,7 @@ export class RequestsComponent {
 
   constructor() {
     this.requestData = new MatTableDataSource([] as ProductRequest[]);
+    this.getAllTasks();
     this.getRequestsByWorkshop();
   }
 
@@ -79,10 +84,30 @@ export class RequestsComponent {
   getRequestsByWorkshop() {
     this.requestService.getByWorkshopId(1)
       .subscribe((requests: ProductRequest[]) => {
+        console.log(requests);
         this.requestData.data = requests;
         this.requestData.paginator=this.paginator;
         this.requestData.sort = this.sort;
+        this.getRequestWithAssistantName();
       });
+  }
+
+  getAllTasks(){
+    this.taskService.getAll().subscribe(task=>{
+      this.requestTask=task;
+      console.log('request task', this.requestTask);
+    });
+  }
+
+  getRequestWithAssistantName(){
+    this.requestData.data = this.requestData.data.map(request=>{
+      const mechanic =this.requestTask.find(task=>task.assistant.id===request.id);
+      console.log('mechanic')
+      return{
+        ...request,
+        mechanic: mechanic ? `${mechanic.assistant.firstName} ${mechanic.assistant.lastName}` : 'Unknown'
+      };
+    });
   }
 
   updateRequest(status: String): void{

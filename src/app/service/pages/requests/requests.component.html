@@ -29,17 +29,17 @@
         <td mat-cell *matCellDef="let data">{{data.name}}</td>
       </ng-container>
 
-      <ng-container matColumnDef="amount">
+      <ng-container matColumnDef="requestedQuantity">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount</th>
         <td mat-cell *matCellDef="let data">{{data.requestedQuantity}}</td>
       </ng-container>
 
       <ng-container matColumnDef="mechanic">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Mechanic</th>
-        <td mat-cell *matCellDef="let data">{{data.task?.assistant.firstName}}</td>
+        <td mat-cell *matCellDef="let data">{{data.mechanic}}</td>
       </ng-container>
 
-      <ng-container matColumnDef="date">
+      <ng-container matColumnDef="requestedDate">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
         <td mat-cell *matCellDef="let data">{{data.requestedDate}}</td>
       </ng-container>
