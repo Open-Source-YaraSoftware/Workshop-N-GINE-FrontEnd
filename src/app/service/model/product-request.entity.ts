@@ -1,5 +1,3 @@
-import {Workshop} from "./workshop.entity";
-import {Task} from "./task.entity";
 import {ProductRequestState} from "./product-request-state.enum";
 
 export class ProductRequest {
