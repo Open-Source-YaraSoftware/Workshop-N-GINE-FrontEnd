@@ -130,12 +130,12 @@ export const routes: Routes = [
               {
                 path: 'requests',
                 title: 'activity-requests',
-                loadComponent: () => import('./service/pages/activity-requests/activity-requests.component').then(m => m.ActivityRequestsComponent),
+                loadComponent: () => import('./service/components/activity-requests/activity-requests.component').then(m => m.ActivityRequestsComponent),
               },
               {
                 path: 'tracking',
                 title: 'activity-tracking',
-                loadComponent: () => import('./service/pages/activity-tracking/activity-tracking.component').then(m => m.ActivityTrackingComponent),
+                loadComponent: () => import('./service/components/activity-tracking/activity-tracking.component').then(m => m.ActivityTrackingComponent),
               }
             ]
           },

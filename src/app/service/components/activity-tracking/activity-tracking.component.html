@@ -1,0 +1,36 @@
+<section>
+  <form [formGroup]="trackingForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Activity</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <div class="buttons">
+      <button mat-button class="button" type="submit">{{isEditMode()?"Save": "Add"}}</button>
+      @if(isEditMode()){
+        <button mat-button class="button" type="button" (click)="onCancelRequest()">Cancel</button>
+      }
+    </div>
+  </form>
+  <mat-list>
+    @for (checkpoint of checkpoints(); track checkpoint.id; let idx = $index; let length = $count){
+      <mat-list-item>
+        <article class="item">
+          <span>{{checkpoint.name}}</span>
+          @if (!isEditMode()){
+            <div class="item-buttons">
+              <button mat-icon-button color="warn" aria-label="Delete" (click)="onDeleteCheckpoint(checkpoint)">
+                <mat-icon>delete</mat-icon>
+              </button>
+              <button mat-icon-button color="primary" aria-label="Edit" (click)="onEditCheckpoint(checkpoint)">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </div>
+          }
+        </article>
+      </mat-list-item>
+      @if(idx < length - 1){
+        <mat-divider></mat-divider>
+      }
+    }
+  </mat-list>
+</section>

@@ -3,15 +3,15 @@ import {BaseService} from "../../shared/services/base.service";
 import {ProductRequest} from "../model/product-request.entity";
 import {catchError, Observable, retry, concatMap, delay, from} from "rxjs";
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class ProductRequestService extends BaseService<ProductRequest>{
+
+export class ProductRequestService extends BaseService<ProductRequest> {
 
   constructor() {
     super();
-    this.resourceEndpoint= '/products-request';
+    this.resourceEndpoint = '/products-request';
   }
 
   public getAllByTaskId(taskId: number): Observable<ProductRequest[]> {
@@ -19,12 +19,12 @@ export class ProductRequestService extends BaseService<ProductRequest>{
         .pipe(retry(2),catchError(this.handleError));
   }
 
-  getByWorkshopId(workshopId: number){
+  public getByWorkshopId(workshopId: number){
     return this.http.get<ProductRequest[]>(`${this.resourcePath()}?workshopId=${workshopId}&status=0`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
-  updateRequests(requests: ProductRequest[], newStatus: String) {
+  public updateRequests(requests: ProductRequest[], newStatus: String) {
     return from(requests).pipe(
       concatMap(request => {
         const updateData = { status: newStatus };
@@ -33,6 +33,5 @@ export class ProductRequestService extends BaseService<ProductRequest>{
       })
     );
   }
-
-
+  
 }
