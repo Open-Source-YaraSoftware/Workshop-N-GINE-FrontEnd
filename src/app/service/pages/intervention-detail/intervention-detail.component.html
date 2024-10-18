@@ -23,12 +23,12 @@
         (updateIntervention)="updateIntervention($event)"
       >
       </app-general-information>
-      <!--
-     <app-intervention-summary
-       *ngIf="currentView === 'interventionSummary'"
-       [intervention]="intervention">
-     </app-intervention-summary>
-     -->
+      <app-intervention-summary
+        *ngIf="currentView === 'interventionSummary'"
+        [tasks]="tasks"
+        [intervention]="intervention"
+      >
+      </app-intervention-summary>
     </div>
   </div>
 </div>

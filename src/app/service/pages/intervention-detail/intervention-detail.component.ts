@@ -18,6 +18,9 @@ import {
 import {MatDialog} from "@angular/material/dialog";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {InterventionState} from "../../model/intervention-state.enum";
+import {TaskService} from "../../services/task.service";
+import {Task} from "../../model/task.entity";
+import {InterventionSummaryComponent} from "../../components/intervention-summary/intervention-summary.component";
 
 @Component({
   selector: 'app-intervention-detail',
@@ -29,12 +32,15 @@ import {InterventionState} from "../../model/intervention-state.enum";
     ReplaceUnderscorePipe,
     TitleCasePipe,
     NgIf,
-    GeneralInformationComponent
+    GeneralInformationComponent,
+    InterventionSummaryComponent
   ],
   templateUrl: './intervention-detail.component.html',
   styleUrl: './intervention-detail.component.css'
 })
 export class InterventionDetailComponent implements OnInit {
+
+  //generalInformation
   private interventionService = inject(InterventionsService);
   private personnelService = inject(PersonnelService);
   private vehicleService = inject(VehicleService);
@@ -49,11 +55,17 @@ export class InterventionDetailComponent implements OnInit {
   private dialog = inject(MatDialog);
   private snackBar = inject(MatSnackBar);
 
+  //interventionSummary
+  private taskService = inject(TaskService);
+  protected tasks: Task[] = [];
+
+
   ngOnInit(): void {
     this.loadInterventionId();
     this.loadPersonnelData();
     this.loadInterventionData();
     this.loadVehiclesData();
+    this.loadTasksData();
   }
 
   loadAccordingRole() {
@@ -133,4 +145,13 @@ export class InterventionDetailComponent implements OnInit {
       verticalPosition: 'top',
     });
   }
+
+  //interventionSummary
+
+  private loadTasksData() {
+    this.taskService.getByInterventionId(parseInt(this.interventionId)).subscribe(tasks => {
+      this.tasks = tasks;
+    });
+  }
+
 }
