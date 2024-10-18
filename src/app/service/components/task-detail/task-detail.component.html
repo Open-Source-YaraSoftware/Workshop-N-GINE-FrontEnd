@@ -16,5 +16,20 @@
       </li>
     </ul>
 
+    <h4>List of replacement parts used:</h4>
+    <table mat-table [dataSource]="productUsages" class="mat-elevation-z8">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Replacement Part </th>
+        <td mat-cell *matCellDef="let element"> {{ element?.stock?.name || 'No name available' }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="quantityUsed">
+        <th mat-header-cell *matHeaderCellDef> Quantity Used </th>
+        <td mat-cell *matCellDef="let element"> {{ element?.usage?.quantityUsed || 'N/A' }} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="['name', 'quantityUsed']"></tr>
+      <tr mat-row *matRowDef="let row; columns: ['name', 'quantityUsed'];"></tr>
+    </table>
   </div>
 </mat-expansion-panel>

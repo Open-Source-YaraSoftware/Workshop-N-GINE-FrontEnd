@@ -9,6 +9,8 @@ import {
 import {Checkpoint} from "../../model/checkpoint.entity";
 import {NgForOf, TitleCasePipe} from "@angular/common";
 import {ReplaceUnderscorePipe} from "../../../shared/utilities/replace-underscore.pipe";
+import {TaskProductUsage} from "../../model/task-product-usage.entity";
+import {ProductStock} from "../../model/product-stock.entity";
 import {
   MatCell,
   MatCellDef,
@@ -50,4 +52,5 @@ import {
 export class TaskDetailComponent {
   @Input() task!: Task;
   @Input() checkpoints!: Checkpoint[];
+  @Input() productUsages!: { usage: TaskProductUsage, stock: ProductStock }[];
 }
