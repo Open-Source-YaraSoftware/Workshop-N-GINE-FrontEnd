@@ -1,0 +1,20 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ task.description }}
+    </mat-panel-title>
+    <mat-panel-description>
+      State: {{ task.state.toString() | replaceUnderscore | titlecase }}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <div class="task-details">
+    <h4 class="section-title">Checkpoints:</h4>
+    <ul>
+      <li *ngFor="let checkpoint of checkpoints" class="checkpoint-item">
+        -  {{ checkpoint?.name || 'No name available' }}
+      </li>
+    </ul>
+
+  </div>
+</mat-expansion-panel>
