@@ -1,0 +1,10 @@
+<div class="subscription-list">
+  <h2>Subscription Plans</h2>
+  <ul>
+    <li *ngFor="let subscription of subscriptions">
+      {{ subscription.name }} - ${{ subscription.price }}
+    </li>
+  </ul>
+  <button mat-button (click)="navigateTo('/subscriptions/history')">View Subscription History</button>
+  <button mat-button (click)="navigateTo('/subscriptions/billing-details')">View Billing Details</button>
+</div>

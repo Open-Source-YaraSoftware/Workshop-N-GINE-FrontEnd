@@ -1,1 +1,71 @@
-<p>profile works!</p>
+<div class="container">
+    <div class="profile-card" *ngIf="profileData">
+      <header class="profile-header">
+        <h1>Perfil de {{ isMechanic ? 'Mecánico' : 'Cliente' }}</h1>
+      </header>
+      <div class="profile-content">
+        <div class="profile-image">
+          <div class="image-placeholder" aria-label="Imagen de perfil">
+            {{ profileData.firstName[0] }}
+          </div>
+        </div>
+        <div class="profile-info">
+          <h2>{{ profileData.firstName }} {{ profileData.lastName }}</h2>
+          <p>{{ isMechanic ? 'Mecánico' : 'Cliente' }}</p>
+        </div>
+        <nav>
+          <ul class="tab-list">
+            <li><button (click)="activeTab = 'personal'" [class.active]="activeTab === 'personal'">Información Personal</button></li>
+            <li><button (click)="activeTab = 'account'" [class.active]="activeTab === 'account'">Cuenta</button></li>
+            <li *ngIf="isMechanic"><button (click)="activeTab = 'work'" [class.active]="activeTab === 'work'">Información Laboral</button></li>
+          </ul>
+        </nav>
+        <form (ngSubmit)="saveChanges()" #profileForm="ngForm">
+          <div class="tab-content" [ngSwitch]="activeTab">
+            <div *ngSwitchCase="'personal'">
+              <div class="form-group">
+                <label for="firstName">Nombre</label>
+                <input id="firstName" name="firstName" [(ngModel)]="profileData.firstName" [readonly]="!isEditing">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Apellido</label>
+                <input id="lastName" name="lastName" [(ngModel)]="profileData.lastName" [readonly]="!isEditing">
+              </div>
+              <div class="form-group">
+                <label for="dni">DNI</label>
+                <input id="dni" name="dni" [(ngModel)]="profileData.dni" [readonly]="!isEditing">
+              </div>
+              <div class="form-group">
+                <label for="age">Edad</label>
+                <input id="age" name="age" [(ngModel)]="profileData.age" [readonly]="!isEditing">
+              </div>
+            </div>
+            <div *ngSwitchCase="'account'">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" [(ngModel)]="profileData.email" [readonly]="!isEditing">
+              </div>
+              <div class="form-group">
+                <label for="state">Estado</label>
+                <input id="state" name="state" [(ngModel)]="profileData.state" readonly>
+              </div>
+            </div>
+            <div *ngIf="isMechanic">
+              <div class="form-group">
+                <label for="workshop">Taller</label>
+                <input id="workshop" name="workshop" [value]="profileData.workshop?.id" readonly>
+              </div>
+              <!-- Aquí puedes agregar más campos específicos para mecánicos si es necesario -->
+            </div>
+          </div>
+          <div class="profile-footer">
+            <button *ngIf="!isEditing" type="button" (click)="toggleEdit()" class="btn-edit">Editar Perfil</button>
+            <ng-container *ngIf="isEditing">
+              <button type="submit" class="btn-save">Guardar Cambios</button>
+              <button type="button" (click)="toggleEdit()" class="btn-cancel">Cancelar</button>
+            </ng-container>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

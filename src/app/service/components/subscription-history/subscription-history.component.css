@@ -1,0 +1,18 @@
+.history-list {
+  margin: 20px;
+}
+
+h2 {
+  color: #28a745;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+}

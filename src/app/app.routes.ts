@@ -22,6 +22,26 @@ export const routes: Routes = [
         loadComponent: () => import('./crm/pages/client-detail/client-detail.component').then(m => m.ClientDetailComponent),
       },
       {
+        path: 'subscriptions',
+        title: 'subscriptions',
+        loadComponent: () => import('./service/pages/subscription/subscription.component').then(m => m.SubscriptionComponent),
+      },
+      {
+        path: 'subscriptions/history',
+        title: 'subscription-history',
+        loadComponent: () => import('./service/components/subscription-history/subscription-history.component').then(m => m.SubscriptionHistoryComponent),
+      },
+      {
+        path: 'subscriptions/billing-details',
+        title: 'billing-details',
+        loadComponent: () => import('./service/components/billing-details/billing-details.component').then(m => m.BillingDetailsComponent),
+      },
+      {
+        path: 'subscriptions/confirmation',
+        title: 'subscription-confirmation',
+        loadComponent: () => import('./service/components/subscription-confirmation/subscription-confirmation.component').then(m => m.SubscriptionConfirmationComponent),
+      },
+      {
         path: 'interventions',
         title: 'interventions',
         loadComponent: () => import('./service/pages/interventions/interventions.component').then(m => m.InterventionsComponent),
@@ -88,7 +108,7 @@ export const routes: Routes = [
           {
             path: 'assistant',
             title: 'assistant',
-            loadComponent: () => import('./service/pages/interventions-assistant/interventions-assistant.component').then(m => m.InterventionsAssistantComponent),
+            loadComponent: () => import('./service/pages/tasks/tasks.component').then(m => m.TasksComponent),
           },
           {
             path: 'leader',
@@ -100,7 +120,51 @@ export const routes: Routes = [
       {
         path: 'activities/:id',
         title: 'activity',
-        loadComponent: () => import('./service/pages/activity/activity.component').then(m => m.ActivityComponent)
+        loadComponent: () => import('./service/components/activity-header/activity-header.component').then(m => m.ActivityHeaderComponent),
+        children: [
+          {
+            path: '',
+            pathMatch: 'full',
+            redirectTo: 'information',
+          },
+          {
+            path: 'information',
+            title: 'information',
+            loadComponent: () => import('./service/pages/activity-information/activity-information.component').then(m => m.ActivityInformationComponent),
+          },
+          {
+            path: 'diagnostic-preparation',
+            title: 'diagnostic-preparation',
+            loadComponent: () => import('./service/pages/activity-diagnostic-preparation/activity-diagnostic-preparation.component').then(m => m.ActivityDiagnosticPreparationComponent),
+          },
+          {
+            path: 'execution/:taskId',
+            title: 'execution',
+            loadComponent: () => import('./service/components/activity-execution-header/activity-execution-header.component').then(m => m.ActivityExecutionHeaderComponent),
+            children: [
+              {
+                path: '',
+                pathMatch: 'full',
+                redirectTo: 'requests',
+              },
+              {
+                path: 'requests',
+                title: 'activity-requests',
+                loadComponent: () => import('./service/components/activity-requests/activity-requests.component').then(m => m.ActivityRequestsComponent),
+              },
+              {
+                path: 'tracking',
+                title: 'activity-tracking',
+                loadComponent: () => import('./service/components/activity-tracking/activity-tracking.component').then(m => m.ActivityTrackingComponent),
+              }
+            ]
+          },
+          {
+            path: 'monitoring',
+            title: 'monitoring',
+            loadComponent: () => import('./service/pages/activity-monitoring/activity-monitoring.component').then(m => m.ActivityMonitoringComponent),
+          }
+        ]
       },
       {
         path: 'vehicles',
@@ -116,6 +180,13 @@ export const routes: Routes = [
         path: 'profile/:id',
         title: 'profile',
         loadComponent: () => import('./iam/pages/profile/profile.component').then(m => m.ProfileComponent),
+        data: { isMechanic: false }
+      },
+      {
+        path: 'mechanic-profile/:id',
+        title: 'mechanic-profile',
+        loadComponent: () => import('./iam/pages/profile/profile.component').then(m => m.ProfileComponent),
+        data: { isMechanic: true }
       }
     ]
   },

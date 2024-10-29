@@ -1,0 +1,9 @@
+<div class="history-list">
+  <h2>Subscription History</h2>
+  <ul>
+    <li *ngFor="let entry of history">
+      {{ entry.planName }} - {{ entry.status }} ({{ entry.startDate }} to {{ entry.endDate || 'Ongoing' }})
+    </li>
+  </ul>
+  <button mat-button (click)="navigateTo('/subscriptions')">Back to Subscription Plans</button>
+</div>

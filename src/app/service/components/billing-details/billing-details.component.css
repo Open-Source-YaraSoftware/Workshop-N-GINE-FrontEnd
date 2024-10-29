@@ -1,0 +1,13 @@
+.billing-details {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+h2 {
+  color: #ff5722;
+}
+
+p {
+  margin: 5px 0;
+}

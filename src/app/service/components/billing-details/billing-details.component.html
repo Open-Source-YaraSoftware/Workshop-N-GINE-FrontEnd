@@ -1,0 +1,8 @@
+<div class="billing-details">
+  <h2>Billing Details</h2>
+  <p>Card Holder: {{ billingDetails.cardHolderName }}</p>
+  <p>Card Number: {{ billingDetails.cardNumber }}</p>
+  <p>Expiration Date: {{ billingDetails.expirationDate }}</p>
+  <p>Billing Address: {{ billingDetails.billingAddress }}</p>
+  <button mat-button (click)="navigateTo('/subscriptions')">Back to Subscription Plans</button>
+</div>

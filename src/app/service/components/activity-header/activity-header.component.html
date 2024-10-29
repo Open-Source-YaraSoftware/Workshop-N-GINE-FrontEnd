@@ -1,0 +1,42 @@
+<main class="container">
+  <mat-stepper
+    class="content"
+    labelPosition="bottom"
+  >
+    <mat-step label="Information">
+      <div class="end">
+        <button mat-button matStepperNext>Next</button>
+      </div>
+      <div>
+        <app-activity-information/>
+      </div>
+    </mat-step>
+    <mat-step *ngIf="type === 'leader'" label="Diagnostic and preparation">
+      <div class="justify">
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+      <div>
+        <app-activity-diagnostic-preparation/>
+      </div>
+    </mat-step>
+    <mat-step label="Execution">
+      <div class="justify">
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+      <div>
+        <app-activity-execution-header/>
+      </div>
+    </mat-step>
+    <mat-step *ngIf="type === 'leader'" label="Supervision">
+      <div class="justify">
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button>Finish</button>
+      </div>
+      <div>
+        <app-activity-monitoring/>
+      </div>
+    </mat-step>
+  </mat-stepper>
+</main>

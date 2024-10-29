@@ -1,0 +1,15 @@
+<main class="container">
+  <app-task-distribution
+    class="item"
+    [tasks]="tasks()"
+    [interventionId]="interventionId()"
+    (taskAddRequested)="onTaskAddRequested($event)"
+    (taskDeleteRequested)="onTaskDeleteRequested($event)"
+    (taskUpdatedRequested)="onTaskUpdateRequested($event)"
+  />
+  <app-intervention-diagnostic
+    class="item"
+    [intervention]="interventionData()"
+    (interventionUpdateRequested)="onInterventionUpdateRequested($event)"
+  />
+</main>
