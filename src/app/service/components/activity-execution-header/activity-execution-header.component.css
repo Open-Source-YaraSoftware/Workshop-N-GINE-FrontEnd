@@ -2,19 +2,25 @@
   padding-top: 2rem;
   width: 100%;
   gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.options{
+
+.options {
   padding: 1rem 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
-.options-header{
+
+.options-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
+
 .option {
   list-style: none;
 }
