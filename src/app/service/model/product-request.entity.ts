@@ -1,4 +1,4 @@
-import { ProductRequestState } from "./product-request-state.enum";
+import {ProductRequestState} from "./product-request-state.enum";
 
 export class ProductRequest {
   id: number;

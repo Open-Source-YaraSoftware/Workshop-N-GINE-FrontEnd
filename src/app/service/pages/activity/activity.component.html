@@ -2,6 +2,7 @@
   <mat-stepper
     class="content"
     labelPosition="bottom"
+    (selectionChange)="onStepChange($event)"
   >
     <mat-step label="Information">
       <div class="end">
@@ -26,16 +27,16 @@
         <button mat-button matStepperNext>Next</button>
       </div>
       <div>
-        <app-activity-execution-header/>
+        <app-activity-execution #execution/>
       </div>
     </mat-step>
     <mat-step *ngIf="type === 'leader'" label="Supervision">
       <div class="justify">
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button>Finish</button>
+        <button mat-button (click)="onFinishIntervention()">Finish</button>
       </div>
       <div>
-        <app-activity-monitoring/>
+        <app-activity-monitoring #supervision/>
       </div>
     </mat-step>
   </mat-stepper>

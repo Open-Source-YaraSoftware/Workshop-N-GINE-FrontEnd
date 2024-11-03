@@ -16,7 +16,7 @@ export class Task {
   description: string;
 
   constructor() {
-    this.id = Math.floor(Math.random() * 100000);
+    this.id = 0;
     this.state = TaskState.PENDING;
     this.assistant = new Mechanic();
     this.intervention = new Intervention();
@@ -25,7 +25,4 @@ export class Task {
     this.checkpoint = new Checkpoint();
     this.description = '';
   }
-
-  updateTaskState(state: TaskState): void {}
-  getTaskDetails(): string { return ''; }
 }
