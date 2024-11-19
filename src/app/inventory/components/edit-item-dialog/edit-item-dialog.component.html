@@ -9,23 +9,23 @@
   </section>
 
   <section class="form-section">
-    <h2>Type</h2>
+    <h2>Description</h2>
     <mat-form-field appearance="outline">
-      <input matInput [(ngModel)]="item.productType.name">
+      <input matInput [(ngModel)]="item.description">
     </mat-form-field>
   </section>
 
   <section class="form-section">
-    <h2>Amount</h2>
+    <h2>Stock Quantity</h2>
     <mat-form-field appearance="outline">
-      <input matInput [(ngModel)]="item.amount">
+      <input matInput [(ngModel)]="item.stockQuantity">
     </mat-form-field>
   </section>
 
   <section class="form-section">
-    <h2>Limit</h2>
+    <h2>Low Stock Threshold</h2>
     <mat-form-field appearance="outline">
-      <input matInput [(ngModel)]="item.limit">
+      <input matInput [(ngModel)]="item.lowStockThreshold">
     </mat-form-field>
   </section>
 </div>

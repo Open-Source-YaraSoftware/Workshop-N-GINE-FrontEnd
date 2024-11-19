@@ -20,8 +20,8 @@ import {
   ConfirmationDialogComponent
 } from "../../../shared/components/confirmation-dialog/confirmation-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
-import {Task} from "../../model/task.entity";
-import {TaskService} from "../../services/task.service";
+import {Task} from "../../../service/model/task.entity";
+import {TaskService} from "../../../service/services/task.service";
 
 @Component({
   selector: 'app-requests',
@@ -54,7 +54,7 @@ export class RequestsComponent {
   protected requestTask: Array<Task>=[];
   private taskService: TaskService=inject(TaskService);
   private requestService: ProductRequestService = inject(ProductRequestService);
-  protected displayedColumns: string[] = ['select', 'name', 'requestedQuantity', 'mechanic', 'requestedDate', 'observation'];
+  protected displayedColumns: string[] = ['id', 'requestedQuantity', 'status'];
   protected dialog: MatDialog = inject(MatDialog);
 
   protected selection = new SelectionModel<ProductRequest>(true, []);

@@ -1,7 +1,7 @@
 import {TaskState} from "./task-state.enum";
 import {Mechanic} from "./mechanic.entity";
 import {Intervention} from "./intervention.entity";
-import {ProductRequest} from "./product-request.entity";
+import {ProductRequest} from "../../inventory/model/product-request.entity";
 import {TaskStock} from "./task-stock.entity";
 import {Checkpoint} from "./checkpoint.entity";
 

@@ -16,8 +16,8 @@ import {MatIcon} from "@angular/material/icon";
 import {MatIconButton} from "@angular/material/button";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSort, MatSortHeader} from "@angular/material/sort";
-import {ProductRequest} from "../../model/product-request.entity";
-import {ProductRequestState} from "../../model/product-request-state.enum";
+import {ProductRequest} from "../../../inventory/model/product-request.entity";
+import {ProductRequestState} from "../../../inventory/model/product-request-state.enum";
 
 @Component({
   selector: 'app-task-product-request-list',

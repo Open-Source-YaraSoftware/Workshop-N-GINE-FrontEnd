@@ -5,11 +5,11 @@ import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/
 import {MatInput} from "@angular/material/input";
 import {MatButton, MatIconButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
-import {ProductStock} from "../../model/product-stock.entity";
-import {ProductStockService} from "../../services/product-stock.service";
-import {ProductRequestService} from "../../services/product-request.service";
+import {ProductStock} from "../../../inventory/model/product-stock.entity";
+import {ProductStockService} from "../../../inventory/services/product-stock.service";
+import {ProductRequestService} from "../../../inventory/services/product-request.service";
 import {TaskProductUsageService} from "../../services/task-product-usage.service";
-import {ProductRequest} from "../../model/product-request.entity";
+import {ProductRequest} from "../../../inventory/model/product-request.entity";
 import {TaskProductUsage} from "../../model/task-product-usage.entity";
 import {TaskProductStockListComponent} from "../task-product-stock-list/task-product-stock-list.component";
 import {TaskProductRequestListComponent} from "../task-product-request-list/task-product-request-list.component";
@@ -138,9 +138,9 @@ export class ActivityRequestsComponent {
     productRequest.taskId = this.taskSelectedId;
     const otherPartValue = this.requestsForm.get('otherPart')?.value;
     if(!otherPartValue) return;
-    productRequest.name = otherPartValue;
+    //productRequest.name = otherPartValue;
     const observationValue = this.requestsForm.get('observation')?.value;
-    productRequest.observation = observationValue? observationValue: '';
+    //productRequest.observation = observationValue? observationValue: '';
     productRequest.requestedQuantity = Number(this.requestsForm.get('quantity')?.value);
     this.productRequestService.create(productRequest)
       .subscribe({
@@ -231,8 +231,8 @@ export class ActivityRequestsComponent {
   private editProductRequest(productRequest: ProductRequest) {
     this.productRequestSelected.set(productRequest);
     this.requestsForm.get('requiredPart')?.setValue(0);
-    this.requestsForm.get('otherPart')?.setValue(productRequest.name);
-    this.requestsForm.get('observation')?.setValue(productRequest.observation);
+    // this.requestsForm.get('otherPart')?.setValue(productRequest.name);
+    // this.requestsForm.get('observation')?.setValue(productRequest.observation);
     this.requestsForm.get('quantity')?.setValue(productRequest.requestedQuantity);
   }
 
@@ -271,11 +271,11 @@ export class ActivityRequestsComponent {
   private updateProductRequest() {
     const productRequest = this.productRequestSelected();
     const otherPartValue = this.requestsForm.get('otherPart')?.value;
-    if(otherPartValue) productRequest.name = otherPartValue;
+    //if(otherPartValue) productRequest.name = otherPartValue;
     const observationValue = this.requestsForm.get('observation')?.value;
-    if(observationValue) productRequest.observation = observationValue;
-    productRequest.requestedQuantity = Number(this.requestsForm.get('quantity')?.value);
-    productRequest.requestedDate = new Date();
+    //if(observationValue) productRequest.observation = observationValue;
+   // productRequest.requestedQuantity = Number(this.requestsForm.get('quantity')?.value);
+    //productRequest.requestedDate = new Date();
     this.productRequestService.update(productRequest.id, productRequest)
       .subscribe({
         next: ()=>{

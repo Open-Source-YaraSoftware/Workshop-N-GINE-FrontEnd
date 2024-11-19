@@ -1,5 +1,5 @@
 export enum Role {
-  MECHANIC,
+  MECHANIC = 1,
   WORKSHOP_OWNER,
   CLIENT
 }

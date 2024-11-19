@@ -10,17 +10,17 @@ export class ProductStockService extends BaseService<ProductStock>{
 
   constructor() {
     super();
-    this.resourceEndpoint = '/products-stock';
+    this.resourceEndpoint = '/products';
   }
 
   public getByWorkshopId(workshopId: number){
-    return this.http.get<ProductStock[]>(`${this.resourcePath()}?workshop.id=${workshopId}&_expand=productType`, this.httpOptions)
+    return this.http.get<ProductStock[]>(`${this.resourcePath()}?workshopId=${workshopId}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
 
   }
 
-  public deleteItem(deletedRow: ProductStock): Observable<any> {
-    return this.http.delete(`${this.resourcePath()}/${deletedRow.id}`, this.httpOptions)
+  public deleteItem(deletedRowId: number): Observable<any> {
+    return this.http.delete(`${this.resourcePath()}/${deletedRowId}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
@@ -28,5 +28,5 @@ export class ProductStockService extends BaseService<ProductStock>{
    return this.http.put<ProductStock>(`${this.resourcePath()}/${updatedRow.id}`, updatedRow, this.httpOptions)
      .pipe(retry(2), catchError(this.handleError));
   }
-  
+
 }
