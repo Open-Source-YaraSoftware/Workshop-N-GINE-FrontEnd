@@ -1,7 +1,5 @@
 import {Component, computed, OnInit, signal} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { PersonnelService } from '../../services/personnel.service';
-import { Mechanic } from '../../model/mechanic.entity';
 import { NewMechanicDialogComponent } from '../../components/new-mechanic-dialog/new-mechanic-dialog.component';
 import { NgIf } from '@angular/common';
 import {MatFormField, MatLabel} from '@angular/material/form-field';
@@ -10,6 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { PersonnelListComponent } from '../../components/personnel-list/personnel-list.component';
+import {Profile} from "../../../profiles/model/profile.entity";
+import {ProfileService} from "../../../profiles/services/profile.service";
+import {WorkshopService} from "../../services/workshop.service";
 
 @Component({
   selector: 'app-personnel',
@@ -30,8 +31,8 @@ import { PersonnelListComponent } from '../../components/personnel-list/personne
 })
 export class PersonnelComponent implements OnInit {
   isModalOpen = false;
-  selectedMechanic: Mechanic | null = null;
-  filteredMechanics = computed<Mechanic[]>(() => {
+  selectedMechanic: Profile | null = null;
+  filteredMechanics = computed<Profile[]>(() => {
     const filter = this.searchQuery().toLowerCase();
     return this.mechanics().filter(
       mechanic =>
@@ -40,28 +41,35 @@ export class PersonnelComponent implements OnInit {
         || mechanic.dni.toString().includes(filter)
         || mechanic.email.toLowerCase().includes(filter));
   });
-  mechanics = signal<Mechanic[]>([]);
+  mechanics = signal<Profile[]>([]);
   noMechanics = false;
   searchQuery = signal('');
 
 
 
-  constructor( private personnelService: PersonnelService,  private dialog: MatDialog) {}
+  constructor( private profileService: ProfileService, private workshopService: WorkshopService, private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.getPersonnel();
   }
 
   getPersonnel(): void {
-    this.personnelService.getByWorkshopId(1).subscribe({
-      next: (data: Mechanic[]) => {
-        this.mechanics.set(data);
-        this.noMechanics = data.length === 0;
+    this.workshopService.getMechanicsIdsByWorkshopId(1).subscribe({
+      next: (mechanicIds: number[]) => {
+        if (mechanicIds.length === 0) {
+          this.noMechanics = true;
+          return;
+        }
+        mechanicIds.forEach((id: number) => {
+          this.profileService.getProfileById(id).subscribe({
+            next: (mechanic: Profile) => {
+              this.mechanics.set([mechanic, ...this.mechanics()]);
+            },
+            error: (error: any) => console.error('Error getting mechanic:', error)
+          });
+        });
       },
-      error: (error) => {
-        console.error('Error fetching personnel:', error);
-        this.noMechanics = true;
-      }
+      error: (error: any) => console.error('Error getting mechanics:', error)
     });
   }
 
@@ -78,7 +86,7 @@ export class PersonnelComponent implements OnInit {
     });
   }
 
-  openUpdateModal(mechanic: Mechanic): void {
+  openUpdateModal(mechanic: Profile): void {
     this.selectedMechanic = mechanic;
     const dialogRef = this.dialog.open(NewMechanicDialogComponent, {
       data: { mechanic: this.selectedMechanic }
@@ -91,15 +99,15 @@ export class PersonnelComponent implements OnInit {
     });
   }
 
-  createMechanic(newMechanicData: Mechanic): void {
-    this.personnelService.postPersonnel(newMechanicData).subscribe({
-      next: (data: Mechanic) => this.mechanics.set([data, ...this.mechanics()]),
+  createMechanic(newMechanicData: Profile): void {
+    this.workshopService.postMechanicByWorkshopId(1, newMechanicData).subscribe({
+      next: (data: Profile) => this.mechanics.set([data, ...this.mechanics()]),
       error: (error) => console.error('Error creating mechanic:', error)
     });
   }
 
-  updateMechanic(updatedMechanicData: Mechanic): void {
-    this.personnelService.putMechanic(updatedMechanicData).subscribe({
+  updateMechanic(updatedMechanicData: Profile): void {
+    this.profileService.putProfile(updatedMechanicData.id, updatedMechanicData).subscribe({
       next: () => {
         const index = this.mechanics().findIndex(m => m.id === updatedMechanicData.id);
         if (index !== -1) {
@@ -107,15 +115,6 @@ export class PersonnelComponent implements OnInit {
         }
       },
       error: (error) => console.error('Error updating mechanic:', error)
-    });
-  }
-
-  deleteMechanic(id: number): void {
-    this.personnelService.deleteMechanic(id).subscribe({
-      next: () => {
-        this.mechanics.set(this.mechanics().filter(m => m.id !== id));
-      },
-      error: (error) => console.error('Error deleting mechanic:', error)
     });
   }
 }
