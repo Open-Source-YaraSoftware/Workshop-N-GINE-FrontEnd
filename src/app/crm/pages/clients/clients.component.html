@@ -5,7 +5,7 @@
       <mat-label>Filter</mat-label>
       <input matInput (keyup)="applyFilter($event)" placeholder="Search..." #input>
     </mat-form-field>
-    <button class="button-new-client" mat-raised-button color="primary">New client</button>
+    <button class="button-new-client" mat-raised-button color="primary" (click)="openNewClientDialog()">New client</button>
   </div>
   <div>
     <table mat-table [dataSource]="dataSource" matSort>
@@ -20,7 +20,7 @@
         <td mat-cell *matCellDef="let data">{{ data.firstName }} </td>
       </ng-container>
       <ng-container matColumnDef="lastName">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>First name</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Last name</th>
         <td mat-cell *matCellDef="let data">{{ data.lastName }} </td>
       </ng-container>
       <ng-container matColumnDef="dni">

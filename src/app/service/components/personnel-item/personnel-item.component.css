@@ -1,0 +1,15 @@
+.mechanic-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(215, 215, 215, 0.1);
+    transition: all 0.3s;
+}
+.mechanic-card:hover {
+    box-shadow: 0 0 10px rgba(26, 175, 132, 0.3);
+}

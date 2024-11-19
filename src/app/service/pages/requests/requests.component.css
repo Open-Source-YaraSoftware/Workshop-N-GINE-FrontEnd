@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mat-table {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}

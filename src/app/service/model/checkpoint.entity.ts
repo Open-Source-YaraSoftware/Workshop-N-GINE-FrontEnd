@@ -1,13 +1,15 @@
-import {Task} from "./task.entity";
-
 export class Checkpoint {
   id: number;
   name: string;
-  task: Task;
+  taskId: number;
 
-  constructor() {
-    this.id = 0;
-    this.name = '';
-    this.task = new Task();
+  constructor({
+    id = 0,
+    name = '',
+    taskId = 0
+  }={}) {
+    this.id = id;
+    this.name = name;
+    this.taskId = taskId;
   }
 }
