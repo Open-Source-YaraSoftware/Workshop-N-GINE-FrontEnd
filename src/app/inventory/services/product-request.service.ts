@@ -20,18 +20,36 @@ export class ProductRequestService extends BaseService<ProductRequest> {
   }
 
   public getByWorkshopId(workshopId: number){
-    return this.http.get<ProductRequest[]>(`${this.resourcePath()}?workshopId=${workshopId}&status=0`, this.httpOptions)
+    return this.http.get<ProductRequest[]>(`${this.resourcePath()}?workshopId=${workshopId}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
-  public updateRequests(requests: ProductRequest[], newStatus: String) {
+  public updateRequests(requests: ProductRequest[], status: String) {
+    if(status === 'ACCEPTED') {
+      return this.acceptRequests(requests);
+    }
+    else if (status === 'REJECTED') {
+      return this.rejecttRequests(requests);
+    }else {
+      throw new Error('Invalid status');
+    }
+  }
+
+  public acceptRequests(requests: ProductRequest[]) {
     return from(requests).pipe(
       concatMap(request => {
-        const updateData = { status: newStatus };
-        return this.http.patch<ProductRequest>(`${this.resourcePath()}/${request.id}`, updateData, this.httpOptions)
+        return this.http.post<ProductRequest>(`${this.resourcePath()}/${request.id}/accept`, this.httpOptions)
           .pipe(delay(20));
       })
     );
   }
-  
+
+  public rejecttRequests(requests: ProductRequest[]) {
+    return from(requests).pipe(
+      concatMap(request => {
+        return this.http.post<ProductRequest>(`${this.resourcePath()}/${request.id}/reject`, this.httpOptions)
+          .pipe(delay(20));
+      })
+    );
+  }
 }
