@@ -80,5 +80,20 @@
   "OPTIONAL": "opcional",
   "MODALITY": "Modalidad",
   "SCHEDULED_DATE": "Fecha programada",
-  "LEAD_MECHANIC": "Mecánico principal"
+  "LEAD_MECHANIC": "Mecánico principal",
+  "INTERVENTIONS": "Intervenciones",
+  "PENDING": "Pendiente",
+  "IN_PROGRESS": "En progreso",
+  "COMPLETED": "Completado",
+  "ALL": "Todos",
+  "SCHEDULE_INTERVENTION": "Programar intervención",
+  "FILTER_INTERVENTIONS": "Filtrar intervenciones",
+  "CLIENT_FIRST_NAME": "Nombre del cliente",
+  "CLIENT_LAST_NAME": "Apellido del cliente",
+  "VEHICLE_LICENSE_PLATE": "Placa del vehículo",
+  "VEHICLE_MODEL": "Modelo del vehículo",
+  "REGISTRATION_DATE": "Fecha de registro",
+  "COMPLETION_DATE": "Fecha de finalización",
+  "STATUS": "Estado",
+  "SELECT_PAGE_OF_INTERVENTIONS": "Seleccionar página de intervenciones"
 }

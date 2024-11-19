@@ -80,5 +80,20 @@
   "OPTIONAL": "optional",
   "MODALITY": "Modality",
   "SCHEDULED_DATE": "Scheduled date",
-  "LEAD_MECHANIC": "Lead mechanic"
+  "LEAD_MECHANIC": "Lead mechanic",
+  "INTERVENTIONS": "Interventions",
+  "PENDING": "Pending",
+  "IN_PROGRESS": "In progress",
+  "COMPLETED": "Completed",
+  "ALL": "All",
+  "SCHEDULE_INTERVENTION": "Schedule intervention",
+  "FILTER_INTERVENTIONS": "Filter interventions",
+  "CLIENT_FIRST_NAME": "Client First Name",
+  "CLIENT_LAST_NAME": "Client Last Name",
+  "VEHICLE_LICENSE_PLATE": "Vehicle License Plate",
+  "VEHICLE_MODEL": "Vehicle Model",
+  "REGISTRATION_DATE": "Registration Date",
+  "COMPLETION_DATE": "Completion Date",
+  "STATUS": "Status",
+  "SELECT_PAGE_OF_INTERVENTIONS": "Select page of interventions"
 }

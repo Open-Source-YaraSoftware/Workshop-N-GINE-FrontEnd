@@ -19,6 +19,7 @@ import {EditItemDialogComponent} from "../../components/edit-item-dialog/edit-it
 import {
   ConfirmationDialogComponent
 } from "../../../shared/components/confirmation-dialog/confirmation-dialog.component";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-items',
@@ -40,7 +41,8 @@ import {
     MatSortHeader,
     MatButton,
     MatIcon,
-    MatIconButton
+    MatIconButton,
+    TranslateModule
   ],
   templateUrl: './items.component.html',
   styleUrl: './items.component.css'

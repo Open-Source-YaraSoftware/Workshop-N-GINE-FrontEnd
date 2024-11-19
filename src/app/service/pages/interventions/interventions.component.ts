@@ -14,6 +14,7 @@ import { DatePipe, NgClass } from "@angular/common";
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-interventions',
@@ -31,7 +32,8 @@ import { MatButtonModule } from '@angular/material/button';
     NewInterventionDialogComponent,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatButtonModule
+    MatButtonModule,
+    TranslateModule
   ]
 })
 export class InterventionsComponent implements OnInit, AfterViewInit {
