@@ -1,84 +1,51 @@
+.hidden {
+  display: none;
+}
 .navbar {
-  width: 250px;
+  width: min-content;
   height: 100%;
-  background-color: #d8eafd;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 1.5rem 1rem;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
-
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: start;
+  align-items: start;
   gap: 2rem;
   flex-grow: 1;
+}
+.menu-icon{
   width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid white;
+  i{
+    cursor: pointer;
+  }
 }
-
-.mat-icon {
-  color: #007bff;
-}
-
-.menu-icon {
+.logo{
+  margin: 0 auto;
   width: 100%;
-  padding: 1rem 0;
-  border-bottom: 2px solid #6e99a3;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.logo {
-  width: 80%;
-  margin: 1.5rem auto;
   aspect-ratio: 1/1;
 }
-
 .links {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
+  gap: 3rem;
   width: 100%;
+  button {
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
-
-.links button {
-  width: 100%;
-  text-decoration: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: #007bff;
-  cursor: pointer;
-  text-align: left;
-  padding: 0.8rem 1rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.links button:hover {
-  background-color: #ffffff;
-  border-radius: 5px;
-}
-
 .go-back {
   width: 100%;
-  padding-top: 1.5rem;
-  border-top: 2px solid #6e99a3;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.go-back button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #007bff;
-  transition: color 0.3s ease;
-  padding: 0.5rem 1rem;
-}
-
-.go-back button:hover {
-  background-color: #ffffff;
+  padding-top: 2rem;
+  border-top: 0.5rem solid white;
+  i{
+    cursor: pointer;
+  }
 }
