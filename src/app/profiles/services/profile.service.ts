@@ -22,7 +22,7 @@ export class ProfileService extends BaseService<Profile> {
   }
 
   getProfileById(profileId: number) {
-    return this.http.get(`/profiles/${profileId}`);
+    return this.http.get<Profile>(`/profiles/${profileId}`);
   }
 
   postProfile(data: any) {

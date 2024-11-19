@@ -11,11 +11,12 @@ import { catchError, retry } from 'rxjs/operators';
 export class PersonnelService extends BaseService<Mechanic> {
   constructor() {
     super();
-    this.resourceEndpoint = '/mechanics';
+    this.resourceEndpoint = '/workshops';
   }
 
   getByWorkshopId(workshopId: number) {
-    return this.http.get<Mechanic[]>(`${this.resourcePath()}?workshop.id=${workshopId}`, this.httpOptions)
+    console.log(`${this.resourcePath()}/${workshopId}/mechanics`)
+    return this.http.get<Mechanic[]>(`${this.resourcePath()}/${workshopId}/mechanics`, this.httpOptions)
   .pipe(retry(2), catchError(this.handleError));
   }
 
@@ -27,8 +28,8 @@ export class PersonnelService extends BaseService<Mechanic> {
       );
   }
 
-  postPersonnel(data: any): Observable<Mechanic> {
-    return this.http.post<Mechanic>(this.resourcePath(), data, this.httpOptions)
+  postPersonnel(workshopId: number, data: any): Observable<Mechanic> {
+    return this.http.post<Mechanic>(`${this.resourcePath()}/${workshopId}/mechanics`, data, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError)

@@ -15,7 +15,8 @@ import { Task } from '../../model/task.entity';
 import {MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
-import {MatButton} from "@angular/material/button"; // Ensure this is imported
+import {MatButton} from "@angular/material/button";
+import {Profile} from "../../../profiles/model/profile.entity"; // Ensure this is imported
 
 @Component({
   selector: 'app-new-mechanic-dialog',
@@ -33,11 +34,11 @@ import {MatButton} from "@angular/material/button"; // Ensure this is imported
   styleUrls: ['./new-mechanic-dialog.component.css']
 })
 export class NewMechanicDialogComponent {
-  mechanic!: Mechanic; // Non-null assertion, mechanic will be injected
+  mechanic!: Profile; // Non-null assertion, mechanic will be injected
 
   constructor(
     public dialogRef: MatDialogRef<NewMechanicDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { mechanic: Mechanic }
+    @Inject(MAT_DIALOG_DATA) public data: { mechanic: Profile }
   ) {
     // Assign the mechanic from injected data or default to an empty object
     this.mechanic = data.mechanic || {
@@ -50,8 +51,6 @@ export class NewMechanicDialogComponent {
       role: Role.MECHANIC, // Default role for new mechanics
       workshop: new Workshop(),
       accountState: AccountState.ACTIVE, // Default active state
-      notificationList: [] as Notification[],
-      taskList: [] as Task[]
     };
   }
 
