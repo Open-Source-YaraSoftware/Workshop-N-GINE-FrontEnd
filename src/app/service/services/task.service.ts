@@ -17,4 +17,9 @@ export class TaskService extends BaseService<Task> {
     return this.http.get<Task>(`${this.resourcePath()}?assistant.id=${mechanicId}`, this.httpOptions)
       .pipe(retry(2),catchError(this.handleError));
   }
+
+  public getByInterventionId(interventionId: number): Observable<Task[]> {
+    return this.http.get<Task[]>(`${this.resourcePath()}?intervention.id=${interventionId}`, this.httpOptions)
+      .pipe(retry(2),catchError(this.handleError));
+  }
 }

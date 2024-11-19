@@ -1,1 +1,4 @@
-<p>notifications works!</p>
+<h1>Notifications</h1>
+@for (notification of notificationManager().notifications; track notification.id) {
+  <app-notification-item [notification]="notification"/>
+}
