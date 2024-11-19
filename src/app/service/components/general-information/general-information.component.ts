@@ -10,6 +10,7 @@ import {MatIcon} from "@angular/material/icon";
 import {NgForOf, NgIf} from "@angular/common";
 import {Mechanic} from "../../model/mechanic.entity";
 import {Vehicle} from "../../model/vehicle.entity";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-general-information',
@@ -29,7 +30,8 @@ import {Vehicle} from "../../model/vehicle.entity";
     MatIcon,
     MatFabButton,
     NgForOf,
-    NgIf
+    NgIf,
+    TranslateModule
   ],
   templateUrl: './general-information.component.html',
   styleUrl: './general-information.component.css'

@@ -2,17 +2,17 @@
   <form [formGroup]="interventionForm" (ngSubmit)="updateInterventionInformation()" class="intervention-form">
     <div class="inputs-container">
       <mat-form-field appearance="fill" *ngIf="isOwner">
-        <mat-label>DNI</mat-label>
+        <mat-label>{{ 'DNI' | translate }}</mat-label>
         <input matInput formControlName="dni">
       </mat-form-field>
 
       <mat-form-field appearance="fill" *ngIf="isOwner">
-        <mat-label>Client</mat-label>
+        <mat-label>{{ 'CLIENT' | translate }}</mat-label>
         <input matInput formControlName="client">
       </mat-form-field>
 
       <mat-form-field appearance="fill" *ngIf="isOwner">
-        <mat-label>License plate</mat-label>
+        <mat-label>{{ 'LICENSE_PLATE' | translate }}</mat-label>
         <mat-select formControlName="licensePlate">
           <mat-option *ngFor="let vehicle of vehicles" [value]="vehicle.licensePlate">
             {{ vehicle.licensePlate }}
@@ -21,30 +21,30 @@
       </mat-form-field>
 
       <mat-form-field appearance="fill" *ngIf="isOwner">
-        <mat-label>Brand</mat-label>
+        <mat-label>{{ 'BRAND' | translate }}</mat-label>
         <input matInput formControlName="brand">
       </mat-form-field>
 
       <mat-form-field appearance="fill" *ngIf="isOwner">
-        <mat-label>Model</mat-label>
+        <mat-label>{{ 'MODEL' | translate }}</mat-label>
         <input matInput formControlName="model">
       </mat-form-field>
 
       <mat-form-field appearance="fill">
-        <mat-label>Modality</mat-label>
+        <mat-label>{{ 'MODALITY' | translate }}</mat-label>
         <mat-select formControlName="modality">
-          <mat-option value="REPARATION">Reparation</mat-option>
-          <mat-option value="MAINTENANCE">Maintenance</mat-option>
+          <mat-option value="REPARATION">{{ 'REPARATION' | translate }}</mat-option>
+          <mat-option value="MAINTENANCE">{{ 'MAINTENANCE' | translate }}</mat-option>
         </mat-select>
       </mat-form-field>
 
       <mat-form-field appearance="fill">
-        <mat-label>Scheduled date</mat-label>
+        <mat-label>{{ 'SCHEDULED_DATE' | translate }}</mat-label>
         <input matInput type="date" formControlName="scheduledDate">
       </mat-form-field>
 
       <mat-form-field appearance="fill">
-        <mat-label>Lead mechanic</mat-label>
+        <mat-label>{{ 'LEAD_MECHANIC' | translate }}</mat-label>
         <mat-select formControlName="leadMechanic">
           <mat-option *ngFor="let mechanic of mechanics" [value]="mechanic.firstName + ' ' + mechanic.lastName">
             {{ mechanic.firstName }} {{ mechanic.lastName }}
@@ -53,7 +53,7 @@
       </mat-form-field>
 
       <mat-form-field appearance="fill">
-        <mat-label>Description</mat-label>
+        <mat-label>{{ 'DESCRIPTION' | translate }}</mat-label>
         <textarea matInput formControlName="description"></textarea>
       </mat-form-field>
     </div>

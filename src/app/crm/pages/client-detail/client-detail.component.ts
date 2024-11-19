@@ -15,7 +15,6 @@ import {MatOption, MatSelect} from "@angular/material/select";
 import {MatIcon} from "@angular/material/icon";
 import {MatButton, MatIconButton} from "@angular/material/button";
 import {NgForOf} from "@angular/common";
-import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-client-detail',
@@ -32,7 +31,6 @@ import {TranslateModule} from "@ngx-translate/core";
     MatIconButton,
     MatButton,
     NgForOf,
-    TranslateModule,
     // Angular Material and other imports
   ],
   templateUrl: './client-detail.component.html',

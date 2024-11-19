@@ -1,29 +1,29 @@
-<h1 mat-dialog-title class="modal-title">Edit</h1>
+<h1 mat-dialog-title class="modal-title">{{ 'EDIT' | translate }}</h1>
 
 <div mat-dialog-content class="modal-content">
   <section class="form-section">
-    <h2>Name</h2>
+    <h2>{{ 'NAME' | translate }}</h2>
     <mat-form-field appearance="outline">
       <input matInput [(ngModel)]="item.name">
     </mat-form-field>
   </section>
 
   <section class="form-section">
-    <h2>Type</h2>
+    <h2>{{ 'TYPE' | translate }}</h2>
     <mat-form-field appearance="outline">
       <input matInput [(ngModel)]="item.productType.name">
     </mat-form-field>
   </section>
 
   <section class="form-section">
-    <h2>Amount</h2>
+    <h2>{{ 'AMOUNT' | translate }}</h2>
     <mat-form-field appearance="outline">
       <input matInput [(ngModel)]="item.amount">
     </mat-form-field>
   </section>
 
   <section class="form-section">
-    <h2>Limit</h2>
+    <h2>{{ 'LIMIT' | translate }}</h2>
     <mat-form-field appearance="outline">
       <input matInput [(ngModel)]="item.limit">
     </mat-form-field>
@@ -31,6 +31,6 @@
 </div>
 
 <div mat-dialog-actions class="modal-actions">
-  <button mat-button color="warn" (click)="onConfirm()">Confirm</button>
-  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button color="warn" (click)="onConfirm()">{{ 'CONFIRM' | translate }}</button>
+  <button mat-button (click)="onCancel()">{{ 'CANCEL' | translate }}</button>
 </div>

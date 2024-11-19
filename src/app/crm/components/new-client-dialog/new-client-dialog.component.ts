@@ -6,6 +6,7 @@ import { FormsModule } from "@angular/forms";
 import { MatButton } from "@angular/material/button";
 import { MatSelect } from "@angular/material/select";
 import { MatOption } from "@angular/material/core";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-new-client-dialog',
@@ -20,7 +21,8 @@ import { MatOption } from "@angular/material/core";
     MatButton,
     MatSelect,
     MatOption,
-    MatDialogModule
+    MatDialogModule,
+    TranslateModule
   ]
 })
 export class NewClientDialogComponent {

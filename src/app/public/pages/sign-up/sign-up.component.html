@@ -3,19 +3,19 @@
     <div class="icon-container">
       <img class="logo" src="assets/images/default-car.png" alt="default-car icon">
     </div>
-    <h2>Sign Up</h2>
+    <h2>{{ 'SIGN_UP' | translate }}</h2>
     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-      <input type="text" formControlName="firstName" placeholder="First Name" required>
-      <input type="email" formControlName="email" placeholder="Email" required>
-      <input type="password" formControlName="password" placeholder="Password" required>
-      <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" required>
-      <input type="text" formControlName="workshopName" placeholder="Workshop's name" required>
-      <button type="submit" [disabled]="!signupForm.valid">Create</button>
+      <input type="text" formControlName="firstName" [placeholder]="'FIRST_NAME' | translate" required>
+      <input type="email" formControlName="email" [placeholder]="'EMAIL' | translate" required>
+      <input type="password" formControlName="password" [placeholder]="'PASSWORD' | translate" required>
+      <input type="password" formControlName="confirmPassword" [placeholder]="'CONFIRM_PASSWORD' | translate" required>
+      <input type="text" formControlName="workshopName" [placeholder]="'WORKSHOP_NAME' | translate" required>
+      <button type="submit" [disabled]="!signupForm.valid">{{ 'CREATE' | translate }}</button>
     </form>
   </div>
   <div class="right-side">
-    <h2>Welcome Again!</h2>
-    <p>To stay connected with us, log in with your credentials</p>
-    <button mat-button [routerLink]="'/login'">Sign In</button>
+    <h2>{{ 'WELCOME_AGAIN' | translate }}</h2>
+    <p>{{ 'STAY_CONNECTED_PROMPT' | translate }}</p>
+    <button mat-button [routerLink]="'/login'">{{ 'SIGN_IN' | translate }}</button>
   </div>
 </div>

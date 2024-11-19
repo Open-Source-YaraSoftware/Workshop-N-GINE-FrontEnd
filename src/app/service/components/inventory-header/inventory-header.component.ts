@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import {MatAnchor} from "@angular/material/button";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-inventory-header',
@@ -9,7 +10,8 @@ import {MatAnchor} from "@angular/material/button";
     RouterOutlet,
     MatAnchor,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    TranslateModule
   ],
   templateUrl: './inventory-header.component.html',
   styleUrl: './inventory-header.component.css'

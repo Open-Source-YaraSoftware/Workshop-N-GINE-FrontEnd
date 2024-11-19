@@ -1,21 +1,21 @@
-<h2 class="section-title">{{ 'PERSONAL_INFORMATION' | translate }}: </h2>
+<h2 class="section-title">Personal information: </h2>
 
 <form>
   <div class="client-info-container">
     <div class="spacer"></div>
     <div class="client-info-fields">
       <mat-form-field class="full-width">
-        <mat-label>{{ 'FIRST_NAME' | translate }}:</mat-label>
+        <mat-label>First Name:</mat-label>
         <input matInput name="firstName" [(ngModel)]="workshopClient.firstName">
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <mat-label>{{ 'LAST_NAME' | translate }}:</mat-label>
+        <mat-label>Last Name:</mat-label>
         <input matInput name="lastName" [(ngModel)]="workshopClient.lastName">
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <mat-label>{{ 'DOCUMENT_TYPE' | translate }}:</mat-label>
+        <mat-label>Document Type:</mat-label>
         <mat-select>
           <mat-option value="passport">Passport</mat-option>
           <mat-option value="id">ID Card</mat-option>
@@ -24,30 +24,30 @@
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <mat-label>{{ 'DOCUMENT_NO' | translate }}</mat-label>
+        <mat-label>Document No</mat-label>
         <input matInput name="documentNumber" [(ngModel)]="workshopClient.dni">
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <mat-label>{{ 'EMAIL' | translate }}</mat-label>
+        <mat-label>Email</mat-label>
         <input matInput name="email" [(ngModel)]="workshopClient.email" type="email">
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <mat-label>{{ 'AGE' | translate }}</mat-label>
+        <mat-label>Age</mat-label>
         <input matInput name="age" [(ngModel)]="workshopClient.age" type="number">
       </mat-form-field>
 
       <mat-form-field class="full-width">
-        <mat-label>{{ 'LOCATION' | translate }}</mat-label>
+        <mat-label>Location</mat-label>
         <input matInput name="location" [(ngModel)]="workshopClient.location">
       </mat-form-field>
     </div>
     <div class="client-info-actions">
-      <button mat-icon-button color="warn" aria-label="{{ 'DELETE' | translate }}" (click)="deleteClient()">
-        <mat-icon>delete</mat-icon>
+      <button mat-icon-button color="warn" aria-label="Delete" (click)="deleteClient()">
+        <mat-icon >delete</mat-icon>
       </button>
-      <button mat-icon-button color="primary" aria-label="{{ 'SAVE' | translate }}" (click)="updateClient()">
+      <button mat-icon-button color="primary" aria-label="Save" (click)="updateClient()">
         <mat-icon>save</mat-icon>
       </button>
     </div>
@@ -55,8 +55,9 @@
 </form>
 
 <div class="section-header">
-  <h2 class="section-title">{{ 'VEHICLES' | translate }}:</h2>
-  <button mat-raised-button color="primary" (click)="startVehicleRegistration()">{{ 'NEW_VEHICLE' | translate }}</button>
+  <h2 class="section-title">Vehicles:</h2>
+  <!--(click)="openDialog()"-->
+  <button mat-raised-button color="primary" (click)="startVehicleRegistration()">+ New vehicle</button>
 </div>
 
 <div class="client-cars-container">

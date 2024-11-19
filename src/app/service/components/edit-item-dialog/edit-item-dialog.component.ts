@@ -11,6 +11,7 @@ import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import {ProductStock} from "../../model/product-stock.entity";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-edit-item-dialog',
@@ -23,7 +24,8 @@ import {ProductStock} from "../../model/product-stock.entity";
     MatFormField,
     MatLabel,
     MatInput,
-    FormsModule
+    FormsModule,
+    TranslateModule
   ],
   templateUrl: './edit-item-dialog.component.html',
   styleUrl: './edit-item-dialog.component.css'

@@ -3,12 +3,14 @@ import {Notification} from "../../model/notification.entity";
 import {NotificationItemComponent} from "../../components/notification-item/notification-item.component";
 import {NotificationService} from "../../services/notification.service";
 import {NotificationManager} from "../../model/notification-manager.entity";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-notifications',
   standalone: true,
   imports: [
-    NotificationItemComponent
+    NotificationItemComponent,
+    TranslateModule
   ],
   templateUrl: './notifications.component.html',
   styleUrl: './notifications.component.css'

@@ -1,4 +1,4 @@
-<h1>Notifications</h1>
+<h1>{{ 'NOTIFICATIONS' | translate }}</h1>
 @for (notification of notificationManager().notifications; track notification.id) {
   <app-notification-item [notification]="notification"/>
 }
