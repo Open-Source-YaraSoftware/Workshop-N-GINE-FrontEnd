@@ -1,7 +1,7 @@
 import {MembershipType} from "./membership-type.enum";
 import {User} from "./user.entity";
 import {Mechanic} from "./mechanic.entity";
-import {ProductStock} from "./product-stock.entity";
+import {ProductStock} from "../../inventory/model/product-stock.entity";
 import {Intervention} from "./intervention.entity";
 
 export class Workshop {

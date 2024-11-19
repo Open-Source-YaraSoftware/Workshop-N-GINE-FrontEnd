@@ -21,7 +21,7 @@
     }
     @if(requiredPartSelected() && requiredPartSelected() != -1){
       <label class="amount-available">
-        <span>Total available: {{productStockSelected()?.amount}}</span>
+        <span>Total available: {{productStockSelected()?.stockQuantity}}</span>
       </label>
     }
     <mat-form-field>

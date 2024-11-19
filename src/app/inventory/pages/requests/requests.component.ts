@@ -20,8 +20,8 @@ import {
   ConfirmationDialogComponent
 } from "../../../shared/components/confirmation-dialog/confirmation-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
-import {Task} from "../../model/task.entity";
-import {TaskService} from "../../services/task.service";
+import {Task} from "../../../service/model/task.entity";
+import {TaskService} from "../../../service/services/task.service";
 
 @Component({
   selector: 'app-requests',

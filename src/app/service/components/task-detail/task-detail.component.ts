@@ -10,7 +10,7 @@ import {Checkpoint} from "../../model/checkpoint.entity";
 import {NgForOf, TitleCasePipe} from "@angular/common";
 import {ReplaceUnderscorePipe} from "../../../shared/utilities/replace-underscore.pipe";
 import {TaskProductUsage} from "../../model/task-product-usage.entity";
-import {ProductStock} from "../../model/product-stock.entity";
+import {ProductStock} from "../../../inventory/model/product-stock.entity";
 import {
   MatCell,
   MatCellDef,

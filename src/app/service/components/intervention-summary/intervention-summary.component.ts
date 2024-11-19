@@ -6,9 +6,9 @@ import { TaskDetailComponent } from "../task-detail/task-detail.component";
 import { Checkpoint } from "../../model/checkpoint.entity";
 import { CheckpointService } from "../../services/checkpoint.service";
 import { TaskProductUsage } from "../../model/task-product-usage.entity";
-import { ProductStock } from "../../model/product-stock.entity";
+import { ProductStock } from "../../../inventory/model/product-stock.entity";
 import { TaskProductUsageService } from "../../services/task-product-usage.service";
-import { ProductStockService } from "../../services/product-stock.service";
+import { ProductStockService } from "../../../inventory/services/product-stock.service";
 
 @Component({
   selector: 'app-intervention-summary',

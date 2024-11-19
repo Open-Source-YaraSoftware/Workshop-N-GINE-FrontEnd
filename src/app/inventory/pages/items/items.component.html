@@ -6,19 +6,19 @@
         <td mat-cell *matCellDef="let data">{{data.name}}</td>
       </ng-container>
 
-      <ng-container matColumnDef="type">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Type</th>
-        <td mat-cell *matCellDef="let data">{{data.productType?.name}}</td>
+      <ng-container matColumnDef="stockQuantity">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>StockQuantity</th>
+        <td mat-cell *matCellDef="let data">{{data.stockQuantity}}</td>
       </ng-container>
 
-      <ng-container matColumnDef="amount">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount</th>
-        <td mat-cell *matCellDef="let data">{{data.amount}}</td>
+      <ng-container matColumnDef="lowStockThreshold">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>LowStockThreshold</th>
+        <td mat-cell *matCellDef="let data">{{data.lowStockThreshold}}</td>
       </ng-container>
 
-      <ng-container matColumnDef="limit">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Limit</th>
-        <td mat-cell *matCellDef="let data">{{data.limit}}</td>
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
+        <td mat-cell *matCellDef="let data">{{data.description}}</td>
       </ng-container>
 
       <ng-container matColumnDef="delete">

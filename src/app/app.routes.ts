@@ -34,7 +34,7 @@ export const routes: Routes = [
       {
         path: 'inventory',
         title: 'inventory',
-        loadComponent: () => import('./service/components/inventory-header/inventory-header.component').then(m => m.InventoryHeaderComponent),
+        loadComponent: () => import('./inventory/components/inventory-header/inventory-header.component').then(m => m.InventoryHeaderComponent),
         children: [
           {
             path: '',
@@ -44,12 +44,12 @@ export const routes: Routes = [
           {
             path: 'items',
             title: 'items',
-            loadComponent: () => import('./service/pages/items/items.component').then(m => m.ItemsComponent),
+            loadComponent: () => import('./inventory/pages/items/items.component').then(m => m.ItemsComponent),
           },
           {
             path: 'requests',
             title: 'requests',
-            loadComponent: () => import('./service/pages/requests/requests.component').then(m => m.RequestsComponent),
+            loadComponent: () => import('./inventory/pages/requests/requests.component').then(m => m.RequestsComponent),
           }
         ]
       },
