@@ -1,15 +1,15 @@
 <section class="personnel-container">
   <div class="header">
-    <h1>Personnel</h1>
+    <h1>{{ 'PERSONNEL' | translate }}</h1>
   </div>
 
   <div *ngIf="!noMechanics" class="controls">
     <mat-form-field class="filter">
-      <mat-label>Filter</mat-label>
-      <input matInput [(ngModel)]="searchQuery" placeholder="Search...">
+      <mat-label>{{ 'FILTER' | translate }}</mat-label>
+      <input matInput [(ngModel)]="searchQuery" [placeholder]="'SEARCH' | translate">
     </mat-form-field>
     <button class="button-new-mechanic" mat-button (click)="openCreateModal()">
-      New Mechanic <mat-icon>add</mat-icon>
+      {{ 'NEW_MECHANIC' | translate }} <mat-icon>add</mat-icon>
     </button>
   </div>
 
@@ -21,7 +21,7 @@
   </div>
 
   <div *ngIf="noMechanics" class="no-personnel">
-    <p>No registered personnel</p>
-    <button mat-button color="primary" (click)="openCreateModal()">Register</button>
+    <p>{{ 'NO_REGISTERED_PERSONNEL' | translate }}</p>
+    <button mat-button color="primary" (click)="openCreateModal()">{{ 'REGISTER' | translate }}</button>
   </div>
 </section>

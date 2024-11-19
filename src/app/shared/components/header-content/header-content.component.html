@@ -3,23 +3,23 @@
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>My workshop</span>
+    <span>{{ 'MY_WORKSHOP' | translate }}</span>
   </div>
-  <a href="">What's new</a>
+  <a href="">{{ 'WHATS_NEW' | translate }}</a>
   <a href="" class="center space">
-    <span>Help</span>
+    <span>{{ 'HELP' | translate }}</span>
     <mat-icon>arrow_drop_down</mat-icon>
   </a>
   <app-language-switcher></app-language-switcher>
   <div class="right-section center space">
     <div class="auth-buttons center space">
-      <button mat-button [routerLink]="'/login'">Log-in</button>
-      <button mat-button [routerLink]="'/register'">Register</button>
+      <button mat-button [routerLink]="'/login'">{{ 'LOGIN' | translate }}</button>
+      <button mat-button [routerLink]="'/register'">{{ 'REGISTER' | translate }}</button>
     </div>
     <div class="profile center space">
       <mat-icon></mat-icon>
       <div class="center space">
-        <span>Account</span>
+        <span>{{ 'ACCOUNT' | translate }}</span>
         <mat-icon>account_circle</mat-icon>
       </div>
     </div>

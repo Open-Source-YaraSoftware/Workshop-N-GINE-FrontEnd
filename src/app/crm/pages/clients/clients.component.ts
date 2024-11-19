@@ -18,6 +18,7 @@ import {WorkshopClient} from "../../model/workshop-client.entity";
 import {WorkshopClientService} from "../../services/workshop-client.service";
 import {MatDialog} from "@angular/material/dialog";
 import {NewClientDialogComponent} from "../../components/new-client-dialog/new-client-dialog.component";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-clients',
@@ -42,7 +43,8 @@ import {NewClientDialogComponent} from "../../components/new-client-dialog/new-c
     RouterLink,
     MatHeaderCellDef,
     MatNoDataRow,
-    NewClientDialogComponent
+    NewClientDialogComponent,
+    TranslateModule
   ],
   templateUrl: './clients.component.html',
   styleUrl: './clients.component.css'

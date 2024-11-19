@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Output, Inject} from '@angular/core';
 import {MatDialogActions, MatDialogContent, MatDialogRef, MAT_DIALOG_DATA} from "@angular/material/dialog";
 import {MatButton} from "@angular/material/button";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-confirmation-dialog',
@@ -8,7 +9,8 @@ import {MatButton} from "@angular/material/button";
   imports: [
     MatDialogContent,
     MatDialogActions,
-    MatButton
+    MatButton,
+    TranslateModule
   ],
   templateUrl: './confirmation-dialog.component.html',
   styleUrl: './confirmation-dialog.component.css'

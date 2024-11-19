@@ -4,6 +4,7 @@ import { MatIcon } from "@angular/material/icon";
 import { MatIconButton, MatButtonModule } from "@angular/material/button";
 import { RouterModule } from '@angular/router';
 import {LanguageSwitcherComponent} from "../language-switcher/language-switcher.component";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header-content',
@@ -14,7 +15,8 @@ import {LanguageSwitcherComponent} from "../language-switcher/language-switcher.
     MatIconButton,
     MatButtonModule,
     RouterModule,
-    LanguageSwitcherComponent
+    LanguageSwitcherComponent,
+    TranslateModule
   ],
   templateUrl: './header-content.component.html',
   styleUrls: ['./header-content.component.css']

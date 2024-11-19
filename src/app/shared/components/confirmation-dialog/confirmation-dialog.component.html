@@ -1,8 +1,8 @@
 <mat-dialog-content class="dialog">
-  <h2 class="message-content">{{data.message}}</h2>
+  <h2 class="message-content">{{ 'MESSAGE' | translate }}</h2>
   <div class="spacer"></div>
   <div class="action-buttons-container">
-    <button mat-raised-button color="primary" (click)="onConfirm()">Confirm</button>
-    <button mat-raised-button color="warn" (click)="onDismiss()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="onConfirm()">{{ 'CONFIRM' | translate }}</button>
+    <button mat-raised-button color="warn" (click)="onDismiss()">{{ 'CANCEL' | translate }}</button>
   </div>
 </mat-dialog-content>

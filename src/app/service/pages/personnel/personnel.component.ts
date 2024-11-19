@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { PersonnelListComponent } from '../../components/personnel-list/personnel-list.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-personnel',
@@ -24,7 +25,8 @@ import { PersonnelListComponent } from '../../components/personnel-list/personne
     MatIcon,
     PersonnelListComponent,
     MatButton,
-    MatLabel
+    MatLabel,
+    TranslateModule
   ],
   standalone: true
 })
