@@ -1,0 +1,35 @@
+<mat-expansion-panel class="expansion-panel-container">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ task.description }}
+    </mat-panel-title>
+    <mat-panel-description>
+      State: {{ task.state.toString() | replaceUnderscore | titlecase }}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <div class="task-details">
+    <h4 class="section-title">Checkpoints:</h4>
+    <ul>
+      <li *ngFor="let checkpoint of checkpoints" class="checkpoint-item">
+        -  {{ checkpoint?.name || 'No name available' }}
+      </li>
+    </ul>
+
+    <h4>List of replacement parts used:</h4>
+    <table mat-table [dataSource]="productUsages" class="mat-elevation-z8">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Replacement Part </th>
+        <td mat-cell *matCellDef="let element"> {{ element?.stock?.name || 'No name available' }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="quantityUsed">
+        <th mat-header-cell *matHeaderCellDef> Quantity Used </th>
+        <td mat-cell *matCellDef="let element"> {{ element?.usage?.quantityUsed || 'N/A' }} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="['name', 'quantityUsed']"></tr>
+      <tr mat-row *matRowDef="let row; columns: ['name', 'quantityUsed'];"></tr>
+    </table>
+  </div>
+</mat-expansion-panel>

@@ -23,10 +23,10 @@ export class ConfirmationDialogComponent {
 
   onConfirm(): void {
     this.confirm.emit();
-    this.dialogRef.close();
+    this.dialogRef.close(true);
   }
 
   onDismiss(): void {
-    this.dialogRef.close();
+    this.dialogRef.close(false);
   }
 }

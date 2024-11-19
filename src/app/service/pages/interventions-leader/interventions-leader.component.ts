@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, inject, signal, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, inject, ViewChild} from '@angular/core';
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {
@@ -19,7 +19,7 @@ import {Intervention} from "../../model/intervention.entity";
 import {DatePipe} from "@angular/common";
 
 @Component({
-  selector: 'app-tasks',
+  selector: 'app-interventions-assistant',
   standalone: true,
   imports: [
     MatFormField,

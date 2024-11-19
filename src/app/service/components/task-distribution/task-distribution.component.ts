@@ -67,7 +67,7 @@ export class TaskDistributionComponent {
     this.getMechanics();
   }
 
-  taskForm = new FormGroup({
+  protected taskForm = new FormGroup({
     taskName: new FormControl('', [Validators.required]),
     mechanic: new FormControl(0, [Validators.required])
   });

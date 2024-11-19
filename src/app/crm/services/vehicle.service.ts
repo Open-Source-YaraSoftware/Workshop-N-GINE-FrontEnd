@@ -15,4 +15,8 @@ export class VehicleService extends BaseService<Vehicle> {
     return this.http.get<Vehicle[]>(`${this.resourcePath()}?owner.id=${clientId}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
+  getByClientDni(dni: string) {
+    return this.http.get<Vehicle[]>(`${this.resourcePath()}?owner.dni=${dni}`, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
 }
