@@ -54,7 +54,7 @@ export class RequestsComponent {
   protected requestTask: Array<Task>=[];
   private taskService: TaskService=inject(TaskService);
   private requestService: ProductRequestService = inject(ProductRequestService);
-  protected displayedColumns: string[] = ['select', 'name', 'requestedQuantity', 'mechanic', 'requestedDate', 'observation'];
+  protected displayedColumns: string[] = ['id', 'requestedQuantity', 'status'];
   protected dialog: MatDialog = inject(MatDialog);
 
   protected selection = new SelectionModel<ProductRequest>(true, []);
