@@ -5,11 +5,11 @@ import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/
 import {MatInput} from "@angular/material/input";
 import {MatButton, MatIconButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
-import {ProductStock} from "../../model/product-stock.entity";
-import {ProductStockService} from "../../services/product-stock.service";
-import {ProductRequestService} from "../../services/product-request.service";
+import {ProductStock} from "../../../inventory/model/product-stock.entity";
+import {ProductStockService} from "../../../inventory/services/product-stock.service";
+import {ProductRequestService} from "../../../inventory/services/product-request.service";
 import {TaskProductUsageService} from "../../services/task-product-usage.service";
-import {ProductRequest} from "../../model/product-request.entity";
+import {ProductRequest} from "../../../inventory/model/product-request.entity";
 import {TaskProductUsage} from "../../model/task-product-usage.entity";
 import {TaskProductStockListComponent} from "../task-product-stock-list/task-product-stock-list.component";
 import {TaskProductRequestListComponent} from "../task-product-request-list/task-product-request-list.component";

@@ -1,5 +1,5 @@
 import {Task} from "./task.entity";
-import {ProductStock} from "./product-stock.entity";
+import {ProductStock} from "../../inventory/model/product-stock.entity";
 
 export class TaskStock {
   id: number;

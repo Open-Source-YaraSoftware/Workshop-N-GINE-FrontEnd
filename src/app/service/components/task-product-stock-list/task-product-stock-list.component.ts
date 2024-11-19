@@ -16,7 +16,7 @@ import {MatIcon} from "@angular/material/icon";
 import {MatIconButton} from "@angular/material/button";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSort, MatSortHeader} from "@angular/material/sort";
-import {ProductStock} from "../../model/product-stock.entity";
+import {ProductStock} from "../../../inventory/model/product-stock.entity";
 import {TaskProductUsage} from "../../model/task-product-usage.entity";
 
 @Component({
