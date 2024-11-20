@@ -5,8 +5,7 @@
     </div>
     <h2>Sign Up</h2>
     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-      <input type="text" formControlName="firstName" placeholder="First Name" required>
-      <input type="email" formControlName="email" placeholder="Email" required>
+      <input type="username" formControlName="username" placeholder="Username" required>
       <input type="password" formControlName="password" placeholder="Password" required>
       <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" required>
       <input type="text" formControlName="workshopName" placeholder="Workshop's name" required>
