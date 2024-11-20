@@ -61,12 +61,12 @@ export class PersonnelComponent implements OnInit {
           return;
         }
         mechanicIds.forEach((id: number) => {
-          this.profileService.getProfileById(id).subscribe({
+          /*this.profileService.getProfileById(id).subscribe({
             next: (mechanic: Profile) => {
               this.mechanics.set([mechanic, ...this.mechanics()]);
             },
             error: (error: any) => console.error('Error getting mechanic:', error)
-          });
+          });*/
         });
       },
       error: (error: any) => console.error('Error getting mechanics:', error)

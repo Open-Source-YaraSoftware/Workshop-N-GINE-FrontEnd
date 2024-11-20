@@ -53,7 +53,7 @@ export class GeneralInformationComponent implements OnInit {
 
   private setInterventionForm() {
     return this.fb.group({
-      dni: [this.intervention.vehicle.owner.dni, Validators.required],
+      /*dni: [this.intervention.clientId, Validators.required],
       client: [(this.intervention.vehicle.owner.firstName + ' ' + this.intervention.vehicle.owner.lastName), Validators.required],
       licensePlate: [this.intervention.vehicle.licensePlate, Validators.required],
       brand: [this.intervention.vehicle.brand, Validators.required],
@@ -61,10 +61,10 @@ export class GeneralInformationComponent implements OnInit {
       modality: [this.intervention.interventionType, Validators.required],
       scheduledDate: [this.intervention.registrationDate, Validators.required],
       leadMechanic: [
-        `${this.mechanics.find(mechanic => mechanic.id === this.intervention.leader.id)?.firstName || ''} ${this.mechanics.find(mechanic => mechanic.id === this.intervention.leader.id)?.lastName || ''}`,
+        `${this.mechanics.find(mechanic => mechanic.id === this.intervention.mechanicLeaderId)?.firstName || ''} ${this.mechanics.find(mechanic => mechanic.id === this.intervention.mechanicLeaderId)?.lastName || ''}`,
         Validators.required
       ],
-      description: [this.intervention.description]
+      description: [this.intervention.description]*/
     });
 
   }

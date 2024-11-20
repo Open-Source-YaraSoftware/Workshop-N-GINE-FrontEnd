@@ -8,9 +8,11 @@
     <img class="logo" src="/assets/images/logo.png" alt="logo of workshop n-gine">
     <ul class="links">
       @for (item of navigationItems(); track item.name){
-        <button mat-button [routerLink]="item.namePath">
-          {{item.name}}
-        </button>
+        @if(item.isPublic){
+          <button mat-button [routerLink]="item.namePath">
+            {{item.name}}
+          </button>
+        }
       }
     </ul>
   </nav>

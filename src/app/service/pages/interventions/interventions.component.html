@@ -11,7 +11,6 @@
     </div>
     <button mat-raised-button color="primary" (click)="openDialog()">+ Schedule intervention</button>
   </div>
-
   <mat-form-field>
     <input matInput (keyup)="applyFilter($event)" placeholder="Filter interventions" #input>
   </mat-form-field>
@@ -22,54 +21,54 @@
       <!-- Client First Name -->
       <ng-container matColumnDef="clientFirstName">
         <th class="mat-header-cell" mat-header-cell *matHeaderCellDef mat-sort-header> Client First Name </th>
-        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ intervention.vehicle.owner.firstName }} </td>
+        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ '' }} </td>
       </ng-container>
 
       <!-- Client Last Name -->
       <ng-container matColumnDef="clientLastName">
         <th class="mat-header-cell" mat-header-cell *matHeaderCellDef mat-sort-header> Client Last Name </th>
-        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ intervention.vehicle.owner.lastName }} </td>
+        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ '' }} </td>
       </ng-container>
 
       <!-- Vehicle License Plate -->
       <ng-container matColumnDef="licensePlate">
         <th class="mat-header-cell" mat-header-cell *matHeaderCellDef mat-sort-header> Vehicle License Plate </th>
-        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ intervention.vehicle.licensePlate }} </td>
+        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ '' }} </td>
       </ng-container>
 
       <!-- Vehicle Model -->
       <ng-container matColumnDef="vehicleModel">
         <th class="mat-header-cell" mat-header-cell *matHeaderCellDef mat-sort-header> Vehicle Model </th>
-        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ intervention.vehicle.model }} </td>
+        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ '' }} </td>
       </ng-container>
 
       <!-- Registration Date -->
-      <ng-container matColumnDef="registrationDate">
+      <ng-container matColumnDef="scheduledAt">
         <th class="mat-header-cell" mat-header-cell *matHeaderCellDef mat-sort-header> Registration Date </th>
-        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ intervention.registrationDate | date }} </td>
+        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ intervention.scheduledAt ? (intervention.scheduledAt | date) : 'N/A' }} </td>
       </ng-container>
 
       <!-- Completion Date -->
-      <ng-container matColumnDef="completionDate">
+      <ng-container matColumnDef="completedAt">
         <th class="mat-header-cell" mat-header-cell *matHeaderCellDef mat-sort-header> Completion Date </th>
-        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ intervention.completionDate ? (intervention.completionDate | date) : 'N/A' }} </td>
+        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ intervention.completedAt ? (intervention.completedAt | date) : 'N/A' }} </td>
       </ng-container>
 
       <!-- Status -->
       <ng-container matColumnDef="state">
         <th class="mat-header-cell" mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
-        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{ mapStateToString(intervention.state) }} </td>
+        <td class="mat-cell" mat-cell *matCellDef="let intervention"> {{intervention.status}} </td>
       </ng-container>
 
       <!-- Table Rows -->
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr class="mat-cell" mat-row *matRowDef="let intervention; columns: displayedColumns;"></tr>
+      <tr class="mat-cell" mat-row *matRowDef="let columns; columns: displayedColumns;"></tr>
 
       <!-- No Data Row -->
       <tr class="mat-row" *matNoDataRow>
         <td class="mat-cell" colspan="7">No data matching the filter "{{input.value}}"</td>
       </tr>
     </table>
-    <mat-paginator class="mat-header-cell" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of interventions"></mat-paginator>
+    <mat-paginator class="mat-header-cell" [pageSizeOptions]="[5, 10, 15, 20]" aria-label="Select page of interventions"></mat-paginator>
   </div>
 </section>

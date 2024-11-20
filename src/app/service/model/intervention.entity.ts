@@ -1,34 +1,40 @@
-import {InterventionState} from "./intervention-state.enum";
-import {InterventionType} from "./intervention-type.enum";
-import {Workshop} from "./workshop.entity";
-import {Vehicle} from "./vehicle.entity";
-import {Task} from "./task.entity";
-import {Mechanic} from "./mechanic.entity";
-
-
 export class Intervention {
   id: number;
-  state: InterventionState;
-  registrationDate: Date;
-  completionDate: Date;
-  interventionType: InterventionType;
+  workshopId: number;
+  mechanicLeaderId: number;
+  vehicleId: number;
+  clientId: number;
+  scheduledAt: Date;
+  startedAt: Date | null;
+  finishedAt: Date | null;
+  type: string;
+  status: string;
   description: string;
-  workshop: Workshop;
-  vehicle: Vehicle;
-  leader: Mechanic;
-  taskList: Task[];
 
-  constructor() {
-    this.id = 0;
-    this.state = InterventionState.PENDING;
-    this.registrationDate = new Date();
-    this.completionDate = new Date();
-    this.interventionType = InterventionType.MAINTENANCE;
-    this.description = '';
-    this.workshop = new Workshop();
-    this.vehicle = new Vehicle();
-    this.leader = new Mechanic();
-    this.taskList = [];
+  constructor({
+    id = 0,
+    workshopId = 0,
+    mechanicLeaderId = 0,
+    vehicleId = 0,
+    clientId = 0,
+    scheduledAt = '',
+    finishedAt = '',
+    startedAt = '',
+    type = '',
+    status = '',
+    Description = ''
+              }={}
+  ) {
+    this.id = id;
+    this.workshopId = workshopId;
+    this.mechanicLeaderId = mechanicLeaderId;
+    this.vehicleId = vehicleId;
+    this.clientId = clientId;
+    this.scheduledAt = new Date(scheduledAt);
+    this.startedAt = startedAt ? new Date(startedAt) : null;
+    this.finishedAt = finishedAt ? new Date(finishedAt) : null;
+    this.type = type;
+    this.status = status;
+    this.description = Description;
   }
-
 }

@@ -15,6 +15,14 @@ export class WorkshopService extends BaseService<Workshop>{
     this.resourceEndpoint = '/workshops';
   }
 
+  public createWorkshop(data: any): Observable<Workshop> {
+    return this.http.post<Workshop>(this.resourcePath(), data, this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError)
+      );
+  }
+
   public getAllInterventionsByWorkshopId(workshopId: number) :Observable<Intervention[]> {
     return this.http.get<Intervention[]>(`${this.resourcePath()}/${workshopId}/interventions`, this.httpOptions)
       .pipe(

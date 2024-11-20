@@ -34,23 +34,23 @@ export class InterventionDiagnosticComponent {
   protected hasChanged = signal(false);
 
   ngOnInit(){
-    this.interventionType.setValue(this.intervention.interventionType);
+    this.interventionType.setValue(this.intervention.type);
     this.interventionType.valueChanges.subscribe(() => this.updateHasChanged());
     this.interventionDescription.valueChanges.subscribe(() => this.updateHasChanged());
   }
 
   private updateHasChanged() {
-    this.hasChanged.set(this.interventionType.value !== this.intervention.interventionType ||
+    this.hasChanged.set(this.interventionType.value !== this.intervention.type ||
       this.interventionDescription.value !== this.intervention.description);
   }
 
   protected onResetValues() {
-    this.interventionType.setValue(this.intervention.interventionType);
+    this.interventionType.setValue(this.intervention.type);
     this.interventionDescription.setValue(this.intervention.description);
   }
 
   protected onUpdateIntervention() {
-    if(this.interventionType.value || this.interventionType.value === 0) this.intervention.interventionType = (this.interventionType.value === 1)? InterventionType.MAINTENANCE : InterventionType.REPARATION;
+    //if(this.interventionType.value || this.interventionType.value === 0) this.intervention.interventionType = (this.interventionType.value === 1)? InterventionType.MAINTENANCE : InterventionType.REPARATION;
     if(this.interventionDescription.value) this.intervention.description = this.interventionDescription.value;
     this.interventionUpdateRequested.emit(this.intervention);
     this.hasChanged.set(false);

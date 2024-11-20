@@ -1,7 +1,7 @@
 <div class="summary-container">
   <h2>Intervention Summary</h2>
-  <p>Registration Date: {{intervention.registrationDate | date:'dd/MM/yyyy'}}</p>
-  <p>Completion Date: {{intervention.completionDate | date:'dd/MM/yyyy'}}</p>
+  <p>Registration Date: {{intervention.scheduledAt | date:'dd/MM/yyyy'}}</p>
+  <p>Completion Date: {{intervention.finishedAt | date:'dd/MM/yyyy'}}</p>
   <p>{{intervention.description}}</p>
   <h3 class="task-title">Tasks</h3>
   <app-task-detail

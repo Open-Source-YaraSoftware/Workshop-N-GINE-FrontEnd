@@ -1,7 +1,7 @@
 import {Component, inject, signal} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {Vehicle} from "../../model/vehicle.entity";
-import {VehicleService} from "../../../crm/services/vehicle.service";
+import {VehicleService} from "../../services/vehicle.service";
 import {GeneralInfoComponent} from "../general-info/general-info.component";
 import {IotInformationComponent} from "../../../crm/components/iot-information/iot-information.component";
 import {
