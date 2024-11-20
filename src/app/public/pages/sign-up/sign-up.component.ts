@@ -1,7 +1,12 @@
-import { Component } from '@angular/core';
+import {Component, signal} from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import {WorkshopService} from "../../../service/services/workshop.service";
+import {Workshop} from "../../../service/model/workshop.entity";
+import {SignUpRequest} from "../../../iam/model/sign-up.request";
+import {AuthenticationService} from "../../../iam/services/authentication.service";
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-signup',
@@ -11,16 +16,17 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    MatButton
   ]
 })
 export class SignUpComponent {
-  signupForm: FormGroup;
+  signupForm!: FormGroup;
+  submitted = false;
 
-  constructor(private fb: FormBuilder, private router: Router) {
+  constructor(private fb: FormBuilder, private router: Router, private workshopService: WorkshopService, private authenticationService: AuthenticationService) {
     this.signupForm = this.fb.group({
-      firstName: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
+      username: ['', [Validators.required]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirmPassword: ['', Validators.required],
       workshopName: ['', Validators.required]
@@ -35,8 +41,22 @@ export class SignUpComponent {
 
   onSubmit() {
     if (this.signupForm.valid) {
-      console.log('Signup attempt', this.signupForm.value);
-      this.router.navigate(['/login']);
+      this.createWorkshop();
     }
+  }
+
+  createWorkshop() {
+    const newWorkshop = new Workshop();
+    newWorkshop.name =  this.signupForm.value.workshopName;
+    this.workshopService.createWorkshop(newWorkshop)
+      .subscribe((workshop) => {
+        let username = this.signupForm.value.username;
+        let password = this.signupForm.value.password;
+        let roleId=  2;
+        let workshopId = workshop.id;
+        const signUpRequest = new SignUpRequest(username, password, roleId, workshopId);
+        this.authenticationService.signUp(signUpRequest);
+        this.submitted = true;
+      });
   }
 }
