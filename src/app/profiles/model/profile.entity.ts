@@ -28,7 +28,4 @@ export class Profile {
     this.userId = userId;
   }
 
-  get fullName(): string {
-    return `${this.firstName} ${this.lastName}`;
-  }
 }

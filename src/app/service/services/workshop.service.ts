@@ -3,6 +3,7 @@ import {BaseService} from "../../shared/services/base.service";
 import {Workshop} from "../model/workshop.entity";
 import {catchError, Observable, retry} from "rxjs";
 import {Intervention} from "../model/intervention.entity";
+import {Profile} from "../../profiles/model/profile.entity";
 
 @Injectable({
   providedIn: 'root'
@@ -37,4 +38,14 @@ export class WorkshopService extends BaseService<Workshop>{
         catchError(this.handleError)
       );
   }
+
+  public postMechanicByWorkshopId(workshopId: number, data: any): Observable<Profile> {
+    console.log(data);
+    return this.http.post<Profile>(`${this.resourcePath()}/${workshopId}/mechanics`, data, this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError)
+      );
+  }
+
 }

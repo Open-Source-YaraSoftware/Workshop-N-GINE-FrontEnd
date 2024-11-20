@@ -14,6 +14,7 @@ export class User {
   age: number;
   location: string;
   workshop: Workshop;
+  workshopId: number;
   state: AccountState;
   notificationList: Notification[];
 
@@ -28,6 +29,7 @@ export class User {
     this.role = Role.CLIENT;
     this.age = 0;
     this.location = '';
+    this.workshopId = 0;
     this.workshop = new Workshop();
     this.state = AccountState.ACTIVE;
     this.notificationList = [];
