@@ -56,7 +56,7 @@ export class InterventionsLeaderComponent implements AfterViewInit {
   constructor(){
     this.dataSource = new MatTableDataSource([] as Intervention[]);
     // TODO: Implement this by mechanic id dynamically
-    this.setupFilterPredicateForInterventionLeader();
+    //this.setupFilterPredicateForInterventionLeader();
     this.getInterventionForMechanicLeader();
   }
 
@@ -66,7 +66,7 @@ export class InterventionsLeaderComponent implements AfterViewInit {
       this.dataSource.data = data;
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
-      this.updatedSortingAccessor();
+      //this.updatedSortingAccessor();
     });
   }
 
@@ -87,7 +87,7 @@ export class InterventionsLeaderComponent implements AfterViewInit {
   taskService = inject(TaskService);
   interventionService = inject(InterventionsService);
 
-  updatedSortingAccessor() {
+  /*updatedSortingAccessor() {
     this.dataSource.sortingDataAccessor = (item: Intervention, property: string) => {
       switch (property) {
         case 'client':
@@ -104,8 +104,8 @@ export class InterventionsLeaderComponent implements AfterViewInit {
           return (item as any)[property];
       }
     };
-  }
-  setupFilterPredicateForInterventionLeader() {
+  }*/
+  /*setupFilterPredicateForInterventionLeader() {
     this.dataSource.filterPredicate = (data: Intervention, filter: string) => {
       const transformedFilter = filter.trim().toLowerCase();
       const combinedData = `
@@ -118,5 +118,5 @@ export class InterventionsLeaderComponent implements AfterViewInit {
       `.toLowerCase();
       return combinedData.includes(transformedFilter);
     };
-  }
+  }*/
 }

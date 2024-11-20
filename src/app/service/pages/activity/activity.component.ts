@@ -116,7 +116,7 @@ export class ActivityComponent {
 
   private finishIntervention() {
     const intervention = this.intervention();
-    intervention.state = InterventionState.COMPLETED;
+    //intervention.state = InterventionState.COMPLETED;
     this.interventionService.update(intervention.id, intervention)
       .subscribe({
         next: () => {

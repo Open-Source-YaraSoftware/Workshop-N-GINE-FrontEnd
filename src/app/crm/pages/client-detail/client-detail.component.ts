@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkshopClientService } from '../../services/workshop-client.service';
-import { VehicleService } from '../../services/vehicle.service';
+import { VehicleService } from '../../../service/services/vehicle.service';
 import { WorkshopClient } from '../../model/workshop-client.entity';
 import { Vehicle } from '../../../service/model/vehicle.entity';
 import { ConfirmationDialogComponent } from '../../../shared/components/confirmation-dialog/confirmation-dialog.component';
@@ -73,7 +73,7 @@ export class ClientDetailComponent {
   }
 
   private loadVehiclesData() {
-    this.vehicleService.getByClientId(this.clientId).subscribe(
+    this.vehicleService.getAllByClientId(this.clientId).subscribe(
       (vehicles: Vehicle[]) => this.vehicles = vehicles
     );
   }
@@ -106,7 +106,7 @@ export class ClientDetailComponent {
   }
 
   private registerNewVehicle(newVehicle: Vehicle) {
-    newVehicle.owner = this.workshopClient;
+    //newVehicle.owner = this.workshopClient;
     this.vehicleService.create(newVehicle).subscribe(() => {
       this.loadVehiclesData();
     });

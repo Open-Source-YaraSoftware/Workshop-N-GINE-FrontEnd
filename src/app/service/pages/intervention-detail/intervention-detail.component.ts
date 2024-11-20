@@ -10,7 +10,7 @@ import {NgIf, TitleCasePipe} from '@angular/common';
 import {GeneralInformationComponent} from '../../components/general-information/general-information.component';
 import {PersonnelService} from "../../services/personnel.service";
 import {Mechanic} from "../../model/mechanic.entity";
-import {VehicleService} from "../../../crm/services/vehicle.service";
+import {VehicleService} from "../../services/vehicle.service";
 import {Vehicle} from "../../model/vehicle.entity";
 import {
   ConfirmationDialogComponent
@@ -93,9 +93,9 @@ export class InterventionDetailComponent implements OnInit {
   }
 
   private loadVehiclesData() {
-    this.vehicleService.getByClientDni(this.intervention.vehicle.owner.dni).subscribe(vehicles => {
+    /*this.vehicleService.getByClientDni('').subscribe(vehicles => {
       this.vehicles = vehicles;
-    });
+    });*/
   }
 
   protected showGeneralInformation() {
@@ -107,7 +107,7 @@ export class InterventionDetailComponent implements OnInit {
   }
 
   protected updateIntervention(intervention: Intervention) {
-    const stateAsEnum = InterventionState[this.intervention.state as unknown as keyof typeof InterventionState];
+    const stateAsEnum = InterventionState[this.intervention.status as unknown as keyof typeof InterventionState];
 
     if (stateAsEnum === InterventionState.PENDING) {
       this.showConfirmationDialog(intervention);
