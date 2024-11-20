@@ -6,17 +6,14 @@ import {
   MatDialogContent,
   MatDialogActions
 } from '@angular/material/dialog';
-import { Mechanic } from '../../model/mechanic.entity';
+import { MatFormField } from '@angular/material/form-field';
+import { MatInput } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatButton } from '@angular/material/button';
+import { Profile } from '../../../profiles/model/profile.entity';
 import { Role } from '../../model/role.enum';
 import { Workshop } from '../../model/workshop.entity';
 import { AccountState } from '../../model/account-state.enum';
-import { Notification } from "../../../communication/model/notification.entity";// Ensure this is imported
-import { Task } from '../../model/task.entity';
-import {MatFormField} from "@angular/material/form-field";
-import {MatInput} from "@angular/material/input";
-import {FormsModule} from "@angular/forms";
-import {MatButton} from "@angular/material/button";
-import {Profile} from "../../../profiles/model/profile.entity"; // Ensure this is imported
 
 @Component({
   selector: 'app-new-mechanic-dialog',
@@ -34,31 +31,32 @@ import {Profile} from "../../../profiles/model/profile.entity"; // Ensure this i
   styleUrls: ['./new-mechanic-dialog.component.css']
 })
 export class NewMechanicDialogComponent {
-  mechanic!: Profile; // Non-null assertion, mechanic will be injected
+  mechanic!: Profile;
 
   constructor(
     public dialogRef: MatDialogRef<NewMechanicDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: { mechanic: Profile }
   ) {
-    // Assign the mechanic from injected data or default to an empty object
     this.mechanic = data.mechanic || {
       id: 0,
       firstName: '',
       lastName: '',
-      dni: '',
+      dni: 0,
       email: '',
+      age: 0,
+      location: '',
       password: '',
-      role: Role.MECHANIC, // Default role for new mechanics
+      role: Role.MECHANIC,
       workshop: new Workshop(),
-      accountState: AccountState.ACTIVE, // Default active state
+      accountState: AccountState.ACTIVE,
     };
   }
 
   onSubmit(): void {
-    this.dialogRef.close(this.mechanic); // Send the mechanic back to parent on submit
+    this.dialogRef.close(this.mechanic);
   }
 
   onCancel(): void {
-    this.dialogRef.close(); // Close the dialog without saving changes
+    this.dialogRef.close();
   }
 }

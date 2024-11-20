@@ -2,26 +2,36 @@
   <div class="header">
     <h1>Personnel</h1>
   </div>
-
-  <div *ngIf="!noMechanics" class="controls">
-    <mat-form-field class="filter">
+  <div *ngIf="noMechanics" class="controls">
+    <mat-form-field appearance="outline" class="filter">
       <mat-label>Filter</mat-label>
-      <input matInput [(ngModel)]="searchQuery" placeholder="Search...">
+      <input
+        matInput
+        [(ngModel)]="searchQuery"
+        placeholder="Search by name, email, or DNI"
+      />
+      <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
-    <button class="button-new-mechanic" mat-button (click)="openCreateModal()">
-      New Mechanic <mat-icon>add</mat-icon>
+    <button
+      class="button-new-mechanic"
+      mat-raised-button
+      color="primary"
+      (click)="openCreateModal()"
+    >
+      <mat-icon>add</mat-icon>
+      New Mechanic
     </button>
   </div>
-
-  <div *ngIf="!noMechanics">
+  <div *ngIf="noMechanics">
     <app-personnel-list
       [mechanics]="filteredMechanics()"
-      (editMechanic)="openUpdateModal($event)">
-    </app-personnel-list>
+      (editMechanic)="openUpdateModal($event)"
+    ></app-personnel-list>
   </div>
-
-  <div *ngIf="noMechanics" class="no-personnel">
+  <div *ngIf="!noMechanics" class="no-personnel">
     <p>No registered personnel</p>
-    <button mat-button color="primary" (click)="openCreateModal()">Register</button>
+    <button mat-raised-button color="primary" (click)="openCreateModal()">
+      Register
+    </button>
   </div>
 </section>
