@@ -4,7 +4,7 @@ import {PreviousInterventionsComponent} from "../../components/previous-interven
 import {ActivatedRoute} from "@angular/router";
 import {NgComponentOutlet, NgIf} from "@angular/common";
 import {MatButton} from "@angular/material/button";
-import {VehicleService} from "../../services/vehicle.service";
+import {VehicleService} from "../../../service/services/vehicle.service";
 import {Vehicle} from "../../../service/model/vehicle.entity";
 import {MatIcon} from "@angular/material/icon";
 import {MatToolbar} from "@angular/material/toolbar";

@@ -36,7 +36,7 @@ export class IotInformationComponent {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['vehicle'] && changes['vehicle'].currentValue) {
-      this.dataSource = this.vehicle.iotDispositive.codeList || [];
+      //this.dataSource = this.vehicle.iotDeviceId.codeList || [];
     }
   }
 }

@@ -57,7 +57,7 @@ export class PreviousInterventionsComponent {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['vehicle'] && changes['vehicle'].currentValue) {
-      this.previousInterventions = this.vehicle.interventionRegister || [];
+     // this.previousInterventions = this.vehicle.interventionRegister || [];
     }
   }
 }

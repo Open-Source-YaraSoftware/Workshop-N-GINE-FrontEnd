@@ -9,8 +9,8 @@
   <mat-card-content class="card-content">
     <h4>Car {{ index }} </h4>
     <h4>{{ vehicle.brand }} {{ vehicle.model }}</h4>
-      @if (vehicle.interventionRegister.length > 0) {
-          <h4>Last Intervention: {{vehicle.interventionRegister[vehicle.interventionRegister.length-1].completionDate | date}}</h4>
-      }
+      <!--@if (vehicle.interventionRegister.length > 0) {
+          <h4>Last Intervention: {{vehicle.interventionRegister[vehicle.interventionRegister.length-1].finishedAt | date}}</h4>
+      }-->
   </mat-card-content>
 </mat-card>

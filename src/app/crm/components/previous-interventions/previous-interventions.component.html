@@ -13,10 +13,10 @@
           <mat-card class="timeline-content">
             <mat-card-header>
               <mat-card-title># {{ intervention.id }}</mat-card-title>
-              <mat-card-subtitle>{{ intervention.completionDate  | date}}</mat-card-subtitle>
+              <mat-card-subtitle>{{ intervention.finishedAt  | date}}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
-              <p>By {{ intervention.leader.firstName }} {{intervention.leader.lastName}}</p>
+              <p>By {{ 'intervention.leader.firstName' }} {{'intervention.leader.lastName'}}</p>
             </mat-card-content>
             <mat-card-actions>
               <button [routerLink]="['/interventions', intervention.id]" mat-button color="primary">Read more</button>

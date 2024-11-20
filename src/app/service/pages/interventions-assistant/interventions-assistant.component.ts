@@ -58,7 +58,7 @@ export class InterventionsAssistantComponent implements AfterViewInit {
   constructor(){
     this.dataSource = new MatTableDataSource([] as Intervention[]);
     // TODO: Implement this by mechanic id dynamically
-    this.setupFilterPredicate();
+    //this.setupFilterPredicate();
     this.getInterventionForMechanicAssistant()
   }
 
@@ -85,7 +85,7 @@ export class InterventionsAssistantComponent implements AfterViewInit {
         this.dataSource.data = filteredInterventions;
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-        this.updatedSortingAccessor();
+        //this.updatedSortingAccessor();
       });
   }
 
@@ -106,7 +106,7 @@ export class InterventionsAssistantComponent implements AfterViewInit {
   taskService = inject(TaskService);
   interventionService = inject(InterventionsService);
 
-  updatedSortingAccessor() {
+  /*updatedSortingAccessor() {
     this.dataSource.sortingDataAccessor = (item: Intervention, property: string) => {
       switch (property) {
         case 'client':
@@ -123,8 +123,8 @@ export class InterventionsAssistantComponent implements AfterViewInit {
           return (item as any)[property];
       }
     };
-  }
-  setupFilterPredicate() {
+  }*/
+  /*setupFilterPredicate() {
     this.dataSource.filterPredicate = (data: Intervention, filter: string) => {
       const transformedFilter = filter.trim().toLowerCase();
       const combinedData = `
@@ -137,5 +137,5 @@ export class InterventionsAssistantComponent implements AfterViewInit {
       `.toLowerCase();
       return combinedData.includes(transformedFilter);
     };
-  }
+  }*/
 }
