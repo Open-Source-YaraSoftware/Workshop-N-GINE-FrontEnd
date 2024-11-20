@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import {AuthenticationService} from "../../../iam/services/authentication.service";
+import {SignInRequest} from "../../../iam/model/sign-in.request";
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-login',
@@ -11,22 +14,27 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    MatButton
   ]
 })
 export class LoginComponent {
-  loginForm: FormGroup;
+  loginForm!: FormGroup;
+  submitted = false;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private authenticationService: AuthenticationService) {
     this.loginForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      username: ['', [Validators.required, Validators.minLength(1)]],
+      password: ['', [Validators.required, Validators.minLength(1)]]
     });
   }
 
   onSubmit() {
-    if (this.loginForm.valid) {
-      console.log('Login attempt', this.loginForm.value);
-    }
+    if (this.loginForm.invalid) return;
+    let username = this.loginForm.value.username;
+    let password = this.loginForm.value.password;
+    const signInRequest = new SignInRequest(username, password);
+    this.authenticationService.signIn(signInRequest);
+    this.submitted = true;
   }
 }
