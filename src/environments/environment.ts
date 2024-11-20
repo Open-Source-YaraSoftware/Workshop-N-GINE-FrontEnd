@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  serverBasePath: 'https://my-json-server.typicode.com/Open-Source-YaraSoftware/Workshop-N-GINE/'
+  serverBasePath: 'https://workshop-n-gine-platform-production.up.railway.app/api/v1'
 };
