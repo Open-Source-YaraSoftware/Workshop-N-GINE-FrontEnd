@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Mechanic } from '../../model/mechanic.entity';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { MatCard, MatCardAvatar, MatCardContent, MatCardHeader } from '@angular/material/card';
-import {Profile} from "../../../profiles/model/profile.entity";
+import { Profile } from '../../../profiles/model/profile.entity';
 
 @Component({
   selector: 'app-personnel-item',
@@ -16,10 +16,14 @@ import {Profile} from "../../../profiles/model/profile.entity";
   standalone: true
 })
 export class PersonnelItemComponent {
-  // Removed default initialization; mechanic will be provided by parent via Input.
   @Input() mechanic!: Profile;
-
   @Output() selectMechanic = new EventEmitter<Profile>();
+
+  constructor(private sanitizer: DomSanitizer) {}
+
+  get sanitizedImageUrl(): SafeUrl {
+    return this.sanitizer.bypassSecurityTrustUrl('https://xsgames.co/randomusers/avatar.php?g=male');
+  }
 
   onCardClick(): void {
     this.selectMechanic.emit(this.mechanic);
