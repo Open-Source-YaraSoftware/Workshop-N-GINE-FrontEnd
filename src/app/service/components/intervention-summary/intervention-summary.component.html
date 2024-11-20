@@ -1,0 +1,14 @@
+<div class="summary-container">
+  <h2>Intervention Summary</h2>
+  <p>Registration Date: {{intervention.scheduledAt | date:'dd/MM/yyyy'}}</p>
+  <p>Completion Date: {{intervention.finishedAt | date:'dd/MM/yyyy'}}</p>
+  <p>{{intervention.description}}</p>
+  <h3 class="task-title">Tasks</h3>
+  <app-task-detail
+    *ngFor="let task of tasks"
+    [task]="task"
+    [checkpoints]="getCheckpoints(task.id)"
+    [productUsages]="getProductUsages(task.id)"
+    class="task-detail-item"
+  ></app-task-detail>
+</div>

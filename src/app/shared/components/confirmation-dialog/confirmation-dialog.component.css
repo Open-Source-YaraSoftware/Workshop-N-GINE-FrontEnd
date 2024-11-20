@@ -1,0 +1,19 @@
+.dialog{
+  width: 90%;
+  max-width: 30rem;
+  height: auto;
+  margin: 0 auto;
+}
+.message-content {
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+}
+.spacer {
+  margin-top: 20px;
+}
+.action-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

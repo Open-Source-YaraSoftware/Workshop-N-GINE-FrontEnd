@@ -1,40 +1,47 @@
 import { Routes } from '@angular/router';
+import {authenticationGuard} from "./iam/services/authentication.guard";
 
 export const routes: Routes = [
   {
     path: '',
     title: 'home',
     loadComponent: () => import('./shared/components/main-layout/main-layout.component').then(m => m.MainLayoutComponent),
+    canActivate: [authenticationGuard],
     children: [
       {
         path: 'personnel',
         title: 'personnel',
         loadComponent: () => import('./service/pages/personnel/personnel.component').then(m => m.PersonnelComponent),
+        canActivate: [authenticationGuard]
       },
       {
         path: 'clients',
         title: 'clients',
         loadComponent: () => import('./crm/pages/clients/clients.component').then(m => m.ClientsComponent),
+        canActivate: [authenticationGuard]
       },
       {
         path: 'clients/:id',
         title: 'client',
         loadComponent: () => import('./crm/pages/client-detail/client-detail.component').then(m => m.ClientDetailComponent),
+        canActivate: [authenticationGuard]
       },
       {
         path: 'interventions',
         title: 'interventions',
         loadComponent: () => import('./service/pages/interventions/interventions.component').then(m => m.InterventionsComponent),
+        canActivate: [authenticationGuard]
       },
       {
         path: 'interventions/:id',
         title: 'intervention',
         loadComponent: () => import('./service/pages/intervention-detail/intervention-detail.component').then(m => m.InterventionDetailComponent),
+        canActivate: [authenticationGuard]
       },
       {
         path: 'inventory',
         title: 'inventory',
-        loadComponent: () => import('./service/components/inventory-header/inventory-header.component').then(m => m.InventoryHeaderComponent),
+        loadComponent: () => import('./inventory/components/inventory-header/inventory-header.component').then(m => m.InventoryHeaderComponent),
         children: [
           {
             path: '',
@@ -44,12 +51,14 @@ export const routes: Routes = [
           {
             path: 'items',
             title: 'items',
-            loadComponent: () => import('./service/pages/items/items.component').then(m => m.ItemsComponent),
+            loadComponent: () => import('./inventory/pages/items/items.component').then(m => m.ItemsComponent),
+            canActivate: [authenticationGuard]
           },
           {
             path: 'requests',
             title: 'requests',
-            loadComponent: () => import('./service/pages/requests/requests.component').then(m => m.RequestsComponent),
+            loadComponent: () => import('./inventory/pages/requests/requests.component').then(m => m.RequestsComponent),
+            canActivate: [authenticationGuard]
           }
         ]
       },
@@ -57,16 +66,18 @@ export const routes: Routes = [
         path: 'metrics',
         title: 'metrics',
         loadComponent: () => import('./analytics/components/analytics-header/analytics-header.component').then(m => m.AnalyticsHeaderComponent),
+        canActivate: [authenticationGuard],
         children: [
           {
             path: '',
             pathMatch: 'full',
-            redirectTo: 'interventions-by-date',
+            redirectTo: 'interventions-by-date'
           },
           {
             path: 'interventions-by-date',
             title: 'interventions-by-date',
             loadComponent: () => import('./analytics/pages/interventions-by-date/interventions-by-date.component').then(m => m.InterventionsByDateComponent),
+            canActivate: [authenticationGuard]
           }
         ]
       },
@@ -74,75 +85,56 @@ export const routes: Routes = [
         path: 'notifications',
         title: 'notifications',
         loadComponent: () => import('./communication/pages/notifications/notifications.component').then(m => m.NotificationsComponent),
+        canActivate: [authenticationGuard]
       },
       {
-        path: 'tasks',
-        title: 'tasks',
-        loadComponent: () => import('./service/pages/tasks/tasks.component').then(m => m.TasksComponent),
-      },
-      {
-        path: 'tasks/:id',
-        title: 'task',
-        loadComponent: () => import('./service/components/task-header/task-header.component').then(m => m.TaskHeaderComponent),
+        path: 'activities',
+        title: 'activities',
+        loadComponent: () => import('./service/components/activities-header/activities-header.component').then(m => m.ActivitiesHeaderComponent),
+        canActivate: [authenticationGuard],
         children: [
           {
             path: '',
             pathMatch: 'full',
-            redirectTo: 'information',
+            redirectTo: 'assistant'
           },
           {
-            path: 'information',
-            title: 'information',
-            loadComponent: () => import('./service/pages/task-information/task-information.component').then(m => m.TaskInformationComponent),
+            path: 'assistant',
+            title: 'assistant',
+            loadComponent: () => import('./service/pages/interventions-assistant/interventions-assistant.component').then(m => m.InterventionsAssistantComponent),
+            canActivate: [authenticationGuard]
           },
           {
-            path: 'diagnostic-preparation',
-            title: 'diagnostic-preparation',
-            loadComponent: () => import('./service/pages/task-diagnostic-preparation/task-diagnostic-preparation.component').then(m => m.TaskDiagnosticPreparationComponent),
-          },
-          {
-            path: 'execution/:taskId',
-            title: 'execution',
-            loadComponent: () => import('./service/components/task-execution-header/task-execution-header.component').then(m => m.TaskExecutionHeaderComponent),
-            children: [
-              {
-                path: '',
-                pathMatch: 'full',
-                redirectTo: 'requests',
-              },
-              {
-                path: 'requests',
-                title: 'task-requests',
-                loadComponent: () => import('./service/pages/task-requests/task-requests.component').then(m => m.TaskRequestsComponent),
-              },
-              {
-                path: 'tracking',
-                title: 'task-tracking',
-                loadComponent: () => import('./service/pages/task-tracking/task-tracking.component').then(m => m.TaskTrackingComponent),
-              }
-            ]
-          },
-          {
-            path: 'monitoring',
-            title: 'monitoring',
-            loadComponent: () => import('./service/pages/task-monitoring/task-monitoring.component').then(m => m.TaskMonitoringComponent),
+            path: 'leader',
+            title: 'leader',
+            loadComponent: () => import('./service/pages/interventions-leader/interventions-leader.component').then(m => m.InterventionsLeaderComponent),
+            canActivate: [authenticationGuard]
           }
         ]
       },
       {
-        path: 'vehicles/client/:id',
+        path: 'activities/:id',
+        title: 'activity',
+        loadComponent: () => import('./service/pages/activity/activity.component').then(m => m.ActivityComponent),
+        canActivate: [authenticationGuard]
+      },
+      {
+        path: 'vehicles',
         title: 'vehicles',
         loadComponent: () => import('./crm/pages/vehicles/vehicles.component').then(m => m.VehiclesComponent),
+        canActivate: [authenticationGuard]
       },
       {
         path: 'vehicles/:id',
         title: 'vehicle',
         loadComponent: () => import('./crm/pages/vehicle-detail/vehicle-detail.component').then(m => m.VehicleDetailComponent),
+        canActivate: [authenticationGuard]
       },
       {
         path: 'profile/:id',
         title: 'profile',
         loadComponent: () => import('./iam/pages/profile/profile.component').then(m => m.ProfileComponent),
+        canActivate: [authenticationGuard]
       }
     ]
   },

@@ -5,12 +5,92 @@
   justify-content: space-between;
   align-items: center;
 }
-.center{
+.center {
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .space {
-  gap: 0.5rem
+  gap: 0.5rem;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+}
+.auth-buttons button {
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+mat-toolbar {
+  background-color: #e3f2fd; /* Fondo celeste claro */
+  color: #01579b; /* Azul oscuro para texto */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.space {
+  margin-left: 16px;
+}
+
+mat-toolbar .right-section {
+  display: flex;
+  align-items: center;
+}
+
+mat-toolbar a {
+  color: #0277bd; /* Azul intermedio */
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 16px;
+  transition: color 0.3s ease;
+}
+
+mat-toolbar a:hover {
+  color: #01579b; /* Azul oscuro al pasar el cursor */
+  text-decoration: underline;
+}
+
+mat-toolbar .auth-buttons button {
+  border-color: #0288d1; /* Azul intermedio */
+  color: #0288d1;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+mat-toolbar .auth-buttons button:hover {
+  background-color: #b3e5fc; /* Fondo celeste claro */
+  color: #01579b; /* Azul oscuro */
+}
+
+mat-toolbar mat-icon {
+  color: #0288d1; /* Azul intermedio */
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+mat-toolbar mat-icon:hover {
+  transform: scale(1.2); /* Agrandar ligeramente al pasar el cursor */
+}
+
+button[mat-icon-button] {
+  background-color: #b3e5fc; /* Fondo celeste claro */
+  border-radius: 50%;
+  padding: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[mat-icon-button]:hover {
+  background-color: #81d4fa; /* Fondo más intenso */
+  transform: scale(1.1); /* Agrandar ligeramente */
 }

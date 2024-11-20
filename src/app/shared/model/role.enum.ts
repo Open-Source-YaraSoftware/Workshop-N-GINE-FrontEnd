@@ -1,0 +1,5 @@
+export enum Role {
+  MECHANIC = 'MECHANIC',
+  WORKSHOP_OWNER = 'WORKSHOP_OWNER',
+  CLIENT = 'CLIENT'
+}

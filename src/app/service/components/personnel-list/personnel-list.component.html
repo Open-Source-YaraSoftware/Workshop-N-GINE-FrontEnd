@@ -1,0 +1,7 @@
+<div class="personnel-cards">
+  <app-personnel-item
+    *ngFor="let mechanic of mechanics"
+    [mechanic]="mechanic"
+    (selectMechanic)="selectMechanic(mechanic)">
+  </app-personnel-item>
+</div>
